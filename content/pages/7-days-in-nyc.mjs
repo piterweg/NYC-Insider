@@ -229,6 +229,28 @@ ${pageHero({
   </div>
 </section>
 
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "The sights in this plan",
+      title: "Every sight has its own guide",
+      lead: "Hours, entrances and booking order for the attractions this week is built around.",
+      action: `<a class="link-arrow" href="attractions.html">All attraction guides</a>`,
+    })}
+    <div class="grid grid--3">
+      ${card({ kicker: "Day 1", title: `<a href="top-of-the-rock.html">Top of the Rock</a>`, text: "The deck with the Empire State in frame.", foot: `<a class="link-arrow" href="top-of-the-rock.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 2", title: `<a href="statue-of-liberty.html">Statue of Liberty</a>`, text: "First ferry and the only official ticket seller.", foot: `<a class="link-arrow" href="statue-of-liberty.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 3", title: `<a href="met-museum.html">The Met</a>`, text: "Closed Wednesdays; the highlights route.", foot: `<a class="link-arrow" href="met-museum.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 3", title: `<a href="central-park.html">Central Park</a>`, text: "The Mall, Bethesda and the quiet north end.", foot: `<a class="link-arrow" href="central-park.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 4", title: `<a href="brooklyn-bridge.html">Brooklyn Bridge</a>`, text: "Walk into DUMBO before the crowds.", foot: `<a class="link-arrow" href="brooklyn-bridge.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 5", title: `<a href="high-line.html">The High Line</a>`, text: "Seasonal hours and where to enter.", foot: `<a class="link-arrow" href="high-line.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 6", title: `<a href="amnh.html">AMNH</a>`, text: "The museum that anchors the Upper West Side.", foot: `<a class="link-arrow" href="amnh.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 7", title: `<a href="grand-central.html">Grand Central</a>`, text: "The concourse, the whispering gallery, the food hall.", foot: `<a class="link-arrow" href="grand-central.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 7", title: `<a href="moma.html">MoMA</a>`, text: "Friday evenings and the entrance to use.", foot: `<a class="link-arrow" href="moma.html">Read the guide</a>` })}
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     ${newsletter({ title: "The full week, on one page", text: "We will email the printable seven-day plan plus our Queens and Bronx add-ons.", source: "7-days" })}

@@ -17,6 +17,8 @@ GitHub Pages (or any static host) with no server-side code.
 | Tickets | `attractions.html`, `passes.html` plus 14 individual attraction guides (Empire State Building, Top of the Rock, Edge, SUMMIT, One World Observatory, Statue of Liberty, 9/11 Memorial, AMNH, MoMA, the Met, Central Park, High Line, Brooklyn Bridge, Grand Central) |
 | Trip planning | `plan-your-trip.html`, `getting-around.html`, `budget.html`, `when-to-visit.html`, `where-to-stay.html`, `day-trips.html` (Philadelphia, Washington DC, Boston, Niagara Falls, Hudson Valley), `map.html`, `search.html` |
 | Food & journal | `food.html`, `journal.html`, `free-things-to-do-nyc.html`, `sunday-in-brooklyn.html`, `nyc-rainy-day.html` |
+| Neighbourhoods | `neighbourhoods.html` plus SoHo, West Village, Harlem, Williamsburg, DUMBO, Astoria, Flushing and Jackson Heights |
+| Seasonal | `whats-on.html` plus Thanksgiving, Christmas, New Year's Eve, summer, Restaurant Week and the US Open |
 | Trust | `about.html`, `contact.html`, `privacy.html`, `terms.html`, `credits.html`, `404.html` |
 
 ## Developing
@@ -42,6 +44,8 @@ content/components.mjs      reusable HTML-component functions
 content/borough-template.mjs shared renderer for the five borough pages
 content/attraction-template.mjs  shared renderer for individual attraction pages
 content/day-trip-template.mjs    shared renderer for day-trip pages
+content/seasonal-template.mjs    shared renderer for seasonal guides
+content/neighbourhood-template.mjs shared renderer for neighbourhood guides
 content/map-data.mjs             map points and categories (emitted as JSON at build time)
 content/pages/*.mjs         one module per page — the content lives here
 assets/css/main.css         the design system (single stylesheet)

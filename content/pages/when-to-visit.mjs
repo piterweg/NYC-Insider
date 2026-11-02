@@ -296,6 +296,25 @@ ${pageHero({
   </div>
 </section>
 
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "Seasonal guides",
+      title: "What is happening while you are here",
+      lead: "New York changes character with the calendar. These guides cover the dates, the crowds and what to book before it sells out.",
+      action: `<a class="link-arrow" href="whats-on.html">What's on now</a>`,
+    })}
+    <div class="grid grid--3">
+      ${card({ kicker: "November", title: `<a href="thanksgiving-nyc.html">Thanksgiving in NYC</a>`, text: "The parade, where to eat and how the holiday changes opening hours.", foot: `<a class="link-arrow" href="thanksgiving-nyc.html">Read the guide</a>` })}
+      ${card({ kicker: "December", title: `<a href="christmas-in-nyc.html">Christmas in New York</a>`, text: "Tree, windows, markets and the crowds — what to book and what to skip.", foot: `<a class="link-arrow" href="christmas-in-nyc.html">Read the guide</a>` })}
+      ${card({ kicker: "31 December", title: `<a href="new-years-eve-nyc.html">New Year's Eve in NYC</a>`, text: "The ball drop, the alternatives and how to survive the cold.", foot: `<a class="link-arrow" href="new-years-eve-nyc.html">Read the guide</a>` })}
+      ${card({ kicker: "June–August", title: `<a href="summer-in-nyc.html">Summer in New York</a>`, text: "Heat, free concerts, beaches and the routes that stay cool.", foot: `<a class="link-arrow" href="summer-in-nyc.html">Read the guide</a>` })}
+      ${card({ kicker: "January &amp; July", title: `<a href="restaurant-week-nyc.html">Restaurant Week</a>`, text: "How the prix-fixe menus work and how to book the good tables.", foot: `<a class="link-arrow" href="restaurant-week-nyc.html">Read the guide</a>` })}
+      ${card({ kicker: "Late August", title: `<a href="us-open-nyc.html">The US Open</a>`, text: "Grounds passes, the night session and how to do Flushing in a day.", foot: `<a class="link-arrow" href="us-open-nyc.html">Read the guide</a>` })}
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     ${newsletter({

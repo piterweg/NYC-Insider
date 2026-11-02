@@ -149,7 +149,7 @@ ${heroHome({
       eyebrowText: "Five boroughs, five different cities",
       title: "New York is not Manhattan",
       lead: "Manhattan gets the postcards. But Queens is the most linguistically diverse place on earth, Brooklyn has the best food, and the Bronx is rewriting its own story. Start with the right borough for your interests.",
-      action: `<a class="link-arrow" href="boroughs.html">All borough guides</a>`,
+      action: `<a class="link-arrow" href="boroughs.html">All borough guides</a><br><a class="link-arrow" href="neighbourhoods.html">Neighbourhood guides</a>`,
     })}
     <div class="grid grid--3">
       ${boroughTile({
@@ -291,6 +291,22 @@ ${heroHome({
         title: "Free and always worth it",
         text: "The Staten Island Ferry, the High Line, Brooklyn Bridge Park, Grand Central's concourse, and the free museum hours listed in our budget guide. No ticket, no queue, no catch.",
       })}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "What's on",
+      title: "Time your trip around the calendar",
+      lead: "Thanksgiving, Christmas, New Year's Eve, summer and the US Open each change what New York feels like — and what you need to book.",
+      action: `<a class="link-arrow" href="whats-on.html">All seasonal guides</a>`,
+    })}
+    <div class="grid grid--3">
+      ${mediaCard({ href: "thanksgiving-nyc.html", image: img("central-park-bow-bridge.webp"), alt: "Bow Bridge in Central Park in autumn", kicker: "November", title: "Thanksgiving in NYC", text: "The parade, the feast and what closes.", meta: "Seasonal guide" })}
+      ${mediaCard({ href: "christmas-in-nyc.html", image: img("fifth-avenue-cab.webp"), alt: "A yellow cab on Fifth Avenue in Midtown", kicker: "December", title: "Christmas in New York", text: "Tree, windows, markets and the crowd strategy.", meta: "Seasonal guide" })}
+      ${mediaCard({ href: "new-years-eve-nyc.html", image: img("times-square-night.webp"), alt: "Times Square lit up at night", kicker: "31 December", title: "New Year's Eve in NYC", text: "The ball drop and the calmer alternatives.", meta: "Seasonal guide" })}
     </div>
   </div>
 </section>

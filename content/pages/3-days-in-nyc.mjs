@@ -183,6 +183,25 @@ ${pageHero({
   </div>
 </section>
 
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "The sights in this plan",
+      title: "Read the guides before you book",
+      lead: "Timed entries, entrances and queue strategy for the five bookings that shape this itinerary.",
+      action: `<a class="link-arrow" href="attractions.html">All attraction guides</a>`,
+    })}
+    <div class="grid grid--3">
+      ${card({ kicker: "Day 1", title: `<a href="empire-state-building.html">Empire State Building</a>`, text: "Which floor and which entrance — and the sunset slot.", foot: `<a class="link-arrow" href="empire-state-building.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 2", title: `<a href="statue-of-liberty.html">Statue of Liberty</a>`, text: "First ferry, official tickets only, security screening.", foot: `<a class="link-arrow" href="statue-of-liberty.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 2", title: `<a href="9-11-memorial.html">9/11 Memorial &amp; Museum</a>`, text: "Free plaza, timed museum, and what to expect.", foot: `<a class="link-arrow" href="9-11-memorial.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 2", title: `<a href="brooklyn-bridge.html">Brooklyn Bridge</a>`, text: "Walk it in the right direction at the right hour.", foot: `<a class="link-arrow" href="brooklyn-bridge.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 3", title: `<a href="met-museum.html">The Met</a>`, text: "Wednesday closure and the three-hour route.", foot: `<a class="link-arrow" href="met-museum.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 3", title: `<a href="central-park.html">Central Park</a>`, text: "Entrances, highlights and what is ticketed.", foot: `<a class="link-arrow" href="central-park.html">Read the guide</a>` })}
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     ${newsletter({ title: "Take this plan with you", text: "We will email the one-page printable version of this itinerary, plus a weekly New York note.", source: "3-days" })}

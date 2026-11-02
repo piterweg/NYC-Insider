@@ -56,11 +56,15 @@ export default {
           kicker: "SoHo & Nolita",
           name: "SoHo",
           text: "Cast-iron facades, cobblestones and global retail. Walk Greene, Prince and Broome streets, then eat on the edge of Nolita.",
+          link: "soho.html",
+          linkLabel: "SoHo guide",
         },
         {
           kicker: "Greenwich Village",
           name: "Greenwich Village",
           text: "Brownstones, Washington Square Park, jazz basements and the crooked streets of the West Village. The best place to be at 6pm.",
+          link: "west-village.html",
+          linkLabel: "West Village guide",
         },
         {
           kicker: "Upper East Side",
@@ -76,6 +80,8 @@ export default {
           kicker: "Harlem",
           name: "Harlem",
           text: "The Apollo, the Schomburg Center, 125th Street and a deep jazz and soul-food history. Worth a guided half-day.",
+          link: "harlem.html",
+          linkLabel: "Harlem guide",
         },
         {
           kicker: "Lower East Side",

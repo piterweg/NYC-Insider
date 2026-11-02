@@ -44,6 +44,8 @@ export default {
           kicker: "West",
           name: "Astoria",
           text: "Greek heritage, bakeries and tavernas, Astoria Park and the Museum of the Moving Image. Twenty minutes from Midtown on the N/W.",
+          link: "astoria.html",
+          linkLabel: "Astoria guide",
         },
         {
           kicker: "Waterfront",
@@ -54,11 +56,15 @@ export default {
           kicker: "Central",
           name: "Jackson Heights",
           text: "Little India around 74th Street, Latin American food on Roosevelt Avenue, and the most linguistically diverse blocks in the world.",
+          link: "jackson-heights.html",
+          linkLabel: "Jackson Heights guide",
         },
         {
           kicker: "East",
           name: "Flushing",
           text: "The city's biggest Chinatown, New World Mall's food court, and Flushing Meadows–Corona Park with the Unisphere.",
+          link: "flushing.html",
+          linkLabel: "Flushing guide",
         },
         {
           kicker: "South",

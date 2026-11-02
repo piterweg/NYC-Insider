@@ -44,11 +44,15 @@ export default {
           kicker: "North",
           name: "Williamsburg",
           text: "Waterfront skyline views, Bedford Avenue bars and vintage shops, and Domino Park. Best for brunch and sunset photos.",
+          link: "williamsburg.html",
+          linkLabel: "Williamsburg guide",
         },
         {
           kicker: "Waterfront",
           name: "DUMBO",
           text: "Cobblestones between the two bridges, converted warehouses and the Washington Street bridge view. Small, scenic, best on foot.",
+          link: "dumbo.html",
+          linkLabel: "DUMBO guide",
         },
         {
           kicker: "Heights",

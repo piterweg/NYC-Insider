@@ -203,6 +203,28 @@ ${pageHero({
   </div>
 </section>
 
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "The sights in this plan",
+      title: "Read before you book",
+      lead: "Every major sight in this itinerary has its own guide: opening hours, which entrance, the queue strategy and what to book first.",
+      action: `<a class="link-arrow" href="attractions.html">All attraction guides</a>`,
+    })}
+    <div class="grid grid--3">
+      ${card({ kicker: "Day 1", title: `<a href="empire-state-building.html">Empire State Building</a>`, text: "Which floor, which entrance, and the hour to go.", foot: `<a class="link-arrow" href="empire-state-building.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 1", title: `<a href="top-of-the-rock.html">Top of the Rock</a>`, text: "The deck that puts the Empire State in your photographs.", foot: `<a class="link-arrow" href="top-of-the-rock.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 2", title: `<a href="statue-of-liberty.html">Statue of Liberty</a>`, text: "The first ferry, the only official seller and the security line.", foot: `<a class="link-arrow" href="statue-of-liberty.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 2", title: `<a href="9-11-memorial.html">9/11 Memorial &amp; Museum</a>`, text: "Free plaza, timed museum, and what to expect underground.", foot: `<a class="link-arrow" href="9-11-memorial.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 2", title: `<a href="brooklyn-bridge.html">Brooklyn Bridge</a>`, text: "Which direction to walk and when to beat the crowds.", foot: `<a class="link-arrow" href="brooklyn-bridge.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 3", title: `<a href="met-museum.html">The Met</a>`, text: "Closed Wednesdays; the three-hour highlights route.", foot: `<a class="link-arrow" href="met-museum.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 3", title: `<a href="central-park.html">Central Park</a>`, text: "Entrances, the Mall, Bethesda and what is ticketed.", foot: `<a class="link-arrow" href="central-park.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 5", title: `<a href="high-line.html">The High Line</a>`, text: "Seasonal hours, lifts and the south-to-north walk.", foot: `<a class="link-arrow" href="high-line.html">Read the guide</a>` })}
+      ${card({ kicker: "Day 5", title: `<a href="moma.html">MoMA</a>`, text: "Opening time, Friday nights and the mandatory bag check.", foot: `<a class="link-arrow" href="moma.html">Read the guide</a>` })}
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     ${newsletter({ title: "Get the five-day plan as a PDF", text: "One email with the printable itinerary and a short weekly note on what is worth knowing in New York.", source: "5-days" })}
