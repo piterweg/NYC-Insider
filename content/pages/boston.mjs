@@ -72,7 +72,7 @@ export default {
       introEyebrow: "The honest answer",
       introTitle: "The city that punishes a day trip",
       introLead:
-        "Boston is a compact, walkable city with a genuinely great historic core. It is also four hours away, which means a same-day visit spends eight hours on a train for four or five hours on the ground. Stay the night and the arithmetic works.",
+        "Boston is a compact, walkable city with a genuinely great historic core. It is also about four hours away, which means a same-day visit spends about eight hours on a train for four or five hours on the ground. Stay the night and the arithmetic works.",
       introParagraphs: [
         "With an afternoon and a morning you can walk the Freedom Trail from Boston Common through Beacon Hill to the North End, eat properly, and still have time for the Public Garden or a short trip to Cambridge. That is the version of Boston that makes sense from New York.",
         "The train is the civilised way to do it. It leaves from Penn Station and arrives at South Station or Back Bay, both within a walk or short ride of the centre. Flying is about an hour and a quarter in the air, but with roughly two hours of airport time at each end it rarely saves anything.",
@@ -117,7 +117,7 @@ export default {
         "Journey times and fares are approximate and were checked in November 2026. Fares are dynamic — check current fares and schedules for both Amtrak and flights before booking.",
       highlightsTitle: "What the day is really about",
       highlightsLead:
-        "Boston is small enough to walk and old enough to reward looking up. These five cover the historic core without turning the visit into a march.",
+        "Boston is small enough to walk and old enough to reward looking up. These four cover the historic core without turning the visit into a march.",
       highlights: [
         {
           kicker: "The trail",

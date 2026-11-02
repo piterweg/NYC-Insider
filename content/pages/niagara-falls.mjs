@@ -75,7 +75,7 @@ export default {
         "Niagara Falls is about nine hours from New York by train, and the train runs once a day. That single fact decides the whole trip: you go for a night or two, or you go by organised bus tour and spend a very long day on the road.",
       introParagraphs: [
         "The Maple Leaf is a slow, scenic ride up the Hudson Valley and across upstate New York, and it leaves once daily. Flying to Buffalo takes about an hour and a half plus a 40-minute drive, but adds two airports and a car at the other end.",
-        "Once there, the falls are the attraction. The American side puts you at Prospect Point and the state park; the Canadian side has the classic wide view and the town of Niagara-on-the-Lake, and both are worth half a day. Two nights works best: one to travel and see the falls at dusk, one full day for the boat and the cave walkways, and a final morning for the Canadian side before the train back.",
+        "Once there, the falls are the attraction. The American side puts you at Prospect Point and the state park; the Canadian side has the classic wide view and the town of Niagara-on-the-Lake, and both are worth half a day. Two nights work best: one to travel and see the falls at dusk, one full day for the boat and the cave walkways, and a final morning for the Canadian side before the train back.",
       ],
       callouts: [
         {

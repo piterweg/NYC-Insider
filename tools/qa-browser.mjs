@@ -93,7 +93,7 @@ for (const page of pages) {
       const broken = Array.from(document.images).filter((i) => i.complete && i.naturalWidth === 0).map((i) => i.getAttribute("src"));
       const notLoaded = Array.from(document.images).filter((i) => !i.complete).length;
       const overflow = document.documentElement.scrollWidth > window.innerWidth + 1;
-      const emptyLinks = Array.from(document.querySelectorAll('a[href="#"]')).length;
+      const emptyLinks = Array.from(document.querySelectorAll('a[href="#"]')).filter((a) => !a.closest(".leaflet-control")).length;
       return JSON.stringify({ broken, notLoaded, overflow, emptyLinks, title: document.title });
     })()`,
     returnByValue: true,

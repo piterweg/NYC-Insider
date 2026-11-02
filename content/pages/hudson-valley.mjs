@@ -74,7 +74,7 @@ export default {
       introLead:
         "Hudson Valley is the day trip for when you want a landscape rather than another skyline. The train from Grand Central follows the river north, and Beacon station is close enough to the galleries and Main Street that you can walk off the platform and start.",
       introParagraphs: [
-        "Main Street Beacon, with the restaurants, coffee and shops you want for lunch, sits between the museum and the station. If you have been before, continue north to Cold Spring, a smaller village with antique shops and the Hudson Highlands trailheads. The whole day needs no car: buy a Metro-North ticket before boarding, check the last sensible train back, and the only decision left is how long to give Storm King.",
+        "Main Street Beacon, with the restaurants, coffee and shops you want for lunch, sits between the museum and the station. If you have done Dia and Storm King before, continue north to Cold Spring, a smaller village with antique shops and the Hudson Highlands trailheads. The whole day needs no car: buy a Metro-North ticket before boarding, check the last sensible train back, and the only decision left is how long to give Storm King.",
       ],
       callouts: [
         {

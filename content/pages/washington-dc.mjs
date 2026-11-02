@@ -67,7 +67,7 @@ export default {
         { label: "Round trip", value: "$80–$250 by Amtrak; $200–$400 by Acela" },
         { label: "Time needed", value: "One very long day, or one night" },
         { label: "Best day", value: "A weekday" },
-        { label: "Book ahead", value: "Capitol tour, plus any timed museum entry" },
+        { label: "Book ahead", value: "Capitol tour, booked in advance" },
       ],
       introEyebrow: "The honest answer",
       introTitle: "Possible in a day, better with a night",
@@ -151,7 +151,7 @@ export default {
         {
           time: "10:00",
           title: "Arrive Union Station",
-          text: "Walk out and on to the Mall. Leave your bag at the station if you can — there are few places to put it down later in the day.",
+          text: "Walk out and on to the Mall. Travel light — there are few places to put a bag down later in the day.",
         },
         {
           time: "10:30",
