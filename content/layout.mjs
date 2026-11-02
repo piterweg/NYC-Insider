@@ -161,7 +161,7 @@ function footer() {
   </div>
 </footer>
 <a class="to-top" href="#top" aria-label="Back to top" data-to-top>↑</a>
-<div class="consent-banner" data-consent-banner hidden>
+<div class="consent-banner" data-consent-banner data-consent-controls hidden>
   <p>We use Google Analytics to understand which guides are useful. Analytics cookies stay off until you accept. <a href="privacy.html">Privacy policy</a>.</p>
   <div class="consent-banner__actions">
     <button class="btn btn--sm" type="button" data-consent-choice="denied">Decline</button>

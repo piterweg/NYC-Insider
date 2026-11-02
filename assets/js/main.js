@@ -197,13 +197,19 @@
     syncUI();
   }
 
-  controls.forEach(function (container) {
+  function bindConsentControls(container) {
+    if (!container) return;
     container.addEventListener("click", function (event) {
       var button = event.target.closest("[data-consent-choice]");
       if (!button) return;
       choose(button.getAttribute("data-consent-choice"));
     });
-  });
+  }
+
+  Array.prototype.forEach.call(controls, bindConsentControls);
+  if (banner && !Array.prototype.some.call(controls, function (el) { return el === banner; })) {
+    bindConsentControls(banner);
+  }
 
   var stored = currentChoice();
   if (stored === "granted" || stored === "denied") {
