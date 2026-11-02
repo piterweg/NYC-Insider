@@ -28,7 +28,7 @@ export default {
     "A guide to Harlem, Manhattan: the Apollo, 125th Street, the Schomburg Center, soul food, a half-day plan and how to get there by subway.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/manhattan-skyline-night.webp",
+  ogImage: "assets/img/harlem-apollo.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -51,8 +51,8 @@ export default {
   ],
   render: () =>
     renderNeighbourhoodPage({
-      heroImage: "manhattan-skyline-night.webp",
-      heroAlt: "The Manhattan skyline lit at night",
+      heroImage: "harlem-apollo.webp",
+      heroAlt: "The Apollo Theater marquee on 125th Street in Harlem",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "neighbourhoods.html", label: "Neighbourhoods" },
@@ -71,8 +71,8 @@ export default {
       ],
       mapId: "harlem",
       areaName: "Harlem",
-      introImage: "subway-train.webp",
-      introImageAlt: "A New York City subway train, the quickest route uptown to Harlem",
+      introImage: "manhattan-skyline-night.webp",
+      introImageAlt: "The Manhattan skyline lit at night, a short subway ride south of Harlem",
       introEyebrow: "First impressions",
       introTitle: "The neighbourhood that changed American music",
       introLead:

@@ -19,7 +19,13 @@ function head({ page }) {
       url: site.baseUrl,
       description: site.description,
       inLanguage: "en",
-      publisher: { "@type": "Organization", name: site.name, url: site.baseUrl },
+      publisher: {
+        "@type": "Organization",
+        name: site.name,
+        url: site.baseUrl,
+        logo: `${site.baseUrl}/assets/img/og-nyctrove.jpg`,
+        publishingPrinciples: `${site.baseUrl}/editorial.html`,
+      },
     },
     ...(page.jsonLd || []),
   ];
@@ -30,6 +36,7 @@ function head({ page }) {
 <meta name="description" content="${esc(page.description)}" />
 <meta name="robots" content="${robots}" />
 <link rel="canonical" href="${canonical}" />
+<link rel="alternate" type="application/rss+xml" title="${site.name} — latest guides" href="feed.xml" />
 <meta name="theme-color" content="#0b0d10" />
 
 <!-- Open Graph -->

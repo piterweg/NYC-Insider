@@ -2830,6 +2830,40 @@ body.search-open {
   color: var(--brass);
 }
 
+
+/* Fact-check marker */
+.verified-note {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(28, 26, 23, 0.1);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.verified-note__check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--brass);
+  color: var(--ink);
+  font-size: 0.62rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+.verified-note a {
+  color: var(--brass-deep);
+  font-weight: 600;
+}
+
 /* Print */
 @media print {
   .site-header,

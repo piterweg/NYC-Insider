@@ -28,6 +28,15 @@ const photos = [
   ["boston-skyline.webp", "Boston skyline from Cambridge", "King of Hearts", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Boston_skyline_from_Cambridge_November_2015_panorama_1.jpg"],
   ["niagara-falls.webp", "Niagara Falls", "Saffron Blaze", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:3Falls_Niagara.jpg"],
   ["hudson-valley.webp", "Andy Goldsworthy's Storm King Wall, Storm King Art Center", "Eldan Goldenberg", "CC0", "https://commons.wikimedia.org/wiki/File:Andy_Goldsworthy_Storm_King_Wall_(196974395).jpeg"],
+  ["harlem-apollo.webp", "Apollo Theater, Harlem", "Adjoajo", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Apollo_Theater_in_Harlem_Honoring_Nelson_Mandela.jpg"],
+  ["west-village.webp", "A brownstone on West 12th Street, Greenwich Village", "Spencer Means", "CC BY-SA 2.0", "https://commons.wikimedia.org/wiki/File:48_West_12th_(1854),_Greenwich_Village,_New_York_(49208250703).jpg"],
+  ["williamsburg-brooklyn.webp", "The Williamsburg waterfront, Brooklyn", "Acroterion", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:1_North_Fourth_complex_NY1.jpg"],
+  ["dumbo-brooklyn.webp", "Pier 1 lawn, Brooklyn Bridge Park, DUMBO", "Tdorante10", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_Park_td_(2019-08-23)_015_-_Pier_1,_Bridge_View_Lawn.jpg"],
+  ["astoria-queens.webp", "Astoria Park and the Hell Gate bridges, Queens", "onefivefour", "CC BY-SA 2.0", "https://commons.wikimedia.org/wiki/File:Astoria_Park_Panorama_of_Triborough_and_Hell%27s_Gate_Bridges.jpg"],
+  ["flushing-main-street.webp", "Flushing, Queens", "Tdorante10", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:39th_Av_138th_St_Flushing_td_06.jpg"],
+  ["jackson-heights-queens.webp", "Jackson Heights, Queens", "Deans Charbal", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:34-56_74th_Street,_at_35th_Street,_Jackson_Heights,_Queens,_New_York.jpg"],
+  ["moma-museum.webp", "The Museum of Modern Art, West 53rd Street", "Colin W", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Museum_of_Modern_Art,_New_York_City_-_panoramio.jpg"],
+  ["met-museum.webp", "The Metropolitan Museum of Art, Fifth Avenue", "Rodrigo Alomía Díaz", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Details_of_the_exterior_of_Metropolitan_Museum_of_Art.jpg"],
 ];
 
 export default {

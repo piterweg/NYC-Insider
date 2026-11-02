@@ -28,7 +28,7 @@ export default {
     "A guide to Manhattan's West Village: the streets to walk, where to eat and listen to jazz, a half-day plan and the subway stops that get you there.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/fifth-avenue-cab.webp",
+  ogImage: "assets/img/west-village.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -51,8 +51,8 @@ export default {
   ],
   render: () =>
     renderNeighbourhoodPage({
-      heroImage: "fifth-avenue-cab.webp",
-      heroAlt: "A yellow taxi on a Manhattan avenue in Greenwich Village",
+      heroImage: "west-village.webp",
+      heroAlt: "A brownstone doorway and steps in the West Village",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "neighbourhoods.html", label: "Neighbourhoods" },
@@ -71,8 +71,8 @@ export default {
       ],
       mapId: "greenwich-village",
       areaName: "the West Village",
-      introImage: "soho-street-night.webp",
-      introImageAlt: "A lamplit Manhattan street at night",
+      introImage: "fifth-avenue-cab.webp",
+      introImageAlt: "A yellow taxi on a Manhattan avenue at street level",
       introEyebrow: "First impressions",
       introTitle: "A neighbourhood that ignores the grid",
       introLead:

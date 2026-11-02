@@ -28,7 +28,7 @@ export default {
     "A guide to Jackson Heights, Queens: Little India on 74th Street, the Roosevelt Avenue taquerias, the garden blocks and how to get there.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/subway-train.webp",
+  ogImage: "assets/img/jackson-heights-queens.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -51,8 +51,8 @@ export default {
   ],
   render: () =>
     renderNeighbourhoodPage({
-      heroImage: "subway-train.webp",
-      heroAlt: "A New York City subway train at a platform",
+      heroImage: "jackson-heights-queens.webp",
+      heroAlt: "A residential corner in Jackson Heights, Queens",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "neighbourhoods.html", label: "Neighbourhoods" },

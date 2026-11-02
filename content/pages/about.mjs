@@ -147,7 +147,7 @@ ${pageHero({
       <div class="split__body" data-reveal>
         ${eyebrow("Money")}
         <h2 style="font-size:var(--step-3);margin-top:.7rem">How we make money — and what it does not buy</h2>
-        <p>NYCTrove is free to read and has no paywall. It is funded by affiliate commissions and clearly labelled partnerships.</p>
+        <p>How we research, check and correct pages is set out in our <a href="editorial.html">editorial standards</a>. NYCTrove is free to read and has no paywall. It is funded by affiliate commissions and clearly labelled partnerships.</p>
         <p>Some links to ticket sellers, pass operators and booking sites are affiliate links. If you buy through one, the partner pays us a small commission at no extra cost to you. The price is the same, and the recommendation is not for sale.</p>
         <p>We do not run sponsored best-of lists or accept payment for a place to appear in an itinerary. Any paid collaboration is labelled before you read it.</p>
         <p>The full disclosure sits in our <a href="terms.html">terms of use</a>; data handling is in the <a href="privacy.html">privacy policy</a>.</p>

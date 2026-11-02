@@ -82,6 +82,42 @@ await writeFile(
 );
 
 // ---------------------------------------------------------------------------
+// RSS feed for the main guides
+// ---------------------------------------------------------------------------
+const escapeXml = (value) =>
+  String(value).replace(/[<>&"']/g, (char) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&apos;" }[char]));
+const feedPages = [...publicPages]
+  .sort((a, b) => Number(b.priority || 0.7) - Number(a.priority || 0.7))
+  .slice(0, 30);
+const feedDate = new Date().toUTCString();
+const feedItems = feedPages
+  .map((p) => {
+    const link = `${site.baseUrl}/${p.path === "index.html" ? "" : p.path}`;
+    return `    <item>
+      <title>${escapeXml(p.title)}</title>
+      <link>${link}</link>
+      <guid isPermaLink="true">${link}</guid>
+      <pubDate>${feedDate}</pubDate>
+      <description>${escapeXml(p.description)}</description>
+    </item>`;
+  })
+  .join("\n");
+const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeXml(site.name)} — New York City guides</title>
+    <link>${site.baseUrl}/</link>
+    <description>${escapeXml(site.description)}</description>
+    <language>en-us</language>
+    <lastBuildDate>${feedDate}</lastBuildDate>
+    <atom:link href="${site.baseUrl}/feed.xml" rel="self" type="application/rss+xml" />
+${feedItems}
+  </channel>
+</rss>
+`;
+await writeFile(path.join(root, "feed.xml"), feed, "utf8");
+
+// ---------------------------------------------------------------------------
 // Client-side data: search index and map points
 // ---------------------------------------------------------------------------
 const stripHtml = (html) =>

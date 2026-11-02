@@ -238,3 +238,11 @@ export function pageNav({ prev, next }) {
 /** Standard meta row for hero sections. */
 export const metaItems = (...items) =>
   items.map((item) => `<span>${item}</span>`).join("");
+
+
+/**
+ * Small fact-check marker used under the quick-facts band on guides.
+ */
+export function verifiedNote({ date = "2 November 2026", scope = "Prices, opening hours and transport details" } = {}) {
+  return `<p class="verified-note"><span class="verified-note__check" aria-hidden="true">✓</span><span><strong>Checked ${date}.</strong> ${scope} were verified against official sources. Things change — confirm before you book. <a href="editorial.html">How we check</a>.</span></p>`;
+}

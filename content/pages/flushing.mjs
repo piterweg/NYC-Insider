@@ -28,7 +28,7 @@ export default {
     "A guide to Flushing, Queens: the New World Mall food court, Main Street dumplings, Flushing Meadows–Corona Park and how to get there on the 7.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/queens-astoria.webp",
+  ogImage: "assets/img/flushing-main-street.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -51,8 +51,8 @@ export default {
   ],
   render: () =>
     renderNeighbourhoodPage({
-      heroImage: "queens-astoria.webp",
-      heroAlt: "The Manhattan skyline seen across the water from Queens",
+      heroImage: "flushing-main-street.webp",
+      heroAlt: "A busy commercial street in Flushing, Queens",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "neighbourhoods.html", label: "Neighbourhoods" },

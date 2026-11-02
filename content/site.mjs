@@ -54,6 +54,7 @@ export const site = {
       title: "NYCTrove",
       links: [
         { label: "About", href: "about.html" },
+        { label: "Editorial Standards", href: "editorial.html" },
         { label: "Contact", href: "contact.html" },
         { label: "Journal", href: "journal.html" },
         { label: "Cookie Settings", href: "cookie-settings.html" },

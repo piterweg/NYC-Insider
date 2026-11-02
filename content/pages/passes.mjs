@@ -12,6 +12,7 @@ import {
   img,
   metaItems,
   eyebrow,
+  verifiedNote,
 } from "../components.mjs";
 import { assetVersion } from "../version.mjs";
 
@@ -48,6 +49,10 @@ ${pageHero({
   lead: "A sightseeing pass is a bet that you will visit enough paid attractions to beat the ticket price. Sometimes that bet is easy money. Here are five passes, the break-even maths and a calculator.",
   meta: metaItems("5 passes", "Prices checked November 2026", "Break-even maths", "Calculator"),
 })}
+
+<div class="container">
+  ${verifiedNote({ scope: "Pass prices, inclusions and validity windows" })}
+</div>
 
 <section class="section">
   <div class="container">

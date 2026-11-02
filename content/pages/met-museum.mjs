@@ -32,7 +32,7 @@ export default {
     "The Met's admission price, its Wednesday closure, the quietest hours and a realistic plan for seeing the best of it without exhausting yourself.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/central-park-bow-bridge.webp",
+  ogImage: "assets/img/met-museum.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -66,8 +66,8 @@ export default {
   ],
   render: () =>
     renderAttractionPage({
-      heroImage: "central-park-bow-bridge.webp",
-      heroAlt: "Bow Bridge in Central Park, near the Met on Fifth Avenue",
+      heroImage: "met-museum.webp",
+      heroAlt: "The limestone facade of the Metropolitan Museum of Art on Fifth Avenue",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "attractions.html", label: "Things to Do" },

@@ -19,6 +19,7 @@ GitHub Pages (or any static host) with no server-side code.
 | Food & journal | `food.html`, `journal.html`, `free-things-to-do-nyc.html`, `sunday-in-brooklyn.html`, `nyc-rainy-day.html` |
 | Neighbourhoods | `neighbourhoods.html` plus SoHo, West Village, Harlem, Williamsburg, DUMBO, Astoria, Flushing and Jackson Heights |
 | Seasonal | `whats-on.html` plus Thanksgiving, Christmas, New Year's Eve, summer, Restaurant Week and the US Open |
+| Trust | `about.html`, `editorial.html` (research process, AI disclosure, corrections), `contact.html`, `privacy.html`, `terms.html`, `credits.html`, `cookie-settings.html`, `404.html` |
 | Trust | `about.html`, `contact.html`, `privacy.html`, `terms.html`, `credits.html`, `404.html` |
 
 ## Developing
@@ -46,6 +47,7 @@ content/attraction-template.mjs  shared renderer for individual attraction pages
 content/day-trip-template.mjs    shared renderer for day-trip pages
 content/seasonal-template.mjs    shared renderer for seasonal guides
 content/neighbourhood-template.mjs shared renderer for neighbourhood guides
+feed.xml                         generated RSS feed of the top 30 guides
 content/map-data.mjs             map points and categories (emitted as JSON at build time)
 content/pages/*.mjs         one module per page — the content lives here
 assets/css/main.css         the design system (single stylesheet)

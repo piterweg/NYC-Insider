@@ -14,6 +14,7 @@ import {
   img,
   metaItems,
   eyebrow,
+  verifiedNote,
 } from "./components.mjs";
 
 export function renderSeasonalPage(d) {
@@ -37,6 +38,7 @@ ${pageHero({
         )
         .join("")}
     </div>
+    ${verifiedNote()}
   </div>
 </section>
 

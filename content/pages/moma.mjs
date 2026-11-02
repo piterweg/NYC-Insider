@@ -32,7 +32,7 @@ export default {
     "What MoMA costs, when it is quietest, how the free Friday night works and how to see the collection in three hours without rushing.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/fifth-avenue-cab.webp",
+  ogImage: "assets/img/moma-museum.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -66,8 +66,8 @@ export default {
   ],
   render: () =>
     renderAttractionPage({
-      heroImage: "fifth-avenue-cab.webp",
-      heroAlt: "A yellow taxi on Fifth Avenue in Midtown Manhattan",
+      heroImage: "moma-museum.webp",
+      heroAlt: "The facade of the Museum of Modern Art on West 53rd Street",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "attractions.html", label: "Things to Do" },

@@ -28,7 +28,7 @@ export default {
     "A guide to Astoria, Queens: Greek bakeries and tavernas, the Museum of the Moving Image, Astoria Park and how to get there by subway.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/queens-astoria.webp",
+  ogImage: "assets/img/astoria-queens.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -51,8 +51,8 @@ export default {
   ],
   render: () =>
     renderNeighbourhoodPage({
-      heroImage: "queens-astoria.webp",
-      heroAlt: "The Manhattan skyline seen across the water from Astoria, Queens",
+      heroImage: "astoria-queens.webp",
+      heroAlt: "Astoria Park and the Hell Gate and Triborough bridges",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "neighbourhoods.html", label: "Neighbourhoods" },

@@ -28,7 +28,7 @@ export default {
     "A guide to Williamsburg, Brooklyn: the waterfront skyline, Bedford Avenue, the Saturday food market, where to eat and how to get there.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/brooklyn-bridge-skyline.webp",
+  ogImage: "assets/img/williamsburg-brooklyn.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -51,8 +51,8 @@ export default {
   ],
   render: () =>
     renderNeighbourhoodPage({
-      heroImage: "brooklyn-bridge-skyline.webp",
-      heroAlt: "The Manhattan skyline and the Brooklyn Bridge at dusk",
+      heroImage: "williamsburg-brooklyn.webp",
+      heroAlt: "The Williamsburg waterfront with Manhattan across the East River",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "neighbourhoods.html", label: "Neighbourhoods" },
