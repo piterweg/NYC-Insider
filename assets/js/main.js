@@ -137,17 +137,29 @@
 })();
 
 /* ------------------------------------------------------------------
-   Cookie consent — Google Analytics 4 with Consent Mode v2
+   Cookie consent - Google Analytics 4 with Consent Mode v2
    Analytics storage stays denied until the visitor makes a choice.
+   Handles the bottom banner and the cookie-settings page.
    ------------------------------------------------------------------ */
 (function () {
   "use strict";
 
   var KEY = "nyctrove-consent";
   var banner = document.querySelector("[data-consent-banner]");
-  if (!banner) return;
-
+  var controls = document.querySelectorAll("[data-consent-controls]");
+  var statusEls = document.querySelectorAll("[data-consent-status]");
+  var hasInlineControls = Array.prototype.some.call(controls, function (el) {
+    return el !== banner;
+  });
   var decided = false;
+
+  function currentChoice() {
+    try {
+      return window.localStorage.getItem(KEY);
+    } catch (error) {
+      return null;
+    }
+  }
 
   function updateConsent(value) {
     if (typeof window.gtag !== "function") return;
@@ -160,33 +172,47 @@
     });
   }
 
-  var stored = null;
-  try {
-    stored = window.localStorage.getItem(KEY);
-  } catch (error) {
-    stored = null;
+  function syncUI() {
+    var choice = currentChoice();
+    var label =
+      choice === "granted"
+        ? "Analytics cookies: accepted"
+        : choice === "denied"
+          ? "Analytics cookies: declined"
+          : "Analytics cookies: no choice yet";
+    statusEls.forEach(function (el) {
+      el.textContent = label;
+    });
+    if (banner) banner.hidden = true;
   }
 
-  if (stored === "granted" || stored === "denied") {
-    updateConsent(stored);
-    return;
-  }
-
-  window.setTimeout(function () {
-    if (!decided) banner.hidden = false;
-  }, 800);
-
-  banner.addEventListener("click", function (event) {
-    var button = event.target.closest("[data-consent-choice]");
-    if (!button) return;
+  function choose(value) {
     decided = true;
-    var choice = button.getAttribute("data-consent-choice");
     try {
-      window.localStorage.setItem(KEY, choice);
+      window.localStorage.setItem(KEY, value);
     } catch (error) {
-      /* storage blocked — respect the choice for this page view only */
+      /* storage blocked - the choice still applies to this page view */
     }
-    updateConsent(choice);
-    banner.hidden = true;
+    updateConsent(value);
+    syncUI();
+  }
+
+  controls.forEach(function (container) {
+    container.addEventListener("click", function (event) {
+      var button = event.target.closest("[data-consent-choice]");
+      if (!button) return;
+      choose(button.getAttribute("data-consent-choice"));
+    });
   });
+
+  var stored = currentChoice();
+  if (stored === "granted" || stored === "denied") {
+    decided = true;
+    updateConsent(stored);
+  } else if (banner && !hasInlineControls) {
+    window.setTimeout(function () {
+      if (!decided) banner.hidden = false;
+    }, 800);
+  }
+  syncUI();
 })();

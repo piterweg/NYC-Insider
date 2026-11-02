@@ -51,6 +51,7 @@ export const site = {
         { label: "Contact", href: "contact.html" },
         { label: "Journal", href: "journal.html" },
         { label: "Photo Credits", href: "credits.html" },
+        { label: "Cookie Settings", href: "cookie-settings.html" },
         { label: "Privacy Policy", href: "privacy.html" },
         { label: "Terms of Use", href: "terms.html" },
       ],
