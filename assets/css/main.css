@@ -1668,6 +1668,26 @@ table.data td strong {
   font-weight: 600;
 }
 
+/* Data tables always sit on a white surface, even inside dark sections,
+   so body text must keep the dark ink colour regardless of the section. */
+table.data tbody td {
+  color: var(--text);
+}
+
+table.data tbody td a {
+  color: var(--brass-deep);
+  text-decoration-color: rgba(168, 133, 63, 0.45);
+}
+
+table.data tbody td a:hover {
+  text-decoration-color: currentColor;
+}
+
+table.data tbody td .muted,
+table.data tbody td span.muted {
+  color: var(--text-muted);
+}
+
 table.data .num {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
