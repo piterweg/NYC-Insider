@@ -73,6 +73,7 @@ AddDefaultCharset UTF-8
 # ---------------------------------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteRule ^(content|tools|docs|_preview|_srcimages|_deploy)(/|$) - [R=404,L]
+  RewriteRule ^\.git(/|$) - [R=404,L]
   RewriteRule ^(README\.md|deploy\.htaccess|\.gitignore|\.gitattributes|\.nojekyll)$ - [R=404,L]
 </IfModule>
 
