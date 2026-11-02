@@ -1,0 +1,126 @@
+import { renderBoroughPage } from "../borough-template.mjs";
+
+export default {
+  path: "queens.html",
+  navSection: "boroughs",
+  bodyClass: "page-inner",
+  title: "Queens Guide — Astoria, Flushing & Jackson Heights",
+  description:
+    "A guide to Queens, New York: the best food crawl in the city through Jackson Heights and Flushing, Astoria, Long Island City's art scene and Flushing Meadows Park.",
+  priority: "0.8",
+  changefreq: "monthly",
+  ogImage: "assets/img/queens-astoria.webp",
+  render: () =>
+    renderBoroughPage({
+      heroImage: "queens-astoria.webp",
+      heroAlt: "The Manhattan skyline seen across the water from Astoria, Queens",
+      crumbs: [
+        { href: "index.html", label: "Home" },
+        { href: "boroughs.html", label: "Boroughs" },
+        { href: "queens.html", label: "Queens" },
+      ],
+      eyebrowText: "Borough 03 · Queens",
+      title: "Queens",
+      lead: "The most linguistically diverse place on earth, and the best place in New York to eat. Queens is not short of sights — it is just that the food is the sight.",
+      meta: ["2.4 million residents", "109 square miles", "7/E/F/M/R", "Half–full day"],
+      introEyebrow: "The borough",
+      introTitle: "Where the world moved in",
+      introLead:
+        "More than 130 languages are spoken in Queens. That shows up in the food, the shops and the street life, and it makes the borough the most rewarding place in the city for anyone who likes to eat.",
+      introParagraphs: [
+        "The 7 train is the best food tour in New York: from Long Island City's waterfront, through the Indian and Latin American blocks of Jackson Heights, out to Main Street Flushing and the biggest Chinese community in the city.",
+        "Queens is also greener than people expect — Flushing Meadows–Corona Park is the site of the Unisphere and the US Open, and the Rockaways have a proper ocean beach on the A train.",
+      ],
+      stats: [
+        { value: "2.4M", label: "residents" },
+        { value: "130+", label: "languages" },
+        { value: "3", label: "food districts" },
+        { value: "1", label: "US Open" },
+      ],
+      splitImage: "queens-astoria.webp",
+      splitImageAlt: "The Manhattan skyline seen from the Astoria waterfront in Queens",
+      neighbourhoods: [
+        {
+          kicker: "West",
+          name: "Astoria",
+          text: "Greek heritage, bakeries and tavernas, Astoria Park and the Museum of the Moving Image. Twenty minutes from Midtown on the N/W.",
+        },
+        {
+          kicker: "Waterfront",
+          name: "Long Island City",
+          text: "Gantry Plaza State Park, MoMA PS1 and the Noguchi Museum — plus the closest skyline view across the river.",
+        },
+        {
+          kicker: "Central",
+          name: "Jackson Heights",
+          text: "Little India around 74th Street, Latin American food on Roosevelt Avenue, and the most linguistically diverse blocks in the world.",
+        },
+        {
+          kicker: "East",
+          name: "Flushing",
+          text: "The city's biggest Chinatown, New World Mall's food court, and Flushing Meadows–Corona Park with the Unisphere.",
+        },
+        {
+          kicker: "South",
+          name: "Forest Hills",
+          text: "Leafy, residential, and unexpectedly good for a quiet coffee and a look at the tennis stadium.",
+        },
+        {
+          kicker: "Beach",
+          name: "The Rockaways",
+          text: "An ocean beach on the A train. Summer-only for most visitors, but a proper New York summer ritual.",
+        },
+      ],
+      neighbourhoodTitle: "Four food neighbourhoods and two extras",
+      neighbourhoodLead: "If you only have an appetite for one: Jackson Heights for lunch, Flushing for dinner.",
+      highlightsTitle: "What to do between meals",
+      highlights: [
+        { title: "Gantry Plaza State Park", text: "Long Island City waterfront with the Pepsi-Cola sign and the best cheap skyline view in the city." },
+        { title: "MoMA PS1", text: "The contemporary art institution in a former school building. Check opening days before you go." },
+        { title: "Noguchi Museum", text: "The sculptor's own museum and garden in Long Island City — small, calm and worth the trip." },
+        { title: "Flushing Meadows–Corona Park", text: "The Unisphere, the Queens Museum and the US Open grounds. A free, enormous park." },
+        { title: "Museum of the Moving Image", text: "Astoria. The best film and television museum in the city." },
+        { title: "The 7 train food crawl", text: "Jackson Heights then Flushing. The single best-value afternoon in New York." },
+      ],
+      foodEyebrow: "Where to eat",
+      foodTitle: "The best food borough",
+      foodLead: "Queens is where New Yorkers go when they want to eat well and spend little.",
+      foodImage: "queens-astoria.webp",
+      foodImageAlt: "The Manhattan skyline from Astoria, Queens",
+      foodSpots: [
+        { name: "Jackson Heights", text: "Tibetan momos, Indian thalis, Colombian bakeries and Mexican taquerias within four blocks. Start on 74th Street." },
+        { name: "Flushing", text: "New World Mall's basement food court for regional Chinese, then Main Street for dumplings and bakeries." },
+        { name: "Astoria", text: "Greek tavernas and bakeries around Ditmars Boulevard; Taverna Kyclades is the well-known one." },
+        { name: "Little Egypt", text: "Steinway Street in Astoria: Egyptian bakeries, grills and shisha cafés." },
+        { name: "Tacos on Roosevelt Avenue", text: "The avenue under the 7 train is a taqueria corridor. Look for the busiest cart." },
+        { name: "Rockaway Beach", text: "Summer-only: tacos and seafood on the boardwalk after the sand." },
+      ],
+      dayTitle: "One day in Queens",
+      dayLead: "A 7-train day, starting with art and ending with noodles.",
+      dayStops: [
+        { time: "10:00", title: "Gantry Plaza State Park", text: "Long Island City waterfront for the skyline and the Pepsi-Cola sign." },
+        { time: "11:30", title: "MoMA PS1 or the Noguchi Museum", text: "Pick one — both are worth two hours." },
+        { time: "13:30", title: "Jackson Heights lunch", text: "74th Street, then Roosevelt Avenue. Order whatever the next table is having." },
+        { time: "16:00", title: "Flushing", text: "New World Mall food court and Main Street." },
+        { time: "18:00", title: "Flushing Meadows–Corona Park", text: "The Unisphere at golden hour, then the 7 back to Manhattan." },
+      ],
+      transitTitle: "Getting there",
+      transitText:
+        "The 7 train runs from Times Square to Flushing in about 35–40 minutes. The E/F/M/R serve Jackson Heights and Forest Hills; the N/W serve Astoria; the A goes to the Rockaways. The LIRR from Penn to Flushing is faster but less frequent.",
+      tips: [
+        { icon: "◆", title: "Eat where the queue is local", text: "In Jackson Heights and Flushing, the busiest restaurant is almost always the right one. Menus are in English enough to order." },
+        { icon: "☂", title: "Plan for the weather", text: "Most Queens food is on foot. In heavy rain, choose one food district and stay put; the Flushing food courts are entirely indoors." },
+        { icon: "◷", title: "Check museum days", text: "MoMA PS1 and the Noguchi Museum keep limited weekly hours. Book or check before travelling out." },
+      ],
+      faqTitle: "Queens questions",
+      faq: [
+        { q: "Is Queens worth visiting for a first trip to NYC?", a: "<p>Yes — but only if you care about food. Otherwise do Manhattan and Brooklyn first, and come back. Our <a href=\"7-days-in-nyc.html\">7-day itinerary</a> includes a full Queens day.</p>" },
+        { q: "How do I get to Flushing?", a: "<p>The 7 train from Times Square to Flushing–Main Street, about 35–40 minutes. The LIRR from Penn Station is faster but runs less often.</p>" },
+        { q: "Do I need cash in Queens?", a: "<p>Some small spots are cash-only. Carry a little cash, but most places take cards or tap-to-pay.</p>" },
+        { q: "What is the US Open?", a: "<p>The Grand Slam tennis tournament held at Flushing Meadows in late August and early September — 30 Aug–13 Sep in 2026. Grounds passes are the affordable way to go.</p>" },
+      ],
+      source: "queens",
+      prev: { href: "brooklyn.html", label: "Brooklyn" },
+      next: { href: "bronx.html", label: "The Bronx" },
+    }),
+};

@@ -1,207 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your ultimate guide to New York City. Discover itineraries, Broadway shows, 5 boroughs guides, and practical travel tips.">
-    <title>NYC Insider | The Ultimate New York City Guide</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NYC Insider — The Independent Guide to New York City</title>
+<meta name="description" content="Plan a better New York City trip: day-by-day itineraries, guides to all five boroughs, honest advice on passes and tickets, and the practical details that make the city easy." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://piterweg.github.io/NYC-Insider/" />
+<meta name="theme-color" content="#0b0d10" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NYC Insider" />
+<meta property="og:title" content="NYC Insider — The Independent Guide to New York City" />
+<meta property="og:description" content="Plan a better New York City trip: day-by-day itineraries, guides to all five boroughs, honest advice on passes and tickets, and the practical details that make the city easy." />
+<meta property="og:url" content="https://piterweg.github.io/NYC-Insider/" />
+<meta property="og:image" content="https://piterweg.github.io/NYC-Insider/assets/img/times-square-night.webp" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NYC Insider — The Independent Guide to New York City" />
+<meta name="twitter:description" content="Plan a better New York City trip: day-by-day itineraries, guides to all five boroughs, honest advice on passes and tickets, and the practical details that make the city easy." />
+<meta name="twitter:image" content="https://piterweg.github.io/NYC-Insider/assets/img/times-square-night.webp" />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="assets/css/main.css" />
+<script>document.documentElement.classList.remove("no-js");</script>
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","name":"NYC Insider","url":"https://piterweg.github.io/NYC-Insider","description":"NYC Insider is an independent New York City travel guide: curated itineraries, neighbourhood guides for all five boroughs, honest advice on passes and tickets, and practical tips from people who actually live here.","inLanguage":"en","publisher":{"@type":"Organization","name":"NYC Insider","url":"https://piterweg.github.io/NYC-Insider"}}]
+</script>
 </head>
-<body>
+<body class="no-js page-home">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="NYC Insider — home">
+      <span class="brand__mark">NYC<span>Insider</span></span>
+      <span class="brand__tag" aria-hidden="true">The City, Decoded</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__list"><li><a class="main-nav__link" href="itineraries.html">Itineraries</a></li><li><a class="main-nav__link" href="boroughs.html">Boroughs</a></li><li><a class="main-nav__link" href="attractions.html">Things to Do</a></li><li><a class="main-nav__link" href="passes.html">Passes</a></li><li><a class="main-nav__link" href="plan-your-trip.html">Plan Your Trip</a></li><li><a class="main-nav__link" href="journal.html">Journal</a></li></ul>
+      <a class="btn btn--sm main-nav__cta" href="plan-your-trip.html">Start Planning</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="logo">NYC<span>Insider</span></a>
-            <ul class="nav-links">
-                <li><a href="#plan">Plan Your Trip</a></li>
-                <li><a href="#boroughs">5 Boroughs</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#passes">NYC Passes</a></li>
-                <li><a href="#blog">Journal</a></li>
-            </ul>
-            <a href="#plan" class="btn btn-primary nav-cta">Build Itinerary</a>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
-        </nav>
-    </header>
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true" data-mobile-nav>
+  <nav aria-label="Mobile">
+    <a href="index.html">Home <span>NYC</span></a><a href="itineraries.html">Itineraries <span>01</span></a><a href="boroughs.html">Boroughs <span>02</span></a><a href="attractions.html">Things to Do <span>03</span></a><a href="passes.html">Passes <span>04</span></a><a href="plan-your-trip.html">Plan Your Trip <span>05</span></a><a href="journal.html">Journal <span>06</span></a>
+  </nav>
+  <p class="mobile-nav__foot">The Ultimate New York City Guide. Independent guides to all five boroughs.</p>
+</div>
+<main id="main">
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero fade-in">
-            <div class="hero-content">
-                <span class="hero-tag">Welcome to the City of Dreams</span>
-                <h1>Experience the Real New York City</h1>
-                <p>From Broadway lights to hidden Brooklyn gems. Get curated itineraries, local secrets, and practical tips to plan your perfect trip.</p>
-                <div class="hero-buttons">
-                    <a href="#itineraries" class="btn btn-primary">View Itineraries</a>
-                    <a href="#boroughs" class="btn btn-outline">Explore Boroughs</a>
-                </div>
-            </div>
-        </section>
+<section class="hero" id="top">
+  <div class="hero__media">
+    <img src="assets/img/times-square-night.webp" alt="Times Square at night, neon billboards lighting up the Manhattan skyline" width="1200" height="683" fetchpriority="high" />
+  </div>
+  <div class="hero__inner container">
+    <div class="hero__content">
+      <span class="eyebrow">The independent guide to New York City</span>
+      <h1>New York, <em>without the tourist traps.</em></h1>
+      <p class="lead">Five boroughs, 8.5 million neighbours and about a thousand ways to get it wrong. We live here. These are the itineraries, neighbourhoods and small practical details that make a New York trip feel effortless.</p>
+      <div class="hero__actions"><a class="btn" href="itineraries.html" >Browse itineraries</a><a class="btn btn--ghost" href="boroughs.html" >Meet the five boroughs</a></div>
+    </div>
+    <div class="hero__meta"><span><strong>5</strong> borough guides</span><span><strong>20+</strong> in-depth guides</span><span><strong>Updated</strong> November 2026</span><span><strong>0</strong> pay-to-play rankings</span></div>
+  </div>
+</section>
 
-        <!-- Curated Itineraries (Inspired by nuevayork.es) -->
-        <section id="itineraries" class="section bg-alt fade-in">
-            <div class="container">
-                <h2 class="section-title">Curated Itineraries</h2>
-                <p class="section-subtitle">No matter how long you stay, we have a plan for you.</p>
-                <div class="grid-cards">
-                    <article class="card">
-                        <span class="card-badge">First Time</span>
-                        <h3>5 Days in NYC</h3>
-                        <p>The perfect balance of iconic landmarks, Central Park, and a Broadway show.</p>
-                        <a href="#" class="link-arrow">View Plan →</a>
-                    </article>
-                    <article class="card">
-                        <span class="card-badge">Deep Dive</span>
-                        <h3>7 Days in NYC</h3>
-                        <p>Includes a day trip to Woodbury Outlets and exploring Brooklyn's food scene.</p>
-                        <a href="#" class="link-arrow">View Plan →</a>
-                    </article>
-                    <article class="card">
-                        <span class="card-badge">Budget</span>
-                        <h3>NYC on a Budget</h3>
-                        <p>Free museums, city parks, live TV tapings, and affordable eats.</p>
-                        <a href="#" class="link-arrow">View Plan →</a>
-                    </article>
-                </div>
-            </div>
-        </section>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+  <div class="section-head__copy">
+    <span class="eyebrow">Start here</span>
+    <h2>What kind of New York are you after?</h2>
+    <p class="lead">Every trip has a different shape. Pick the plan that matches your time and appetite, then steal the parts you like.</p>
+  </div>
+  <div class="section-head__action"><a class="btn btn--outline" href="itineraries.html" >All itineraries</a></div>
+</div>
+    <div class="grid grid--3">
+      <article class="card card--hover">
+  <span class="card__kicker">01 — First time</span>
+  <h3><a href="5-days-in-nyc.html">Five days, the icons done properly</a></h3>
+  <p>Empire State Building, Central Park, the Brooklyn Bridge at sunrise and one very good Broadway night — sequenced so you are not crossing the city twice a day.</p>
+  <div class="card__foot"><a class="link-arrow" href="5-days-in-nyc.html">See the 5-day plan</a></div>
+</article>
+      <article class="card card--hover">
+  <span class="card__kicker">02 — Long weekend</span>
+  <h3><a href="3-days-in-nyc.html">Three days, zero wasted hours</a></h3>
+  <p>For a first flying visit: one skyline morning, one neighbourhood afternoon, one night out. Works with a Friday-to-Sunday schedule.</p>
+  <div class="card__foot"><a class="link-arrow" href="3-days-in-nyc.html">See the 3-day plan</a></div>
+</article>
+      <article class="card card--hover">
+  <span class="card__kicker">03 — Returning</span>
+  <h3><a href="7-days-in-nyc.html">Seven days, beyond Midtown</a></h3>
+  <p>Queens food crawls, the Bronx, Staten Island by ferry and the parts of Manhattan that locals actually use. Give the city the whole week.</p>
+  <div class="card__foot"><a class="link-arrow" href="7-days-in-nyc.html">See the 7-day plan</a></div>
+</article>
+    </div>
+  </div>
+</section>
 
-        <!-- NYC Pass Picker (Interactive Concept) -->
-        <section id="passes" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">NYC Pass Picker</h2>
-                <p class="section-subtitle">Don't overpay. Compare the top tourist cards and save up to 40%.</p>
-                <div class="pass-comparison">
-                    <div class="pass-card featured">
-                        <h3>CityPASS</h3>
-                        <p class="price">From $136</p>
-                        <ul>
-                            <li>✔ Empire State Building</li>
-                            <li>✔ AMNH or Guggenheim</li>
-                            <li>✔ Circle Line Cruise</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Compare Details</a>
-                    </div>
-                    <div class="pass-card">
-                        <h3>Explorer Pass</h3>
-                        <p class="price">Pay per attraction</p>
-                        <ul>
-                            <li>✔ Choose 3 to 10 attractions</li>
-                            <li>✔ Valid for 30 days</li>
-                            <li>✔ Includes Top of the Rock</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline">Compare Details</a>
-                    </div>
-                    <div class="pass-card">
-                        <h3>New York Pass</h3>
-                        <p class="price">1 to 10 Days</p>
-                        <ul>
-                            <li>✔ 100+ attractions included</li>
-                            <li>✔ Hop-on Hop-off bus</li>
-                            <li>✔ Best for intensive touring</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline">Compare Details</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- The 5 Boroughs (Inspired by nyctourism.com) -->
-        <section id="boroughs" class="section bg-alt fade-in">
-            <div class="container">
-                <h2 class="section-title">Discover the 5 Boroughs</h2>
-                <div class="grid-boroughs">
-                    <a href="#" class="borough-tile" style="background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80')">
-                        <div class="borough-overlay">
-                            <h3>Manhattan</h3>
-                            <p>The iconic core</p>
-                        </div>
-                    </a>
-                    <a href="#" class="borough-tile" style="background-image: url('https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc?auto=format&fit=crop&w=600&q=80')">
-                        <div class="borough-overlay">
-                            <h3>Brooklyn</h3>
-                            <p>Art, food & nightlife</p>
-                        </div>
-                    </a>
-                    <a href="#" class="borough-tile" style="background-image: url('https://images.unsplash.com/photo-1575351881841-3f7230481e06?auto=format&fit=crop&w=600&q=80')">
-                        <div class="borough-overlay">
-                            <h3>Queens</h3>
-                            <p>Global cultures & nature</p>
-                        </div>
-                    </a>
-                    <a href="#" class="borough-tile" style="background-image: url('https://images.unsplash.com/photo-1563820464490-1f2dc118e8f1?auto=format&fit=crop&w=600&q=80')">
-                        <div class="borough-overlay">
-                            <h3>The Bronx</h3>
-                            <p>History, hip-hop & zoo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Practical Info Hub (Inspired by nuevayork.es) -->
-        <section id="plan" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Practical Info Hub</h2>
-                <div class="grid-info">
-                    <div class="info-item">
-                        <span class="info-icon">✈️</span>
-                        <h4>Airport Transfers</h4>
-                        <p>JFK, Newark (EWR) & LaGuardia (LGA) to Manhattan.</p>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">🚇</span>
-                        <h4>MetroCard & OMNY</h4>
-                        <p>How to navigate the subway like a local.</p>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">📱</span>
-                        <h4>eSIM & Internet</h4>
-                        <p>Best affordable data plans for travelers.</p>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">♿</span>
-                        <h4>Accessibility</h4>
-                        <p>Wheelchair-friendly routes and attractions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter -->
-        <section class="newsletter fade-in">
-            <div class="container">
-                <h2>Get NYC Secrets in Your Inbox</h2>
-                <p>Join 50,000+ travelers. Get our free "Top 25 Skyline Views" PDF and exclusive Broadway deals.</p>
-                <form id="newsletter-form" class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required aria-label="Email address">
-                    <label class="checkbox-label">
-                        <input type="checkbox" required> I agree to the <a href="#">Privacy Policy</a>.
-                    </label>
-                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
-                </form>
-                <p class="form-message" id="form-message"></p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-motto">"Don't just visit New York. Live it like a local."</p>
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Instagram</a>
-            </div>
-            <p class="copyright">&copy; 2026 NYC Insider. All rights reserved.</p>
+<section class="section bg-paper-2">
+  <div class="container">
+    <div class="split">
+      <div class="split__media">
+        <img src="assets/img/soho-street-night.webp" alt="A cast-iron street corner in SoHo, New York, after dark" width="1000" height="1250" loading="lazy" />
+      </div>
+      <div class="split__body" data-reveal>
+        <span class="eyebrow">Who we are</span>
+        <h2>We are not a booking site. That is the point.</h2>
+        <p class="lead">NYC Insider is written by people who live in and around New York, for people who want to understand it — not just tick it off.</p>
+        <p class="muted">There is no secret layer to New York that only insiders can access. There is only knowing which entrance to use, which hour to visit, which ticket is a genuinely bad deal and which neighbourhood rewards a second stop. That is what we write about.</p>
+        <p class="muted">When we recommend a pass, a tour or a restaurant, we say why — and we say what it is not good for. If we ever earn a commission from a link, it never decides the ranking.</p>
+        <div class="split__actions">
+          <a class="link-arrow" href="about.html">How this guide works</a>
         </div>
-    </footer>
+        <div class="stats" style="margin-top:2.4rem">
+          <div class="stat"><strong>5</strong><span>boroughs covered</span></div>
+          <div class="stat"><strong>472</strong><span>subway stations</span></div>
+          <div class="stat"><strong>24h</strong><span>city that never stops</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+  <div class="section-head__copy">
+    <span class="eyebrow">Curated itineraries</span>
+    <h2>Plans you can actually follow</h2>
+    <p class="lead">Real days, with travel time and opening hours built in. No ten-stop marathons, no restaurant recommendations that closed in 2019.</p>
+  </div>
+  <div class="section-head__action"><a class="btn btn--outline" href="itineraries.html" >Compare all three</a></div>
+</div>
+    <div class="grid grid--3">
+      <a class="media-card" href="3-days-in-nyc.html">
+  <div class="media-card__media">
+    <img src="assets/img/fifth-avenue-cab.webp" alt="A yellow cab crossing a Manhattan avenue lined with office towers" width="800" height="500" loading="lazy" />
+  </div>
+  <div class="media-card__body">
+    <span class="card__kicker">Short break</span>
+    <h3>3 days in NYC</h3>
+    <p>The essential first taste: skyline, park, one neighbourhood and a show.</p>
+    <div class="media-card__foot">
+      <div class="card__meta"><span>3 days · easy pace</span></div>
+    </div>
+  </div>
+</a>
+      <a class="media-card" href="5-days-in-nyc.html">
+  <div class="media-card__media">
+    <img src="assets/img/broadway-theatre-night.webp" alt="A Broadway theatre marquee glowing at night in the Theatre District" width="800" height="500" loading="lazy" />
+  </div>
+  <div class="media-card__body">
+    <span class="card__kicker">Most popular</span>
+    <h3>5 days in NYC</h3>
+    <p>The full first-timer itinerary, with a morning in Brooklyn and a proper museum day.</p>
+    <div class="media-card__foot">
+      <div class="card__meta"><span>5 days · balanced pace</span></div>
+    </div>
+  </div>
+</a>
+      <a class="media-card" href="7-days-in-nyc.html">
+  <div class="media-card__media">
+    <img src="assets/img/brooklyn-bridge-sunset.webp" alt="The Brooklyn Bridge at sunset seen from the waterfront" width="800" height="500" loading="lazy" />
+  </div>
+  <div class="media-card__body">
+    <span class="card__kicker">Deep dive</span>
+    <h3>7 days in NYC</h3>
+    <p>Seven days means outer boroughs, real neighbourhoods and room to wander.</p>
+    <div class="media-card__foot">
+      <div class="card__meta"><span>7 days · flexible pace</span></div>
+    </div>
+  </div>
+</a>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-ink">
+  <div class="container">
+    <div class="section-head">
+  <div class="section-head__copy">
+    <span class="eyebrow">Five boroughs, five different cities</span>
+    <h2>New York is not Manhattan</h2>
+    <p class="lead">Manhattan gets the postcards. But Queens is the most linguistically diverse place on earth, Brooklyn has the best food, and the Bronx is rewriting its own story. Start with the right borough for your interests.</p>
+  </div>
+  <div class="section-head__action"><a class="link-arrow" href="boroughs.html">All borough guides</a></div>
+</div>
+    <div class="grid grid--3">
+      <a class="borough-tile" href="manhattan.html">
+  <img src="assets/img/manhattan-skyline.webp" alt="The Brooklyn Bridge and Lower Manhattan skyline in daylight" width="800" height="600" loading="lazy" />
+  <div>
+    <h3>Manhattan</h3>
+    <p>The icon factory — and the neighbourhoods behind it</p>
+  </div>
+</a>
+      <a class="borough-tile" href="brooklyn.html">
+  <img src="assets/img/brooklyn-bridge-park.webp" alt="The Brooklyn Bridge tower seen from Brooklyn Bridge Park" width="800" height="600" loading="lazy" />
+  <div>
+    <h3>Brooklyn</h3>
+    <p>Waterfront, brownstones, and the city's best kitchens</p>
+  </div>
+</a>
+      <a class="borough-tile" href="queens.html">
+  <img src="assets/img/queens-astoria.webp" alt="The Manhattan skyline seen across the water from Astoria, Queens" width="800" height="600" loading="lazy" />
+  <div>
+    <h3>Queens</h3>
+    <p>The most diverse food scene in the United States</p>
+  </div>
+</a>
+      <a class="borough-tile" href="bronx.html">
+  <img src="assets/img/bronx-yankee-stadium.webp" alt="Inside Yankee Stadium in the Bronx on a game day" width="800" height="600" loading="lazy" />
+  <div>
+    <h3>The Bronx</h3>
+    <p>Yankee Stadium, the zoo, Arthur Avenue and real history</p>
+  </div>
+</a>
+      <a class="borough-tile" href="staten-island.html">
+  <img src="assets/img/staten-island-ferry.webp" alt="The Staten Island Ferry at St. George with the Manhattan skyline behind" width="800" height="600" loading="lazy" />
+  <div>
+    <h3>Staten Island</h3>
+    <p>A free ferry, green space and the city at its calmest</p>
+  </div>
+</a>
+      <a class="borough-tile" href="food.html" style="background:linear-gradient(145deg,#1c232b,#0b0d10);min-height:260px">
+        <div>
+          <h3 style="color:var(--brass)">Food &amp; drink</h3>
+          <p>Bagels, pizza, pastrami and where to find them</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+  <div class="section-head__copy">
+    <span class="eyebrow">The practical stuff</span>
+    <h2>The details that decide your trip</h2>
+    <p class="lead">Tickets, transit, money and timing. Get these right and you spend your holiday in New York instead of in a queue.</p>
+  </div>
+  
+</div>
+    <div class="grid grid--4 grid--auto">
+      <article class="card card--hover">
+  <span class="card__kicker">Transit</span>
+  <h3><a href="getting-around.html">Subway, airports &amp; OMNY</a></h3>
+  <p>Fares, the AirTrain, which airport transfer is worth it, and how to pay without a MetroCard.</p>
+  
+</article>
+      <article class="card card--hover">
+  <span class="card__kicker">Tickets</span>
+  <h3><a href="passes.html">Which NYC pass is worth it</a></h3>
+  <p>CityPASS, Go City and New York Pass compared — with the maths for a 3, 5 and 7 day trip.</p>
+  
+</article>
+      <article class="card card--hover">
+  <span class="card__kicker">Money</span>
+  <h3><a href="budget.html">What a trip really costs</a></h3>
+  <p>Hotel, food, transport and attraction budgets for three travel styles, updated for 2026.</p>
+  
+</article>
+      <article class="card card--hover">
+  <span class="card__kicker">Timing</span>
+  <h3><a href="when-to-visit.html">When to come to New York</a></h3>
+  <p>Month-by-month weather, crowds, prices and the events worth planning a trip around.</p>
+  
+</article>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-paper-2">
+  <div class="container">
+    <div class="grid grid--2" style="align-items:stretch;gap:clamp(1.5rem,4vw,3.5rem)">
+      <div data-reveal>
+        <span class="eyebrow">Passes, honestly</span>
+        <h2 style="font-size:var(--step-3);margin-top:.7rem">Do not buy a sightseeing pass before you read this.</h2>
+        <p class="lead" style="margin-top:1.1rem">The big three passes are not interchangeable. CityPASS suits a short first trip. Go City's Explorer Pass wins when you want three or four big-ticket sights. The all-inclusive passes only pay off if you genuinely want to be out sightseeing every day.</p>
+        <p class="muted" style="margin-top:1rem">Our comparison breaks down real 2026 prices, what is actually included, and the break-even point for each pass — plus a calculator that tells you which one wins for your trip.</p>
+        <div class="split__actions">
+          <a class="btn" href="passes.html" >Compare the passes</a>
+        </div>
+      </div>
+      <div><aside class="callout">
+  <span class="callout__icon" aria-hidden="true">◆</span>
+  <div>
+    <h4>Insider tip</h4>
+    <p>Buy timed-entry tickets directly from the attraction's own website whenever you can. Third-party resellers charge a booking fee and cannot move your slot if it rains.</p>
+  </div>
+</aside>
+      <aside class="callout">
+  <span class="callout__icon" aria-hidden="true">★</span>
+  <div>
+    <h4>Free and always worth it</h4>
+    <p>The Staten Island Ferry, the High Line, Brooklyn Bridge Park, Grand Central's concourse, and the free museum hours listed in our budget guide. No ticket, no queue, no catch.</p>
+  </div>
+</aside></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-ink">
+  <div class="container">
+    <div class="section-head">
+  <div class="section-head__copy">
+    <span class="eyebrow">The journal</span>
+    <h2>Long reads from the city</h2>
+    <p class="lead">Neighbourhood deep dives, food maps and the arguments we have about the best way to see New York.</p>
+  </div>
+  <div class="section-head__action"><a class="link-arrow" href="journal.html">All stories</a></div>
+</div>
+    <div class="grid grid--3">
+      <a class="media-card" href="free-things-to-do-nyc.html">
+  <div class="media-card__media">
+    <img src="assets/img/high-line.webp" alt="People relaxing on the High Line elevated park in Manhattan" width="800" height="500" loading="lazy" />
+  </div>
+  <div class="media-card__body">
+    <span class="card__kicker">Free NYC</span>
+    <h3>Twelve genuinely free things to do in New York</h3>
+    <p>The Staten Island Ferry, museum free windows and the parks that cost nothing — with the practical catch for each.</p>
+    <div class="media-card__foot">
+      <div class="card__meta"><span>12 min read</span></div>
+    </div>
+  </div>
+</a>
+      <a class="media-card" href="food.html">
+  <div class="media-card__media">
+    <img src="assets/img/nyc-pizza-slice.webp" alt="Two slices of New York-style pizza on paper plates" width="800" height="500" loading="lazy" />
+  </div>
+  <div class="media-card__body">
+    <span class="card__kicker">Food</span>
+    <h3>The five foods you need to eat in New York</h3>
+    <p>A bagel, a slice, pastrami, a dosa in Queens, and one Italian-American classic. Where to go for each.</p>
+    <div class="media-card__foot">
+      <div class="card__meta"><span>9 min read</span></div>
+    </div>
+  </div>
+</a>
+      <a class="media-card" href="sunday-in-brooklyn.html">
+  <div class="media-card__media">
+    <img src="assets/img/brooklyn-bridge-park.webp" alt="The Brooklyn Bridge tower seen from Brooklyn Bridge Park" width="800" height="500" loading="lazy" />
+  </div>
+  <div class="media-card__body">
+    <span class="card__kicker">Boroughs</span>
+    <h3>A perfect Sunday in Brooklyn, morning to evening</h3>
+    <p>Promenade, DUMBO, Prospect Park and dinner in Park Slope — the borough at its most local.</p>
+    <div class="media-card__foot">
+      <div class="card__meta"><span>6 min read</span></div>
+    </div>
+  </div>
+</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <section class="newsletter" aria-labelledby="nl-title">
+  <div class="newsletter__grid">
+    <div>
+      <h2 id="nl-title">One useful New York email a week</h2>
+      <p>New guides, price changes worth knowing about, and the occasional neighbourhood tip you will not find on a booking site.</p>
+    </div>
+    <form class="newsletter-form" data-newsletter data-source="home" novalidate>
+      <div class="row">
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <input id="newsletter-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <p class="consent">No spam, ever. One useful New York email a week, and a free skyline photo guide when you join. Read our <a href="privacy.html">privacy policy</a>.</p>
+      <p class="form-message" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <span class="eyebrow">Start with a plan</span>
+      <h2>Pick a length. We will do the sequencing.</h2>
+      <p>Three budgets, three trip lengths, and one rule: you should come home having seen a neighbourhood, not just an observation deck.</p>
+      <div class="hero__actions" style="justify-content:center"><a class="btn" href="itineraries.html" >See all itineraries</a><a class="btn btn--outline" href="plan-your-trip.html" >Plan from scratch</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">NYC<span>Insider</span></span>
+        </a>
+        <p>An independent guide to New York City: honest itineraries, neighbourhood knowledge and the practical details that make a trip work.</p>
+      </div>
+      <div>
+  <h4>Plan</h4>
+  <ul><li><a href="itineraries.html">Itineraries</a></li><li><a href="when-to-visit.html">When to Visit</a></li><li><a href="getting-around.html">Getting Around</a></li><li><a href="budget.html">Budget Guide</a></li><li><a href="passes.html">Passes & Tickets</a></li></ul>
+</div><div>
+  <h4>Explore</h4>
+  <ul><li><a href="manhattan.html">Manhattan</a></li><li><a href="brooklyn.html">Brooklyn</a></li><li><a href="queens.html">Queens</a></li><li><a href="bronx.html">The Bronx</a></li><li><a href="staten-island.html">Staten Island</a></li><li><a href="food.html">Food & Drink</a></li></ul>
+</div><div>
+  <h4>NYC Insider</h4>
+  <ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="journal.html">Journal</a></li><li><a href="credits.html">Photo Credits</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul>
+</div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 NYC Insider. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="credits.html">Credits</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<a class="to-top" href="#top" aria-label="Back to top" data-to-top>↑</a>
+<script src="assets/js/main.js" defer></script>
+
 </body>
 </html>

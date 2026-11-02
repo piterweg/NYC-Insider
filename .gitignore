@@ -1,0 +1,9 @@
+# Build and working artefacts
+_preview/
+_srcimages/
+node_modules/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

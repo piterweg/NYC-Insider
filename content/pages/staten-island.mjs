@@ -1,0 +1,103 @@
+import { renderBoroughPage } from "../borough-template.mjs";
+
+export default {
+  path: "staten-island.html",
+  navSection: "boroughs",
+  bodyClass: "page-inner",
+  title: "Staten Island Guide — Ferry, Snug Harbor",
+  description:
+    "A guide to Staten Island: the free ferry from Manhattan, Snug Harbor's botanical garden and Chinese Scholar's Garden, St. George, and the quietest corners of New York City.",
+  priority: "0.7",
+  changefreq: "monthly",
+  ogImage: "assets/img/staten-island-ferry.webp",
+  render: () =>
+    renderBoroughPage({
+      heroImage: "staten-island-ferry.webp",
+      heroAlt: "The Staten Island Ferry at St. George Terminal with the Manhattan skyline across the harbour",
+      crumbs: [
+        { href: "index.html", label: "Home" },
+        { href: "boroughs.html", label: "Boroughs" },
+        { href: "staten-island.html", label: "Staten Island" },
+      ],
+      eyebrowText: "Borough 05 · Staten Island",
+      title: "Staten Island",
+      lead: "The borough most visitors see only from the deck of a ferry — and the one that rewards getting off it. A free crossing, a cultural campus in a former sailors' home, and the calmest afternoon in New York.",
+      meta: ["495,000 residents", "59 square miles", "Free ferry · S buses", "Half day"],
+      introEyebrow: "The borough",
+      introTitle: "The city at its calmest",
+      introLead:
+        "Staten Island is the least dense and most suburban of the five boroughs. It is also the easiest day trip in New York: the ferry is free, runs around the clock, and takes 25 minutes each way.",
+      introParagraphs: [
+        "Most people ride the ferry, take the photograph of the Statue of Liberty and come straight back. That is a good use of an hour. Better: get off at St. George, walk the waterfront, take the S40 bus to Snug Harbor, and have lunch on the island.",
+        "If you want a beach or a forest without leaving the city, this is where you find them — the Staten Island Greenbelt and the boardwalk at Midland Beach are both reachable by bus.",
+      ],
+      stats: [
+        { value: "495K", label: "residents" },
+        { value: "25", label: "min ferry" },
+        { value: "83", label: "acres of Snug Harbor" },
+        { value: "$0", label: "ferry fare" },
+      ],
+      splitImage: "staten-island-ferry.webp",
+      splitImageAlt: "The Staten Island Ferry with Lower Manhattan in the background",
+      neighbourhoods: [
+        { kicker: "North", name: "St. George", text: "The ferry terminal, the Staten Island Museum, Empire Outlets and a walkable waterfront. Everything starts here." },
+        { kicker: "Culture", name: "Snug Harbor", text: "An 83-acre former sailors' retirement home turned arts campus, with a botanical garden and Chinese Scholar's Garden." },
+        { kicker: "South", name: "Tottenville", text: "The island's historic southern tip and the Conference House. A long bus ride for history lovers." },
+        { kicker: "Green", name: "The Greenbelt", text: "A 2,800-acre forest network with trails in the middle of the borough. Bring proper shoes." },
+        { kicker: "Beach", name: "Midland Beach", text: "A boardwalk and ocean air, quiet outside summer weekends." },
+        { kicker: "Historic", name: "Historic Richmond Town", text: "A restored village tracing the island's 350-year history. Seasonal hours." },
+      ],
+      neighbourhoodTitle: "Where to spend your half-day",
+      neighbourhoodLead: "St. George and Snug Harbor are the two stops worth planning around.",
+      highlightsTitle: "The essentials",
+      highlights: [
+        { title: "The Staten Island Ferry", text: "Free, 24/7, every ~30 minutes, 25 minutes each way. The best free view of the Statue of Liberty and Lower Manhattan." },
+        { title: "Snug Harbor Cultural Center", text: "The Chinese Scholar's Garden, the botanical garden and galleries across 83 acres. Take the S40 from the ferry." },
+        { title: "Staten Island Museum", text: "Small, free-ish, and a good introduction to the island's natural and social history." },
+        { title: "Empire Outlets", text: "Shopping and food right at the ferry terminal — useful on a wet day." },
+        { title: "Fort Wadsworth", text: "A former coastal defence site with harbour views and free access, a short bus or walk from St. George." },
+        { title: "The Greenbelt", text: "Forest trails and the Greenbelt Nature Center — the wildest corner of New York City." },
+      ],
+      foodEyebrow: "Where to eat",
+      foodTitle: "Lunch on the island",
+      foodLead:
+        "You are not coming to Staten Island for the restaurant scene — you are coming for the ferry and the quiet. Still, there are a few genuinely good local places.",
+      foodImage: "staten-island-ferry.webp",
+      foodImageAlt: "The Staten Island Ferry docked at St. George",
+      foodSpots: [
+        { name: "Denino's Pizzeria", text: "A Staten Island institution on Port Richmond Avenue. Thin crust, no fuss." },
+        { name: "Lee's Tavern", text: "Dongan Hills. Another old-school pizza stop worth the bus ride." },
+        { name: "Enoteca Maria", text: "St. George. A rotating cast of nonnas from around the world cook the menu." },
+        { name: "Empire Outlets food hall", text: "The easy option at the ferry terminal, with harbour views." },
+        { name: "Arthur Kill Road bakeries", text: "The island takes its bakeries seriously; ask locally for the current favourite." },
+        { name: "Waterfront cafés", text: "St. George's waterfront has coffee with a view of Manhattan. Hard to beat for the price." },
+      ],
+      dayTitle: "One day in Staten Island",
+      dayLead: "A slow half-day, with the best views of the trip saved for the boat.",
+      dayStops: [
+        { time: "9:30", title: "Whitehall Terminal", text: "Take the free ferry from Manhattan. Stand outside on the right for the Statue of Liberty." },
+        { time: "10:00", title: "St. George waterfront", text: "Walk the promenade, then the Staten Island Museum or Empire Outlets if it is raining." },
+        { time: "11:30", title: "Snug Harbor", text: "S40 bus to the cultural center; the Chinese Scholar's Garden and grounds take two hours." },
+        { time: "14:00", title: "Lunch", text: "Back toward St. George for pizza or a waterfront café." },
+        { time: "16:00", title: "Ferry back", text: "Return at sunset for the skyline from the water." },
+      ],
+      transitTitle: "Getting there",
+      transitText:
+        "The free Staten Island Ferry leaves Whitehall Terminal in Lower Manhattan every 30 minutes, 24 hours a day. From St. George, S40/S44 buses reach Snug Harbor; the S51 runs along the island's east side. The subway does not reach Staten Island — the ferry is the way.",
+      tips: [
+        { icon: "◆", title: "The ferry is the attraction", text: "Do not treat it as transport. Stand outside, bring a layer, and ride it both ways." },
+        { icon: "☂", title: "Rain plan", text: "Empire Outlets, the Staten Island Museum and the ferry itself all work in bad weather. Snug Harbor's garden is best dry." },
+        { icon: "◷", title: "Check the bus", text: "Snug Harbor is a 10–15 minute bus ride from the ferry. Check S40/S44 times before you set off; they are not as frequent as Manhattan transit." },
+      ],
+      faqTitle: "Staten Island questions",
+      faq: [
+        { q: "Is the Staten Island Ferry really free?", a: "<p>Yes. It has been free since 1997, runs 24 hours a day, and takes about 25 minutes each way. Walk on; no cars and no reservations.</p>" },
+        { q: "Is it worth getting off the ferry?", a: "<p>For Snug Harbor and a quiet lunch, yes. If you only have an hour, the round-trip crossing is still one of the best free experiences in New York.</p>" },
+        { q: "How long does a Staten Island visit take?", a: "<p>Half a day is plenty: ferry, St. George, Snug Harbor, lunch, ferry back. A full day gets you to the Greenbelt or the beaches.</p>" },
+        { q: "Can I bring a car on the ferry?", a: "<p>Vehicles are only allowed for Staten Island residents and authorised users. Visitors walk on.</p>" },
+      ],
+      source: "staten-island",
+      prev: { href: "bronx.html", label: "The Bronx" },
+      next: { href: "attractions.html", label: "Things to do" },
+    }),
+};
