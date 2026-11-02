@@ -85,10 +85,26 @@ The two browser tools need a local Chrome installation (`CHROME_PATH` overrides 
 
 ## Deploying
 
-GitHub Pages serves the repository root as-is (a `.nojekyll` file is included so the
-`content/` and `assets/` folders are served untouched). Set the production domain in
-`content/site.mjs` → `baseUrl` before publishing so canonical URLs and the sitemap are
-correct. If the site moves to a custom domain, update that value and rebuild.
+Production runs on **Hostinger** (PHP/HTML plan) at **https://nyctrove.com**; the site is
+plain static files, so no PHP or Node runtime is needed on the server.
+
+1. Run `node tools/build.mjs` to regenerate all HTML at the repository root.
+2. Upload to the domain's `public_html`: all `*.html` files, `assets/`, `sitemap.xml`,
+   `robots.txt` and **`.htaccess`**. Do not upload `content/`, `tools/`, `docs/`,
+   `_preview/` or `_deploy/` — only the generated site belongs on the server.
+3. `.htaccess` (a visible copy is kept as `deploy.htaccess` for file managers that hide
+   dotfiles) handles HTTPS and `www` → non-`www` redirects, the custom 404, compression,
+   caching and security headers. Enable "Show hidden files" in Hostinger's File Manager
+   after uploading.
+4. Purge the Hostinger CDN cache after a deployment, then check the homepage, a missing URL
+   (custom 404), `https://www.nyctrove.com` (redirect) and `sitemap.xml`.
+
+`content/site.mjs` → `baseUrl` must match the production domain (`https://nyctrove.com`),
+because it drives canonical URLs, Open Graph URLs, the sitemap and `robots.txt`.
+
+GitHub Pages also serves the repository root as a staging copy (a `.nojekyll` file is
+included so `content/` and `assets/` are served untouched); its canonical URLs still point
+at the production domain.
 
 ## Roadmap
 
