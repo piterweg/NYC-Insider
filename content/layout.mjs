@@ -3,6 +3,7 @@
  */
 import { site } from "./site.mjs";
 import { esc, img } from "./components.mjs";
+import { assetVersion } from "./version.mjs";
 
 function head({ page }) {
   const title = page.fullTitle ? page.title : `${page.title} | ${site.name}`;
@@ -52,7 +53,7 @@ function head({ page }) {
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
   rel="stylesheet"
 />
-<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/main.css?v=${assetVersion}" />
 <script>document.documentElement.classList.remove("no-js");</script>
 <!-- Google tag (gtag.js) — Google Analytics 4 with Consent Mode v2.
      Analytics storage stays denied until the visitor accepts the consent banner. -->
@@ -156,7 +157,7 @@ function footer() {
     <button class="btn btn--sm" type="button" data-consent-choice="granted">Accept</button>
   </div>
 </div>
-<script src="assets/js/main.js" defer></script>`;
+<script src="assets/js/main.js?v=${assetVersion}" defer></script>`;
 }
 
 export function renderPage({ page, body }) {

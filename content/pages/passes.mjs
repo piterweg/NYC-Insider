@@ -13,6 +13,7 @@ import {
   metaItems,
   eyebrow,
 } from "../components.mjs";
+import { assetVersion } from "../version.mjs";
 
 export default {
   path: "passes.html",
@@ -24,7 +25,7 @@ export default {
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/skyline-window-view.webp",
-  scripts: '<script src="assets/js/passes.js" defer></script>',
+  scripts: `<script src="assets/js/passes.js?v=${assetVersion}" defer></script>`,
   jsonLd: [
     {
       "@context": "https://schema.org",

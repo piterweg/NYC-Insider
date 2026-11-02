@@ -52,7 +52,7 @@ for (const page of pages) {
   for (const m of html.matchAll(/href="([^"]+)"/g)) {
     const href = m[1];
     if (/^(https?:|mailto:|tel:|#|javascript:)/.test(href)) continue;
-    const target = href.split("#")[0];
+    const target = href.split("#")[0].split("?")[0];
     if (!target) continue;
     try {
       await stat(path.join(root, target));

@@ -75,3 +75,21 @@ AddDefaultCharset UTF-8
   RewriteRule ^(content|tools|docs|_preview|_srcimages|_deploy)(/|$) - [R=404,L]
   RewriteRule ^(README\.md|deploy\.htaccess|\.gitignore|\.gitattributes|\.nojekyll)$ - [R=404,L]
 </IfModule>
+
+# ---------------------------------------------------------------------------
+# Cache policy
+# HTML must revalidate so new deployments are picked up immediately; CSS, JS
+# and images are referenced with a content-hash query string, so they can be
+# cached aggressively.
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|jpg|jpeg|png|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
