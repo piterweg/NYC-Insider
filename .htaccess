@@ -64,3 +64,13 @@ ErrorDocument 404 /404.html
 # UTF-8 for text assets
 # ---------------------------------------------------------------------------
 AddDefaultCharset UTF-8
+
+# ---------------------------------------------------------------------------
+# Hide repository-only files and folders.
+# Hostinger deploys the whole repository root, so source, docs and deployment
+# scaffolding would otherwise be browsable at https://nyctrove.com/README.md etc.
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteRule ^(content|tools|docs|_preview|_srcimages|_deploy)(/|$) - [R=404,L]
+  RewriteRule ^(README\.md|deploy\.htaccess|\.gitignore|\.gitattributes|\.nojekyll)$ - [R=404,L]
+</IfModule>
