@@ -1,4 +1,4 @@
-# NYCTrove — Apache/Hostinger configuration
+﻿# NYCTrove â€” Apache/Hostinger configuration
 # Upload this file to public_html alongside the generated HTML.
 
 Options -Indexes
@@ -58,6 +58,7 @@ ErrorDocument 404 /404.html
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Strict-Transport-Security "max-age=31536000"
 </IfModule>
 
 # ---------------------------------------------------------------------------
