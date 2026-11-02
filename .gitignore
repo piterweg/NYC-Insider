@@ -1,6 +1,7 @@
 # Build and working artefacts
 _preview/
 _srcimages/
+_srcimages2/
 node_modules/
 
 # OS noise

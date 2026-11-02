@@ -314,6 +314,45 @@ ${pageHero({
   </div>
 </section>
 
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "Go deeper",
+      title: "The guides that do the detail",
+      lead: "Once the framework is set, these are the pages that answer the specific questions — where to sleep, what to book, and what is worth a day out of the city.",
+    })}
+    <div class="grid grid--3">
+      ${mediaCard({
+        href: "where-to-stay.html",
+        image: img("skyline-window-view.webp"),
+        alt: "The Manhattan skyline seen through a hotel window at night",
+        kicker: "Accommodation",
+        title: "Where to stay in NYC",
+        text: "Eleven bases compared: who each area suits, price bands, subway lines and the hotel-tax surprise.",
+        meta: "10 min read",
+      })}
+      ${mediaCard({
+        href: "day-trips.html",
+        image: img("philadelphia-skyline.webp"),
+        alt: "The Philadelphia skyline seen from the Amtrak approach",
+        kicker: "Out of town",
+        title: "Day trips from New York",
+        text: "Philadelphia, Washington, Boston, Niagara Falls and the Hudson Valley — with honest verdicts on what fits in a day.",
+        meta: "5 guides",
+      })}
+      ${mediaCard({
+        href: "map.html",
+        image: img("midtown-aerial-night.webp"),
+        alt: "Aerial view of Midtown Manhattan at night",
+        kicker: "Planning tool",
+        title: "The interactive map",
+        text: "Every attraction, cheap food spot and neighbourhood on one map, filterable by category.",
+        meta: "60+ pins",
+      })}
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     ${newsletter({

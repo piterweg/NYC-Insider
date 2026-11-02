@@ -13,6 +13,7 @@ import {
   arrow,
   eyebrow,
 } from "../components.mjs";
+import { assetVersion } from "../version.mjs";
 
 export default {
   path: "index.html",
@@ -25,6 +26,7 @@ export default {
   priority: "1.0",
   changefreq: "weekly",
   ogImage: "assets/img/times-square-night.webp",
+  scripts: `<script src="assets/js/weather.js?v=${assetVersion}" defer></script>`,
   render: () => `
 ${heroHome({
   image: img("times-square-night.webp"),
@@ -223,6 +225,45 @@ ${heroHome({
         title: `<a href="when-to-visit.html">When to come to New York</a>`,
         text: "Month-by-month weather, crowds, prices and the events worth planning a trip around.",
       })}
+      ${card({
+        kicker: "Sleep",
+        title: `<a href="where-to-stay.html">Where to stay</a>`,
+        text: "Neighbourhood by neighbourhood: who each area suits, price bands and subway lines.",
+      })}
+      ${card({
+        kicker: "Explore",
+        title: `<a href="map.html">The interactive map</a>`,
+        text: "Attractions, cheap food and neighbourhoods on one map, filterable in a click.",
+      })}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="grid grid--2" style="align-items:stretch;gap:1.2rem">
+      <div class="widget" data-weather>
+        <div>
+          <span class="widget__label">New York right now</span>
+          <p class="widget__value" data-weather-temp>—°F</p>
+          <p class="widget__meta"><span data-weather-desc>Loading live forecast…</span> · <span data-nyc-time>—</span></p>
+        </div>
+        <div>
+          <span class="widget__label">Next few days</span>
+          <div class="widget__days" data-weather-days></div>
+          <p class="widget__meta">Live forecast from Open-Meteo · <a href="when-to-visit.html">month-by-month guide</a></p>
+        </div>
+      </div>
+      <div class="widget" style="grid-template-columns:1fr">
+        <div>
+          <span class="widget__label">Find your way around</span>
+          <p class="widget__meta" style="margin-top:.6rem">Sixty-odd pins for attractions, cheap food, parks and neighbourhoods — or search the whole guide.</p>
+          <div class="hero__actions" style="margin-top:.9rem">
+            ${btn({ href: "map.html", label: "Open the map", size: "sm" })}
+            ${btn({ href: "search.html", label: "Search", size: "sm", variant: "outline" })}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

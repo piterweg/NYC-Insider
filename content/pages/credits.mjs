@@ -16,6 +16,18 @@ const photos = [
   ["nyc-pizza-slice.webp", "Slices at Paulie Gee's Slice Shop, Brooklyn", "Rhododendrites", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Paulie_Gee%27s_Slice_Shop_(35386).jpg"],
   ["high-line.webp", "The High Line elevated park", "Mike Peel", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:High_Line,_New_York_2012_39.jpg"],
   ["grand-central.webp", "Grand Central Terminal Main Concourse", "Axel Tschentscher", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Grand_Central_Terminal_Main_Concourse_2019-10-03_20-02.jpg"],
+  ["esb-exterior.webp", "Manhattan skyline from Weehawken, New Jersey, at night", "Dmitry Avdeev", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Manhattan_from_Weehawken,_NJ.jpg"],
+  ["amnh-facade.webp", "American Museum of Natural History, interior hall", "Mike Peel", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:At_American_Museum_of_Natural_History_2024_001.jpg"],
+  ["911-memorial.webp", "North Pool, National September 11 Memorial", "Farragutful", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:10.2012_North_Pool_National_September_11_Memorial_01.JPG"],
+  ["one-wtc.webp", "Lower Manhattan skyline including One World Trade Center", "King of Hearts", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_November_2014_panorama_3.jpg"],
+  ["summit-vanderbilt.webp", "Bryant Park seen from One Vanderbilt", "Larry D. Moore", "CC BY 4.0", "https://commons.wikimedia.org/wiki/File:Bryant_Park_from_One_Vanderbilt_New_York_City_2022.jpg"],
+  ["edge-hudson-yards.webp", "30 Hudson Yards, the tower that houses Edge", "Kidfly182", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:30_Hudson_Yards_April_2022_001.jpg"],
+  ["central-park-nyc.webp", "Bethesda Fountain, Central Park", "Rhododendrites", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Bethesda_Fountain_(81527).jpg"],
+  ["philadelphia-skyline.webp", "Philadelphia skyline", "TECHNICALINTERFACE", "CC0", "https://commons.wikimedia.org/wiki/File:Philadelphia_Skyline_Amtrak.jpg"],
+  ["washington-capitol.webp", "United States Capitol, Washington, D.C.", "Noclip", "Public domain", "https://commons.wikimedia.org/wiki/File:Capitol_Building_Full_View.jpg"],
+  ["boston-skyline.webp", "Boston skyline from Cambridge", "King of Hearts", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Boston_skyline_from_Cambridge_November_2015_panorama_1.jpg"],
+  ["niagara-falls.webp", "Niagara Falls", "Saffron Blaze", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:3Falls_Niagara.jpg"],
+  ["hudson-valley.webp", "Andy Goldsworthy's Storm King Wall, Storm King Art Center", "Eldan Goldenberg", "CC0", "https://commons.wikimedia.org/wiki/File:Andy_Goldsworthy_Storm_King_Wall_(196974395).jpeg"],
 ];
 
 export default {

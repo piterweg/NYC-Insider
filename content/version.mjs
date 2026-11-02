@@ -11,7 +11,15 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const files = ["assets/css/main.css", "assets/js/main.js", "assets/js/passes.js"];
+const files = [
+  "assets/css/main.css",
+  "assets/js/main.js",
+  "assets/js/passes.js",
+  "assets/js/search.js",
+  "assets/js/map.js",
+  "assets/js/weather.js",
+  "assets/js/deck-quiz.js",
+];
 
 const hash = createHash("sha1");
 for (const file of files) {

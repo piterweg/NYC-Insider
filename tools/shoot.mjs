@@ -94,6 +94,17 @@ await send(ws, "Runtime.evaluate", { expression: "window.scrollTo(0, 0);" });
 await sleep(600);
 
 const metrics = await send(ws, "Page.getLayoutMetrics");
+if (process.env.TYPE && process.env.TYPE_SELECTOR) {
+  await send(ws, "Runtime.evaluate", {
+    expression: `(() => {
+      const input = document.querySelector(${JSON.stringify(process.env.TYPE_SELECTOR)});
+      if (!input) return;
+      input.value = ${JSON.stringify(process.env.TYPE)};
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    })()`,
+  });
+  await sleep(900);
+}
 if (process.env.CLICK) {
   await send(ws, "Runtime.evaluate", {
     expression: `document.querySelector(${JSON.stringify(process.env.CLICK)})?.click();`,

@@ -30,7 +30,7 @@
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
   rel="stylesheet"
 />
-<link rel="stylesheet" href="assets/css/main.css?v=2cf1ee8c24" />
+<link rel="stylesheet" href="assets/css/main.css?v=ce2a8bd81d" />
 <script>document.documentElement.classList.remove("no-js");</script>
 <!-- Google tag (gtag.js) — Google Analytics 4 with Consent Mode v2.
      Analytics storage stays denied until the visitor accepts the consent banner. -->
@@ -61,6 +61,9 @@
     </a>
     <nav class="main-nav" aria-label="Primary">
       <ul class="main-nav__list"><li><a class="main-nav__link" href="itineraries.html">Itineraries</a></li><li><a class="main-nav__link" href="boroughs.html" aria-current="page">Boroughs</a></li><li><a class="main-nav__link" href="attractions.html">Things to Do</a></li><li><a class="main-nav__link" href="passes.html">Passes</a></li><li><a class="main-nav__link" href="plan-your-trip.html">Plan Your Trip</a></li><li><a class="main-nav__link" href="journal.html">Journal</a></li></ul>
+      <button class="nav-search" type="button" aria-label="Search the guide" data-search-open>
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
       <a class="btn btn--sm main-nav__cta" href="plan-your-trip.html">Start Planning</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-nav-toggle>
         <span class="nav-toggle__bars" aria-hidden="true"></span>
@@ -346,13 +349,13 @@
       </div>
       <div>
   <h4>Plan</h4>
-  <ul><li><a href="itineraries.html">Itineraries</a></li><li><a href="when-to-visit.html">When to Visit</a></li><li><a href="getting-around.html">Getting Around</a></li><li><a href="budget.html">Budget Guide</a></li><li><a href="passes.html">Passes & Tickets</a></li></ul>
+  <ul><li><a href="itineraries.html">Itineraries</a></li><li><a href="when-to-visit.html">When to Visit</a></li><li><a href="getting-around.html">Getting Around</a></li><li><a href="budget.html">Budget Guide</a></li><li><a href="where-to-stay.html">Where to Stay</a></li><li><a href="day-trips.html">Day Trips</a></li><li><a href="map.html">Interactive Map</a></li><li><a href="passes.html">Passes & Tickets</a></li></ul>
 </div><div>
   <h4>Explore</h4>
-  <ul><li><a href="manhattan.html">Manhattan</a></li><li><a href="brooklyn.html">Brooklyn</a></li><li><a href="queens.html">Queens</a></li><li><a href="bronx.html">The Bronx</a></li><li><a href="staten-island.html">Staten Island</a></li><li><a href="food.html">Food & Drink</a></li></ul>
+  <ul><li><a href="manhattan.html">Manhattan</a></li><li><a href="brooklyn.html">Brooklyn</a></li><li><a href="queens.html">Queens</a></li><li><a href="bronx.html">The Bronx</a></li><li><a href="staten-island.html">Staten Island</a></li><li><a href="food.html">Food & Drink</a></li><li><a href="credits.html">Photo Credits</a></li></ul>
 </div><div>
   <h4>NYCTrove</h4>
-  <ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="journal.html">Journal</a></li><li><a href="credits.html">Photo Credits</a></li><li><a href="cookie-settings.html">Cookie Settings</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul>
+  <ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="journal.html">Journal</a></li><li><a href="cookie-settings.html">Cookie Settings</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul>
 </div>
     </div>
     <div class="site-footer__bottom">
@@ -377,7 +380,20 @@
     <button class="btn btn--sm" type="button" data-consent-choice="granted">Accept</button>
   </div>
 </div>
-<script src="assets/js/main.js?v=2cf1ee8c24" defer></script>
+
+<div class="search-overlay" data-search-overlay hidden>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search NYCTrove">
+    <div class="search-panel__head">
+      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="Search itineraries, attractions, food, transport…" aria-label="Search the guide" autocomplete="off" data-search-input />
+      <button class="search-panel__close" type="button" aria-label="Close search" data-search-close>×</button>
+    </div>
+    <ul class="search-results" data-search-results></ul>
+    <p class="search-hint">Press <strong>/</strong> to search · <strong>Esc</strong> to close</p>
+  </div>
+</div>
+<script src="assets/js/main.js?v=ce2a8bd81d" defer></script>
+<script src="assets/js/search.js?v=ce2a8bd81d" defer></script>
 
 </body>
 </html>

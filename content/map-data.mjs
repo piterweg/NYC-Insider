@@ -1,0 +1,82 @@
+/**
+ * Points shown on the interactive map (map.html).
+ * Positions are approximate pin locations, not navigation-grade coordinates.
+ */
+export const mapPoints = [
+  // Attractions and landmarks
+  { id: "empire-state-building", name: "Empire State Building", category: "attractions", lat: 40.74844, lng: -73.98566, href: "empire-state-building.html", blurb: "86th and 102nd floor observatories, Midtown." },
+  { id: "top-of-the-rock", name: "Top of the Rock", category: "attractions", lat: 40.7591, lng: -73.97944, href: "top-of-the-rock.html", blurb: "Rockefeller Center deck with the Empire State in view." },
+  { id: "edge", name: "Edge at Hudson Yards", category: "attractions", lat: 40.754, lng: -74.0013, href: "edge.html", blurb: "Outdoor sky deck with a glass floor, 100th floor." },
+  { id: "summit-one-vanderbilt", name: "SUMMIT One Vanderbilt", category: "attractions", lat: 40.7527, lng: -73.9772, href: "summit-one-vanderbilt.html", blurb: "Mirror-and-glass art experience above Grand Central." },
+  { id: "one-world-observatory", name: "One World Observatory", category: "attractions", lat: 40.71274, lng: -74.01338, href: "one-world-observatory.html", blurb: "The tallest deck, at the top of One World Trade Center." },
+  { id: "statue-of-liberty", name: "Statue of Liberty", category: "attractions", lat: 40.68925, lng: -74.0445, href: "statue-of-liberty.html", blurb: "Liberty Island, reached by the Statue City Cruises ferry." },
+  { id: "ellis-island", name: "Ellis Island", category: "attractions", lat: 40.6995, lng: -74.0396, href: "statue-of-liberty.html", blurb: "Immigration museum on the same ferry loop." },
+  { id: "9-11-memorial", name: "9/11 Memorial & Museum", category: "attractions", lat: 40.7115, lng: -74.0134, href: "9-11-memorial.html", blurb: "Memorial plaza and museum at the World Trade Center site." },
+  { id: "amnh", name: "American Museum of Natural History", category: "attractions", lat: 40.7813, lng: -73.974, href: "amnh.html", blurb: "Dinosaurs, space and the blue whale, Upper West Side." },
+  { id: "moma", name: "MoMA", category: "attractions", lat: 40.7614, lng: -73.9776, href: "moma.html", blurb: "Modern art from Van Gogh to the present." },
+  { id: "met-museum", name: "The Met", category: "attractions", lat: 40.7794, lng: -73.9632, href: "met-museum.html", blurb: "One of the great museums, on Fifth Avenue at 82nd Street." },
+  { id: "grand-central", name: "Grand Central Terminal", category: "attractions", lat: 40.7527, lng: -73.977, href: "grand-central.html", blurb: "Beaux-Arts concourse, celestial ceiling, food hall." },
+  { id: "times-square", name: "Times Square", category: "attractions", lat: 40.758, lng: -73.9855, href: "attractions.html", blurb: "The billboard crossroads — best at dusk, briefly." },
+  { id: "broadway", name: "Broadway theatres", category: "attractions", lat: 40.759, lng: -73.988, href: "attractions.html#broadway", blurb: "The Theatre District between 41st and 54th Streets." },
+  { id: "coney-island", name: "Coney Island", category: "attractions", lat: 40.5755, lng: -73.9707, href: "brooklyn.html", blurb: "Boardwalk, beach and the Cyclone roller coaster." },
+  { id: "yankee-stadium", name: "Yankee Stadium", category: "attractions", lat: 40.8296, lng: -73.9262, href: "bronx.html", blurb: "Home of the Yankees, 161 St station." },
+  { id: "bronx-zoo", name: "Bronx Zoo", category: "attractions", lat: 40.8506, lng: -73.877, href: "bronx.html", blurb: "265 acres of zoo, next to the Botanical Garden." },
+
+  // Parks and waterfront
+  { id: "central-park", name: "Central Park", category: "parks", lat: 40.774, lng: -73.9708, href: "central-park.html", blurb: "843 acres, from Bethesda Terrace to the Ramble." },
+  { id: "high-line", name: "The High Line", category: "parks", lat: 40.748, lng: -74.0048, href: "high-line.html", blurb: "Elevated park on the old freight line, Chelsea." },
+  { id: "brooklyn-bridge", name: "Brooklyn Bridge walkway", category: "parks", lat: 40.7061, lng: -73.9969, href: "brooklyn-bridge.html", blurb: "The 1.3-mile walk between Manhattan and Brooklyn." },
+  { id: "brooklyn-bridge-park", name: "Brooklyn Bridge Park", category: "parks", lat: 40.7, lng: -73.997, href: "brooklyn.html", blurb: "Waterfront lawns and the best skyline view from Brooklyn." },
+  { id: "prospect-park", name: "Prospect Park", category: "parks", lat: 40.6602, lng: -73.969, href: "brooklyn.html", blurb: "526 acres of meadow, woodland and the Botanic Garden." },
+  { id: "bryant-park", name: "Bryant Park", category: "parks", lat: 40.7537, lng: -73.9832, href: "attractions.html", blurb: "Midtown lawn behind the New York Public Library." },
+  { id: "the-battery", name: "The Battery", category: "parks", lat: 40.7033, lng: -74.017, href: "statue-of-liberty.html", blurb: "Harbour park and the ferry departure point." },
+  { id: "flushing-meadows", name: "Flushing Meadows–Corona Park", category: "parks", lat: 40.746, lng: -73.844, href: "queens.html", blurb: "The Unisphere, Queens Museum and the US Open grounds." },
+  { id: "governors-island", name: "Governors Island", category: "parks", lat: 40.6895, lng: -74.0168, href: "free-things-to-do-nyc.html", blurb: "Car-free island, reached by a short ferry." },
+
+  // Food
+  { id: "katzs", name: "Katz's Delicatessen", category: "food", lat: 40.7223, lng: -73.9874, href: "food.html", blurb: "Pastrami on rye, Lower East Side, since 1888." },
+  { id: "russ-and-daughters", name: "Russ & Daughters", category: "food", lat: 40.7227, lng: -73.9883, href: "food.html", blurb: "Appetising counter: bagels, lox and cream cheese." },
+  { id: "joes-pizza", name: "Joe's Pizza", category: "food", lat: 40.7306, lng: -74.0021, href: "food.html", blurb: "The classic Greenwich Village slice." },
+  { id: "prince-street-pizza", name: "Prince Street Pizza", category: "food", lat: 40.7233, lng: -73.9947, href: "food.html", blurb: "Pepperoni squares in SoHo." },
+  { id: "ess-a-bagel", name: "Ess-a-Bagel", category: "food", lat: 40.7566, lng: -73.969, href: "food.html", blurb: "Big, chewy bagels on Third Avenue." },
+  { id: "los-tacos-chelsea", name: "Los Tacos No. 1", category: "food", lat: 40.7425, lng: -74.006, href: "food.html", blurb: "Standing-room tacos in Chelsea Market." },
+  { id: "halal-guys", name: "The Halal Guys", category: "food", lat: 40.7614, lng: -73.9777, href: "food.html", blurb: "The 53rd and Sixth chicken-and-rice cart." },
+  { id: "xian-famous", name: "Xi'an Famous Foods", category: "food", lat: 40.726, lng: -73.984, href: "food.html", blurb: "Hand-pulled noodles, East Village branch." },
+  { id: "grays-papaya", name: "Gray's Papaya", category: "food", lat: 40.7774, lng: -73.982, href: "food.html", blurb: "Upper West Side hot dogs and the Recession Special." },
+  { id: "vannessas-dumplings", name: "Vanessa's Dumpling House", category: "food", lat: 40.7199, lng: -73.991, href: "food.html", blurb: "Cheap dumplings on the Lower East Side." },
+  { id: "peter-pan-donuts", name: "Peter Pan Donuts", category: "food", lat: 40.73, lng: -73.953, href: "food.html", blurb: "Old-school doughnuts in Greenpoint." },
+
+  // Neighbourhoods
+  { id: "soho", name: "SoHo", category: "neighbourhoods", lat: 40.7233, lng: -74.0, href: "manhattan.html", blurb: "Cast-iron architecture and the city's densest shopping." },
+  { id: "greenwich-village", name: "Greenwich Village", category: "neighbourhoods", lat: 40.7336, lng: -74.0027, href: "manhattan.html", blurb: "Brownstones, Washington Square and jazz basements." },
+  { id: "harlem", name: "Harlem", category: "neighbourhoods", lat: 40.8116, lng: -73.9465, href: "manhattan.html", blurb: "The Apollo, 125th Street and soul-food history." },
+  { id: "upper-west-side", name: "Upper West Side", category: "neighbourhoods", lat: 40.787, lng: -73.9754, href: "manhattan.html", blurb: "AMNH, Lincoln Center and Zabar's." },
+  { id: "upper-east-side", name: "Upper East Side", category: "neighbourhoods", lat: 40.7736, lng: -73.9566, href: "manhattan.html", blurb: "Museum Mile and pre-war apartment blocks." },
+  { id: "williamsburg", name: "Williamsburg", category: "neighbourhoods", lat: 40.714, lng: -73.957, href: "brooklyn.html", blurb: "Waterfront skyline, Bedford Avenue, Domino Park." },
+  { id: "dumbo", name: "DUMBO", category: "neighbourhoods", lat: 40.7033, lng: -73.988, href: "brooklyn.html", blurb: "Cobblestones between the bridges and the famous photo spot." },
+  { id: "park-slope", name: "Park Slope", category: "neighbourhoods", lat: 40.671, lng: -73.981, href: "brooklyn.html", blurb: "Brownstones, Prospect Park and Fifth Avenue." },
+  { id: "bushwick", name: "Bushwick", category: "neighbourhoods", lat: 40.6944, lng: -73.921, href: "brooklyn.html", blurb: "Mural walks, warehouses and DIY venues." },
+  { id: "astoria", name: "Astoria", category: "neighbourhoods", lat: 40.7644, lng: -73.9235, href: "queens.html", blurb: "Greek heritage, bakeries and the Museum of the Moving Image." },
+  { id: "long-island-city", name: "Long Island City", category: "neighbourhoods", lat: 40.7447, lng: -73.9486, href: "queens.html", blurb: "Gantry Plaza, MoMA PS1 and the closest skyline view." },
+  { id: "flushing", name: "Flushing", category: "neighbourhoods", lat: 40.7674, lng: -73.833, href: "queens.html", blurb: "The city's biggest Chinatown and the Unisphere." },
+  { id: "jackson-heights", name: "Jackson Heights", category: "neighbourhoods", lat: 40.7557, lng: -73.8831, href: "queens.html", blurb: "Little India on 74th Street and Latin American food." },
+  { id: "arthur-avenue", name: "Arthur Avenue", category: "neighbourhoods", lat: 40.8552, lng: -73.8873, href: "bronx.html", blurb: "The Bronx's Little Italy and retail market." },
+  { id: "st-george", name: "St. George", category: "neighbourhoods", lat: 40.6437, lng: -74.0736, href: "staten-island.html", blurb: "Staten Island's ferry terminal, museum and waterfront." },
+  { id: "snug-harbor", name: "Snug Harbor", category: "neighbourhoods", lat: 40.643, lng: -74.103, href: "staten-island.html", blurb: "83-acre arts campus and Chinese Scholar's Garden." },
+
+  // Transport
+  { id: "jfk", name: "JFK Airport", category: "transport", lat: 40.6413, lng: -73.7781, href: "getting-around.html", blurb: "AirTrain to Jamaica or Howard Beach, then subway or LIRR." },
+  { id: "lga", name: "LaGuardia Airport", category: "transport", lat: 40.7769, lng: -73.874, href: "getting-around.html", blurb: "No rail link — Q70 bus or taxi." },
+  { id: "ewr", name: "Newark Liberty Airport", category: "transport", lat: 40.6895, lng: -74.1745, href: "getting-around.html", blurb: "AirTrain plus NJ Transit to Penn Station." },
+  { id: "penn-station", name: "Penn Station", category: "transport", lat: 40.7506, lng: -73.9935, href: "getting-around.html", blurb: "Amtrak, NJ Transit, LIRR and the A/C/E/1/2/3." },
+  { id: "port-authority", name: "Port Authority Bus Terminal", category: "transport", lat: 40.757, lng: -73.99, href: "getting-around.html", blurb: "Buses to New Jersey and the airports." },
+  { id: "whitehall-ferry", name: "Whitehall Ferry Terminal", category: "transport", lat: 40.7012, lng: -74.013, href: "staten-island.html", blurb: "Free Staten Island Ferry, 24 hours a day." },
+];
+
+export const mapCategories = [
+  { id: "attractions", label: "Attractions" },
+  { id: "parks", label: "Parks & walks" },
+  { id: "food", label: "Food" },
+  { id: "neighbourhoods", label: "Neighbourhoods" },
+  { id: "transport", label: "Transport" },
+];

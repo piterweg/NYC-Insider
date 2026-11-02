@@ -9,12 +9,13 @@
  * writes the generated HTML to the repository root. Also regenerates
  * sitemap.xml and reports broken internal links.
  */
-import { readdir, writeFile, readFile } from "node:fs/promises";
+import { readdir, writeFile, readFile, mkdir } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import path from "node:path";
 
 import { site } from "../content/site.mjs";
 import { renderPage } from "../content/layout.mjs";
+import { mapPoints, mapCategories } from "../content/map-data.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pagesDir = path.join(root, "content", "pages");
@@ -45,8 +46,10 @@ for (const page of pages) {
 // Render
 let written = 0;
 const known = new Set(pages.map((p) => p.path));
+const bodies = new Map();
 for (const page of pages) {
   const body = await page.render({ site });
+  bodies.set(page.path, body);
   const html = renderPage({ page, body });
   await writeFile(path.join(root, page.path), html, "utf8");
   written++;
@@ -78,6 +81,40 @@ await writeFile(
   "utf8"
 );
 
+// ---------------------------------------------------------------------------
+// Client-side data: search index and map points
+// ---------------------------------------------------------------------------
+const stripHtml = (html) =>
+  html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z#0-9]+;/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const searchIndex = pages
+  .filter((p) => !p.noindex)
+  .map((p) => ({
+    path: p.path,
+    title: p.fullTitle ? p.title : `${p.title} | ${site.name}`,
+    description: p.description,
+    section: p.navSection || "",
+    text: stripHtml(bodies.get(p.path) || "").slice(0, 900),
+  }));
+
+await mkdir(path.join(root, "assets", "data"), { recursive: true });
+await writeFile(
+  path.join(root, "assets", "data", "search-index.json"),
+  JSON.stringify(searchIndex),
+  "utf8"
+);
+await writeFile(
+  path.join(root, "assets", "data", "map-points.json"),
+  JSON.stringify({ categories: mapCategories, points: mapPoints }),
+  "utf8"
+);
+
 // Internal link check
 const problems = [];
 for (const page of pages) {
@@ -85,7 +122,7 @@ for (const page of pages) {
   const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((m) => m[1]);
   for (const href of hrefs) {
     if (/^(https?:|mailto:|tel:|#|javascript:)/.test(href)) continue;
-    const target = href.split("#")[0];
+    const target = href.split("#")[0].split("?")[0];
     if (!target) continue;
     if (target.startsWith("assets/") || target.endsWith(".xml") || target.endsWith(".txt")) continue;
     if (known.has(target)) continue;

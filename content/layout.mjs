@@ -72,7 +72,7 @@ function head({ page }) {
 </script>
 <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 0)}
-</script>`;
+</script>${page.headExtra ? `\n${page.headExtra}` : ""}`;
 }
 
 function header(page) {
@@ -99,6 +99,9 @@ function header(page) {
     </a>
     <nav class="main-nav" aria-label="Primary">
       <ul class="main-nav__list">${links}</ul>
+      <button class="nav-search" type="button" aria-label="Search the guide" data-search-open>
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
       <a class="btn btn--sm main-nav__cta" href="plan-your-trip.html">Start Planning</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-nav-toggle>
         <span class="nav-toggle__bars" aria-hidden="true"></span>
@@ -158,7 +161,20 @@ function footer() {
     <button class="btn btn--sm" type="button" data-consent-choice="granted">Accept</button>
   </div>
 </div>
-<script src="assets/js/main.js?v=${assetVersion}" defer></script>`;
+
+<div class="search-overlay" data-search-overlay hidden>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search NYCTrove">
+    <div class="search-panel__head">
+      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="Search itineraries, attractions, food, transport…" aria-label="Search the guide" autocomplete="off" data-search-input />
+      <button class="search-panel__close" type="button" aria-label="Close search" data-search-close>×</button>
+    </div>
+    <ul class="search-results" data-search-results></ul>
+    <p class="search-hint">Press <strong>/</strong> to search · <strong>Esc</strong> to close</p>
+  </div>
+</div>
+<script src="assets/js/main.js?v=${assetVersion}" defer></script>
+<script src="assets/js/search.js?v=${assetVersion}" defer></script>`;
 }
 
 export function renderPage({ page, body }) {

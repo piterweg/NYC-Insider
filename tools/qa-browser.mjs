@@ -12,6 +12,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const BASE = process.env.BASE_URL || "";
 const chrome = process.env.CHROME_PATH || "C:/Program Files/Google/Chrome/Application/chrome.exe";
 const port = 9500 + Math.floor(Math.random() * 300);
 const userDir = await mkdtemp(path.join(os.tmpdir(), "nyc-qa-"));
@@ -84,7 +85,8 @@ const problems = [];
 
 for (const page of pages) {
   events.length = 0;
-  await send("Page.navigate", { url: pathToFileURL(path.join(root, page)).href });
+  const target = BASE ? `${BASE.replace(/\/$/, "")}/${page}` : pathToFileURL(path.join(root, page)).href;
+  await send("Page.navigate", { url: target });
   await sleep(1100);
   const result = await send("Runtime.evaluate", {
     expression: `(() => {

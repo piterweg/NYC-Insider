@@ -3,6 +3,7 @@ import {
   sectionHead,
   pageHero,
   card,
+  mediaCard,
   callout,
   table,
   faq,
@@ -13,6 +14,7 @@ import {
   metaItems,
   eyebrow,
 } from "../components.mjs";
+import { assetVersion } from "../version.mjs";
 
 export default {
   path: "attractions.html",
@@ -24,6 +26,7 @@ export default {
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/manhattan-skyline-night.webp",
+  scripts: `<script src="assets/js/deck-quiz.js?v=${assetVersion}" defer></script>`,
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -59,6 +62,47 @@ ${pageHero({
       <div class="split__media">
         <img src="${img("skyline-window-view.webp")}" alt="The Manhattan skyline seen through a high window, with rooftops in the foreground" width="1000" height="1250" loading="lazy" />
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "Individual guides",
+      title: "Every attraction, in detail",
+      lead: "Prices, opening hours, which entrance to use, how long it really takes and what to book first. Each guide is written to be read before you buy a ticket.",
+      action: `<a class="link-arrow" href="map.html">See them on the map</a>`,
+    })}
+    <div class="grid grid--3">
+      ${[
+        ["empire-state-building.html", "esb-exterior.webp", "Empire State Building", "Observation deck", "from $46"],
+        ["top-of-the-rock.html", "skyline-window-view.webp", "Top of the Rock", "Observation deck", "from $42"],
+        ["edge.html", "edge-hudson-yards.webp", "Edge at Hudson Yards", "Observation deck", "from $44"],
+        ["summit-one-vanderbilt.html", "summit-vanderbilt.webp", "SUMMIT One Vanderbilt", "Observation deck", "from $44"],
+        ["one-world-observatory.html", "one-wtc.webp", "One World Observatory", "Observation deck", "$51"],
+        ["statue-of-liberty.html", "statue-of-liberty.webp", "Statue of Liberty", "Harbour", "ferry from $25.50"],
+        ["9-11-memorial.html", "911-memorial.webp", "9/11 Memorial & Museum", "Harbour", "plaza free"],
+        ["amnh.html", "amnh-facade.webp", "American Museum of Natural History", "Museum", "from $28"],
+        ["moma.html", "fifth-avenue-cab.webp", "MoMA", "Museum", "$30"],
+        ["met-museum.html", "central-park-bow-bridge.webp", "The Met", "Museum", "$30"],
+        ["central-park.html", "central-park-nyc.webp", "Central Park", "Park", "free"],
+        ["high-line.html", "high-line.webp", "The High Line", "Park", "free"],
+        ["brooklyn-bridge.html", "brooklyn-bridge-park.webp", "Brooklyn Bridge", "Walk", "free"],
+        ["grand-central.html", "grand-central.webp", "Grand Central Terminal", "Landmark", "free"],
+      ]
+        .map(([href, image, title, kicker, meta]) =>
+          mediaCard({
+            href,
+            image: img(image),
+            alt: `${title} — New York City`,
+            kicker,
+            title,
+            text: meta === "free" ? "Free to visit. The essential details anyway." : `Tickets ${meta}. Opening hours, tips and what to book.`,
+            meta,
+          })
+        )
+        .join("")}
     </div>
   </div>
 </section>
@@ -275,6 +319,20 @@ ${pageHero({
           text: "Put paid attractions in the middle of the trip, not on arrival day. Jet lag and delayed flights ruin more prepaid tickets than bad weather does.",
         })}
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="quiz" data-deck-quiz>
+      <span class="quiz__progress" data-quiz-progress>Question 1 of 3</span>
+      <h2>Which observation deck fits your trip?</h2>
+      <p class="muted" style="color:var(--text-on-dark-muted)">Three questions, one recommendation. All five decks are good — this is about which one is right for your trip, not which is “best”.</p>
+      <p class="quiz__question" data-quiz-question></p>
+      <div class="quiz__options" data-quiz-options></div>
+      <div class="quiz__result" data-quiz-result></div>
+      <div><button class="btn btn--sm btn--outline" type="button" data-quiz-restart>Start again</button></div>
     </div>
   </div>
 </section>

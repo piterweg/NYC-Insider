@@ -12,6 +12,7 @@ import {
   metaItems,
   eyebrow,
 } from "../components.mjs";
+import { assetVersion } from "../version.mjs";
 
 export default {
   path: "when-to-visit.html",
@@ -23,6 +24,7 @@ export default {
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/central-park-bow-bridge.webp",
+  scripts: `<script src="assets/js/weather.js?v=${assetVersion}" defer></script>`,
   breadcrumbs: [
     { href: "index.html", label: "Home" },
     { href: "when-to-visit.html", label: "When to Visit" },
@@ -40,6 +42,23 @@ ${pageHero({
   lead: "New York has four proper seasons, and each changes what the trip feels like. The best month depends on whether you want long park days, Christmas windows or quiet museums.",
   meta: metaItems("Month-by-month weather", "Events calendar", "Holiday trade-offs", "What to pack"),
 })}
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="widget" data-weather>
+      <div>
+        <span class="widget__label">New York right now</span>
+        <p class="widget__value" data-weather-temp>—°F</p>
+        <p class="widget__meta"><span data-weather-desc>Loading live forecast…</span> · <span data-nyc-time>—</span></p>
+      </div>
+      <div>
+        <span class="widget__label">Next few days</span>
+        <div class="widget__days" data-weather-days></div>
+        <p class="widget__meta">Live forecast from Open-Meteo. For packing by season, use the tables below.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
