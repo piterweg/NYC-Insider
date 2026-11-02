@@ -147,6 +147,8 @@
   var banner = document.querySelector("[data-consent-banner]");
   if (!banner) return;
 
+  var decided = false;
+
   function updateConsent(value) {
     if (typeof window.gtag !== "function") return;
     var state = value === "granted" ? "granted" : "denied";
@@ -171,12 +173,13 @@
   }
 
   window.setTimeout(function () {
-    banner.hidden = false;
-  }, 1200);
+    if (!decided) banner.hidden = false;
+  }, 800);
 
   banner.addEventListener("click", function (event) {
     var button = event.target.closest("[data-consent-choice]");
     if (!button) return;
+    decided = true;
     var choice = button.getAttribute("data-consent-choice");
     try {
       window.localStorage.setItem(KEY, choice);
