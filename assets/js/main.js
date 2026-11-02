@@ -135,3 +135,55 @@
     el.textContent = String(new Date().getFullYear());
   });
 })();
+
+/* ------------------------------------------------------------------
+   Cookie consent — Google Analytics 4 with Consent Mode v2
+   Analytics storage stays denied until the visitor makes a choice.
+   ------------------------------------------------------------------ */
+(function () {
+  "use strict";
+
+  var KEY = "nyctrove-consent";
+  var banner = document.querySelector("[data-consent-banner]");
+  if (!banner) return;
+
+  function updateConsent(value) {
+    if (typeof window.gtag !== "function") return;
+    var state = value === "granted" ? "granted" : "denied";
+    window.gtag("consent", "update", {
+      ad_storage: state,
+      ad_user_data: state,
+      ad_personalization: state,
+      analytics_storage: state
+    });
+  }
+
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem(KEY);
+  } catch (error) {
+    stored = null;
+  }
+
+  if (stored === "granted" || stored === "denied") {
+    updateConsent(stored);
+    return;
+  }
+
+  window.setTimeout(function () {
+    banner.hidden = false;
+  }, 1200);
+
+  banner.addEventListener("click", function (event) {
+    var button = event.target.closest("[data-consent-choice]");
+    if (!button) return;
+    var choice = button.getAttribute("data-consent-choice");
+    try {
+      window.localStorage.setItem(KEY, choice);
+    } catch (error) {
+      /* storage blocked — respect the choice for this page view only */
+    }
+    updateConsent(choice);
+    banner.hidden = true;
+  });
+})();

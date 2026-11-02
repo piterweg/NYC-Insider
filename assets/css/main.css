@@ -2257,6 +2257,65 @@ html.no-js [data-reveal] {
   transform: none;
 }
 
+/* --------------------------------------------------------------------------
+   Cookie consent banner
+   -------------------------------------------------------------------------- */
+
+.consent-banner {
+  position: fixed;
+  left: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 130;
+  width: min(540px, calc(100% - 2rem));
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.2rem 1.35rem;
+  background: var(--ink);
+  color: var(--text-on-dark);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-l);
+}
+
+.consent-banner[hidden] {
+  display: none;
+}
+
+.consent-banner p {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-on-dark-muted);
+}
+
+.consent-banner a {
+  color: var(--brass);
+}
+
+.consent-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.consent-banner .btn--outline {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: var(--text-on-dark);
+}
+
+.consent-banner .btn--outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: var(--white);
+}
+
+@media (max-width: 520px) {
+  .consent-banner {
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+  }
+}
+
 /* Print */
 @media print {
   .site-header,

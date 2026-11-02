@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Page shell: <head>, header, mobile navigation, footer and closing scripts.
  */
 import { site } from "./site.mjs";
@@ -54,6 +54,21 @@ function head({ page }) {
 />
 <link rel="stylesheet" href="assets/css/main.css" />
 <script>document.documentElement.classList.remove("no-js");</script>
+<!-- Google tag (gtag.js) — Google Analytics 4 with Consent Mode v2.
+     Analytics storage stays denied until the visitor accepts the consent banner. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4H2E46709P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  });
+  gtag('config', 'G-4H2E46709P');
+</script>
 <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 0)}
 </script>`;
@@ -77,7 +92,7 @@ function header(page) {
 
   return `<header class="site-header" data-header>
   <div class="container">
-    <a class="brand" href="index.html" aria-label="${site.name} â€” home">
+    <a class="brand" href="index.html" aria-label="${site.name} — home">
       <span class="brand__mark">NYC<span>Trove</span></span>
       <span class="brand__tag" aria-hidden="true">The City, Decoded</span>
     </a>
@@ -133,7 +148,14 @@ function footer() {
     </div>
   </div>
 </footer>
-<a class="to-top" href="#top" aria-label="Back to top" data-to-top>â†‘</a>
+<a class="to-top" href="#top" aria-label="Back to top" data-to-top>↑</a>
+<div class="consent-banner" data-consent-banner hidden>
+  <p>We use Google Analytics to understand which guides are useful. Analytics cookies stay off until you accept. <a href="privacy.html">Privacy policy</a>.</p>
+  <div class="consent-banner__actions">
+    <button class="btn btn--sm btn--outline" type="button" data-consent-choice="denied">Decline</button>
+    <button class="btn btn--sm" type="button" data-consent-choice="granted">Accept</button>
+  </div>
+</div>
 <script src="assets/js/main.js" defer></script>`;
 }
 

@@ -54,7 +54,7 @@ ${pageHero({
       <p>Two kinds of information.</p>
       <ul>
         <li><strong>Information you give us.</strong> Newsletter subscriptions store your email address; messages you send us include your name, email address and whatever you write.</li>
-        <li><strong>Information collected automatically.</strong> Privacy-friendly analytics tell us which pages are read and how readers arrive: the page, the referring site, browser and device type, and an approximate location from your IP address. We do not profile individual readers.</li>
+        <li><strong>Information collected automatically.</strong> With your consent, Google Analytics 4 records which pages are read and how readers arrive: the page, the referring site, browser and device type, and an approximate location derived from your IP address. It uses a randomly generated identifier, not your name, and we do not try to identify individual readers. Until you accept the consent banner, analytics runs with storage denied and sets no analytics cookies.</li>
       </ul>
       <p>Booking payments are handled entirely by the partner on their own site.</p>
 
@@ -62,10 +62,10 @@ ${pageHero({
       <p>Subscribing is opt-in: we store your address and send the newsletter you asked for, usually once a week. Every issue has an unsubscribe link, and we keep a short suppression record so we do not email you again by accident. Our platform processes the address on our instructions and may measure opens and clicks. We never sell or rent email addresses, and we do not add contact-form senders to the list.</p>
 
       <h2>Cookies and similar technology</h2>
-      <p>We keep cookies to a minimum. The site sets no advertising cookies and runs no cross-site advertising trackers. Analytics may use a first-party cookie or a privacy-preserving method that does not identify you; blocking cookies does not break the guide. Affiliate partners may set their own cookies after you click through — those belong to the partner and are controlled through your browser and their cookie notice.</p>
+      <p>Analytics cookies are the only cookies this site sets, and only after you choose “Accept” in the consent banner. Google Analytics 4 stores a first-party cookie called <code>_ga</code> and a second one named <code>_ga_4H2E46709P</code> to distinguish returning visits; they can live for up to two years. Choosing “Decline” — or closing the banner without answering — keeps them switched off, and the guide works exactly the same. To change your mind, clear this site's data in your browser: the banner will appear again on your next visit. Affiliate partners may set their own cookies after you click through — those belong to the partner and are controlled through your browser and their cookie notice.</p>
 
       <h2>Third-party services</h2>
-      <p>We rely on a few providers: hosting and infrastructure, an email platform and analytics. They process data only on our instructions and under contracts that require appropriate protection. Some may process data outside your country; where that happens we rely on standard contractual clauses or an equivalent safeguard.</p>
+      <p>We rely on a few providers: Hostinger (hosting and infrastructure), an email platform for the newsletter, and Google Analytics 4 (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) for audience measurement. Google processes analytics data on our instructions as a processor; see <a href="https://business.safety.google/privacy/" rel="nofollow noopener" target="_blank">Google's privacy disclosures</a> and its <a href="https://tools.google.com/dlpage/gaoptout" rel="nofollow noopener" target="_blank">opt-out browser add-on</a>. Some providers may process data outside your country; where that happens we rely on standard contractual clauses or an equivalent safeguard.</p>
 
       <h2>Affiliate links</h2>
       <p>Some outbound links are affiliate links. If you buy through one, we may earn a small commission at no extra cost to you. The partner records the referral, usually with a cookie on their site. We do not receive your name, email or payment details — only aggregate reports that a link produced a sale. Once you leave NYCTrove, the partner's privacy policy applies. Our commercial disclosure is in the <a href="about.html">about page</a> and <a href="terms.html">terms of use</a>.</p>
@@ -87,7 +87,7 @@ ${pageHero({
       <ul>
         <li><strong>Newsletter:</strong> until you unsubscribe, plus the suppression record.</li>
         <li><strong>Correspondence:</strong> up to two years, so we have context if you write again.</li>
-        <li><strong>Analytics:</strong> kept in aggregate for up to 14 months.</li>
+        <li><strong>Analytics:</strong> Google Analytics aggregates for up to 14 months, depending on the retention setting in the property; no profile is built about you.</li>
         <li><strong>Legal records:</strong> kept for as long as the law requires.</li>
       </ul>
 
