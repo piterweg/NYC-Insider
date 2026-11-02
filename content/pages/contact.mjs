@@ -15,9 +15,9 @@ export default {
   path: "contact.html",
   navSection: "home",
   bodyClass: "page-inner",
-  title: "Contact NYC Insider",
+  title: "Contact NYCTrove",
   description:
-    "Contact NYC Insider about a correction, press request, collaboration or reader question. Email hello@nycinsider.com — we reply within a few working days.",
+    "Contact NYCTrove about a correction, press request, collaboration or reader question. Email hello@nyctrove.com — we reply within a few working days.",
   priority: "0.4",
   changefreq: "monthly",
   ogImage: "assets/img/grand-central.webp",
@@ -30,9 +30,9 @@ ${pageHero({
     { href: "contact.html", label: "Contact" },
   ],
   eyebrowText: "Contact",
-  title: "Talk to NYC Insider",
+  title: "Talk to NYCTrove",
   lead: "Corrections, press questions, collaboration ideas and reader questions all land in the same inbox. Here is what to send, and where.",
-  meta: metaItems("Email is best", "Replies within a few working days", "hello@nycinsider.com"),
+  meta: metaItems("Email is best", "Replies within a few working days", "hello@nyctrove.com"),
 })}
 
 <section class="section">
@@ -115,7 +115,7 @@ ${pageHero({
       <div class="split__body" data-reveal>
         ${eyebrow("What happens next")}
         <h2 style="font-size:var(--step-3);margin-top:.7rem">Response times, honestly</h2>
-        <p>Email is the fastest route: <a href="mailto:hello@nycinsider.com">hello@nycinsider.com</a>. We aim to answer everything within a few working days, Monday to Friday, New York time. Reader questions can take longer in the run-up to a holiday weekend, when the inbox is busiest.</p>
+        <p>Email is the fastest route: <a href="mailto:hello@nyctrove.com">hello@nyctrove.com</a>. We aim to answer everything within a few working days, Monday to Friday, New York time. Reader questions can take longer in the run-up to a holiday weekend, when the inbox is busiest.</p>
         <p>If you are on a press deadline, put the word Deadline and the date in the subject line and we will try to come back to you sooner. If you are reporting a correction, a direct link to the page saves us a step and gets it fixed faster.</p>
         <p class="muted">We do not share reader emails with third parties, and we do not add contact-form senders to the newsletter. See the <a href="privacy.html">privacy policy</a> for the detail.</p>
       </div>
@@ -123,12 +123,12 @@ ${pageHero({
         ${callout({
           icon: "✉",
           title: "Prefer to write from your own inbox?",
-          text: 'That works just as well. Send your message to <a href="mailto:hello@nycinsider.com">hello@nycinsider.com</a> with a one-line subject that tells us what it is about.',
+          text: 'That works just as well. Send your message to <a href="mailto:hello@nyctrove.com">hello@nyctrove.com</a> with a one-line subject that tells us what it is about.',
         })}
         <div style="margin-top:1.5rem">
           ${btn({
-            href: "mailto:hello@nycinsider.com",
-            label: "Email hello@nycinsider.com",
+            href: "mailto:hello@nyctrove.com",
+            label: "Email hello@nyctrove.com",
             variant: "outline",
           })}
         </div>
@@ -147,7 +147,7 @@ ${pageHero({
     ${faq([
       {
         q: "Can you book tickets or hotels for me?",
-        a: "<p>No. NYC Insider is a guide, not a travel agent. We can point you to the right official seller and explain how the pricing works, but the booking and the customer service afterwards are theirs. Our <a href=\"passes.html\">passes guide</a> and <a href=\"plan-your-trip.html\">planning guide</a> cover the common decisions.</p>",
+        a: "<p>No. NYCTrove is a guide, not a travel agent. We can point you to the right official seller and explain how the pricing works, but the booking and the customer service afterwards are theirs. Our <a href=\"passes.html\">passes guide</a> and <a href=\"plan-your-trip.html\">planning guide</a> cover the common decisions.</p>",
       },
       {
         q: "Do you accept guest posts, link insertions or paid reviews?",
@@ -219,8 +219,8 @@ ${ctaBand({
     }
 
     var link = document.createElement("a");
-    link.href = "mailto:hello@nycinsider.com?subject=" + encodeURIComponent("NYC Insider — " + topic.value);
-    link.textContent = "hello@nycinsider.com";
+    link.href = "mailto:hello@nyctrove.com?subject=" + encodeURIComponent("NYCTrove — " + topic.value);
+    link.textContent = "hello@nyctrove.com";
 
     status.textContent = "This form has no backend yet, so nothing was sent. Please email your message to ";
     status.appendChild(link);

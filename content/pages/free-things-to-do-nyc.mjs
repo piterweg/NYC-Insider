@@ -29,7 +29,7 @@ export default {
       headline: "Twelve Genuinely Free Things to Do in New York City",
       description:
         "A practical long read on the best free experiences in New York, including free museum windows, concerts and self-guided walks.",
-      author: { "@type": "Organization", name: "NYC Insider" },
+      author: { "@type": "Organization", name: "NYCTrove" },
       dateModified: "2026-11-02",
       inLanguage: "en",
     },

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Static site builder for NYC Insider.
+ * Static site builder for NYCTrove.
  *
  * Usage:
  *   node tools/build.mjs

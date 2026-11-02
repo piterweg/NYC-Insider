@@ -30,7 +30,7 @@ export default {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: "NYC Passes Compared — CityPASS, Go City and New York Pass",
-      author: { "@type": "Organization", name: "NYC Insider" },
+      author: { "@type": "Organization", name: "NYCTrove" },
       dateModified: "2026-11-02",
     },
   ],

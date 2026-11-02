@@ -1,4 +1,4 @@
-# NYC Insider
+# NYCTrove
 
 An independent, English-language guide to New York City — itineraries, all five boroughs,
 attraction and pass advice, and the practical details that make a trip work.
@@ -81,7 +81,7 @@ The two browser tools need a local Chrome installation (`CHROME_PATH` overrides 
 - No pay-to-play rankings. Any future affiliate relationship must not change the ranking.
 - Photography: original photography plus Creative Commons images from Wikimedia Commons,
   credited on `credits.html`.
-- Corrections: `contact.html` (email `hello@nycinsider.com`).
+- Corrections: `contact.html` (email `hello@nyctrove.com`).
 
 ## Deploying
 

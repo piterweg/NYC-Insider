@@ -18,7 +18,7 @@ export default {
   path: "index.html",
   navSection: "home",
   bodyClass: "page-home",
-  title: "NYC Insider — The Independent Guide to New York City",
+  title: "NYCTrove — The Independent Guide to New York City",
   fullTitle: true,
   description:
     "Plan a better New York City trip: day-by-day itineraries, guides to all five boroughs, honest advice on passes and tickets, and the practical details that make the city easy.",
@@ -85,7 +85,7 @@ ${heroHome({
       <div class="split__body" data-reveal>
         ${eyebrow("Who we are")}
         <h2>We are not a booking site. That is the point.</h2>
-        <p class="lead">NYC Insider is written by people who live in and around New York, for people who want to understand it — not just tick it off.</p>
+        <p class="lead">NYCTrove is written by people who live in and around New York, for people who want to understand it — not just tick it off.</p>
         <p class="muted">There is no secret layer to New York that only insiders can access. There is only knowing which entrance to use, which hour to visit, which ticket is a genuinely bad deal and which neighbourhood rewards a second stop. That is what we write about.</p>
         <p class="muted">When we recommend a pass, a tour or a restaurant, we say why — and we say what it is not good for. If we ever earn a commission from a link, it never decides the ranking.</p>
         <div class="split__actions">

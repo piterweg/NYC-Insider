@@ -29,7 +29,7 @@ export default {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: "3 Days in NYC — A Day-by-Day Itinerary",
-      author: { "@type": "Organization", name: "NYC Insider" },
+      author: { "@type": "Organization", name: "NYCTrove" },
       dateModified: "2026-11-02",
     },
   ],

@@ -18,7 +18,7 @@ export default {
   bodyClass: "page-inner",
   title: "The Journal — Notes on New York City",
   description:
-    "Essays, itineraries and practical New York reporting from NYC Insider: free things to do, a Sunday in Brooklyn, rainy-day plans and where to eat.",
+    "Essays, itineraries and practical New York reporting from NYCTrove: free things to do, a Sunday in Brooklyn, rainy-day plans and where to eat.",
   priority: "0.8",
   changefreq: "weekly",
   ogImage: "assets/img/high-line.webp",
@@ -168,7 +168,7 @@ ${pageHero({
         <p class="muted">That means prices with the date attached, opening hours that reflect the current schedule, and an honest note when something is not worth the money. We do not invent restaurants, we do not pretend a queue is a discovery, and we update the pages when the facts change.</p>
         <p class="muted">If a recommendation is paid for, it will say so. If we have not been somewhere recently, we describe the category rather than the place. The result is a guide that is occasionally less exciting than the internet and considerably more useful on the day.</p>
         <div class="split__actions">
-          ${btn({ href: "about.html", label: "About NYC Insider" })}
+          ${btn({ href: "about.html", label: "About NYCTrove" })}
         </div>
       </div>
       <div>

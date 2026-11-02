@@ -1,4 +1,4 @@
-# NYC Insider 2026 — verified facts for page copy
+# NYCTrove 2026 — verified facts for page copy
 
 Merged and corrected 2 November 2026. Currency USD. Attraction prices are dynamic and
 date-based; always write "from $X" and tell readers to confirm. Full detail and source links:

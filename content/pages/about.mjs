@@ -15,9 +15,9 @@ export default {
   path: "about.html",
   navSection: "home",
   bodyClass: "page-inner",
-  title: "About NYC Insider — An Independent New York City Guide",
+  title: "About NYCTrove — An Independent New York City Guide",
   description:
-    "NYC Insider is an independent New York City travel guide: who we are, how we choose recommendations, how affiliate links work and how we keep prices current.",
+    "NYCTrove is an independent New York City travel guide: who we are, how we choose recommendations, how affiliate links work and how we keep prices current.",
   priority: "0.5",
   changefreq: "monthly",
   ogImage: "assets/img/manhattan-skyline.webp",
@@ -29,7 +29,7 @@ ${pageHero({
     { href: "index.html", label: "Home" },
     { href: "about.html", label: "About" },
   ],
-  eyebrowText: "About NYC Insider",
+  eyebrowText: "About NYCTrove",
   title: "The city, without the noise",
   lead: "An independent guide to New York City for people who want to understand the place, not just tick it off. We write the advice we wish someone had given us: specific, dated and honest about what we do not know.",
   meta: metaItems("Independent", "All five boroughs", "Updated November 2026"),
@@ -147,7 +147,7 @@ ${pageHero({
       <div class="split__body" data-reveal>
         ${eyebrow("Money")}
         <h2 style="font-size:var(--step-3);margin-top:.7rem">How we make money — and what it does not buy</h2>
-        <p>NYC Insider is free to read and has no paywall. It is funded by affiliate commissions and clearly labelled partnerships.</p>
+        <p>NYCTrove is free to read and has no paywall. It is funded by affiliate commissions and clearly labelled partnerships.</p>
         <p>Some links to ticket sellers, pass operators and booking sites are affiliate links. If you buy through one, the partner pays us a small commission at no extra cost to you. The price is the same, and the recommendation is not for sale.</p>
         <p>We do not run sponsored best-of lists or accept payment for a place to appear in an itinerary. Any paid collaboration is labelled before you read it.</p>
         <p>The full disclosure sits in our <a href="terms.html">terms of use</a>; data handling is in the <a href="privacy.html">privacy policy</a>.</p>
@@ -172,7 +172,7 @@ ${pageHero({
       lead: "Prices are the fastest-moving thing in any guide. Here is what we re-check.",
     })}
     ${table({
-      caption: "What NYC Insider re-checks and how often",
+      caption: "What NYCTrove re-checks and how often",
       head: ["What", "How often we check", "What the page tells you"],
       rows: [
         [

@@ -11,7 +11,7 @@ export default {
   bodyClass: "page-inner",
   title: "Page not found",
   description:
-    "That page does not exist. Head back to NYC Insider's itineraries, borough guides, attractions, passes and trip-planning advice to find what you need.",
+    "That page does not exist. Head back to NYCTrove's itineraries, borough guides, attractions, passes and trip-planning advice to find what you need.",
   priority: "0.1",
   changefreq: "yearly",
   noindex: true,

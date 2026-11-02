@@ -3,12 +3,12 @@
  * Change the base URL once the site has a production domain.
  */
 export const site = {
-  name: "NYC Insider",
+  name: "NYCTrove",
   tagline: "The Ultimate New York City Guide",
   description:
-    "NYC Insider is an independent New York City travel guide: curated itineraries, neighbourhood guides for all five boroughs, honest advice on passes and tickets, and practical tips from people who actually live here.",
-  baseUrl: "https://piterweg.github.io/NYC-Insider",
-  email: "hello@nycinsider.com",
+    "NYCTrove is an independent New York City travel guide: curated itineraries, neighbourhood guides for all five boroughs, honest advice on passes and tickets, and practical tips from people who actually live here.",
+  baseUrl: "https://nyctrove.com",
+  email: "hello@nyctrove.com",
   year: 2026,
 
   // Primary navigation. `id` is used to highlight the current section.
@@ -45,7 +45,7 @@ export const site = {
       ],
     },
     {
-      title: "NYC Insider",
+      title: "NYCTrove",
       links: [
         { label: "About", href: "about.html" },
         { label: "Contact", href: "contact.html" },

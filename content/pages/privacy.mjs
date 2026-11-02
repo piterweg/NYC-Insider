@@ -13,7 +13,7 @@ export default {
   bodyClass: "page-inner",
   title: "Privacy Policy",
   description:
-    "How NYC Insider handles your data: what we collect, newsletter and analytics, cookies, affiliate links, your GDPR and CCPA rights, retention and how to contact us.",
+    "How NYCTrove handles your data: what we collect, newsletter and analytics, cookies, affiliate links, your GDPR and CCPA rights, retention and how to contact us.",
   priority: "0.3",
   changefreq: "yearly",
   ogImage: "assets/img/high-line.webp",
@@ -34,7 +34,7 @@ ${pageHero({
 <section class="section">
   <div class="container container--narrow">
     <div class="prose">
-      <p>This policy explains what NYC Insider collects when you visit the site, why we collect it and what control you have. It covers the website only — bookings made on a partner's site are covered by that partner's policy.</p>
+      <p>This policy explains what NYCTrove collects when you visit the site, why we collect it and what control you have. It covers the website only — bookings made on a partner's site are covered by that partner's policy.</p>
     </div>
     ${callout({
       icon: "◇",
@@ -48,7 +48,7 @@ ${pageHero({
   <div class="container container--narrow">
     <div class="prose">
       <h2>Who we are</h2>
-      <p>NYC Insider is an independent travel guide to New York City, published at this domain. We are the controller of the personal data described here. You can reach us at <a href="mailto:hello@nycinsider.com">hello@nycinsider.com</a>. The site is static: no accounts, no comments and no checkout, so there is not much to collect.</p>
+      <p>NYCTrove is an independent travel guide to New York City, published at this domain. We are the controller of the personal data described here. You can reach us at <a href="mailto:hello@nyctrove.com">hello@nyctrove.com</a>. The site is static: no accounts, no comments and no checkout, so there is not much to collect.</p>
 
       <h2>What we collect</h2>
       <p>Two kinds of information.</p>
@@ -68,7 +68,7 @@ ${pageHero({
       <p>We rely on a few providers: hosting and infrastructure, an email platform and analytics. They process data only on our instructions and under contracts that require appropriate protection. Some may process data outside your country; where that happens we rely on standard contractual clauses or an equivalent safeguard.</p>
 
       <h2>Affiliate links</h2>
-      <p>Some outbound links are affiliate links. If you buy through one, we may earn a small commission at no extra cost to you. The partner records the referral, usually with a cookie on their site. We do not receive your name, email or payment details — only aggregate reports that a link produced a sale. Once you leave NYC Insider, the partner's privacy policy applies. Our commercial disclosure is in the <a href="about.html">about page</a> and <a href="terms.html">terms of use</a>.</p>
+      <p>Some outbound links are affiliate links. If you buy through one, we may earn a small commission at no extra cost to you. The partner records the referral, usually with a cookie on their site. We do not receive your name, email or payment details — only aggregate reports that a link produced a sale. Once you leave NYCTrove, the partner's privacy policy applies. Our commercial disclosure is in the <a href="about.html">about page</a> and <a href="terms.html">terms of use</a>.</p>
 
       <h2>Legal bases (UK and EU GDPR)</h2>
       <p>If you are in the UK or the European Union, we rely on these legal bases:</p>
@@ -81,7 +81,7 @@ ${pageHero({
       <h2>Your rights</h2>
       <p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to processing, receive a portable copy, withdraw consent and complain to your local data protection authority.</p>
       <p>California residents may know, delete, correct and opt out of the sale or sharing of personal data. We do not sell or share personal data for cross-context behavioural advertising, and we will not discriminate against you for exercising your rights.</p>
-      <p>To make a request, email <a href="mailto:hello@nycinsider.com">hello@nycinsider.com</a> with the subject "Privacy request". We may ask for enough information to verify your identity.</p>
+      <p>To make a request, email <a href="mailto:hello@nyctrove.com">hello@nyctrove.com</a> with the subject "Privacy request". We may ask for enough information to verify your identity.</p>
 
       <h2>Data retention</h2>
       <ul>
@@ -98,7 +98,7 @@ ${pageHero({
       <p>If this policy changes, we will update the date at the top. If the change is significant, we will say so on the site and, where we have your email address, tell you directly.</p>
 
       <h2>Contact</h2>
-      <p>Questions or complaints: <a href="mailto:hello@nycinsider.com">hello@nycinsider.com</a>. We aim to respond within a few working days. If you are in the UK or EU and are not satisfied, you can complain to your national data protection authority.</p>
+      <p>Questions or complaints: <a href="mailto:hello@nyctrove.com">hello@nyctrove.com</a>. We aim to respond within a few working days. If you are in the UK or EU and are not satisfied, you can complain to your national data protection authority.</p>
     </div>
   </div>
 </section>

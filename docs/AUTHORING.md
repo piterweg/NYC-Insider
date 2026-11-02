@@ -1,4 +1,4 @@
-# Authoring guide — NYC Insider
+# Authoring guide — NYCTrove
 
 Read this before writing any page. It describes the file contract, the component helpers,
 the CSS classes you may use and the editorial rules.

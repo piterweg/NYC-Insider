@@ -29,7 +29,7 @@ export default {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: "New York City Attractions — Prices, Timing and What to Book",
-      author: { "@type": "Organization", name: "NYC Insider" },
+      author: { "@type": "Organization", name: "NYCTrove" },
       dateModified: "2026-11-02",
     },
   ],

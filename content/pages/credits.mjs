@@ -24,7 +24,7 @@ export default {
   bodyClass: "page-inner",
   title: "Photo Credits",
   description:
-    "Credits and licences for the photography used on NYC Insider, including Creative Commons images from Wikimedia Commons.",
+    "Credits and licences for the photography used on NYCTrove, including Creative Commons images from Wikimedia Commons.",
   priority: "0.1",
   changefreq: "yearly",
   ogImage: "assets/img/times-square-night.webp",
@@ -38,7 +38,7 @@ ${pageHero({
   ],
   eyebrowText: "Credits",
   title: "Photography credits",
-  lead: "Most of the photography on NYC Insider is our own. Where we use free-licensed community photography from Wikimedia Commons, the photographer and licence are listed below.",
+  lead: "Most of the photography on NYCTrove is our own. Where we use free-licensed community photography from Wikimedia Commons, the photographer and licence are listed below.",
   meta: metaItems("Updated November 2026", "Creative Commons", "Attribution"),
 })}
 
@@ -64,7 +64,7 @@ ${pageHero({
       ${callout({
         icon: "◆",
         title: "Original photography",
-        text: "The night-time New York photographs on the home page and in several guides are original to NYC Insider. They may not be reused without permission.",
+        text: "The night-time New York photographs on the home page and in several guides are original to NYCTrove. They may not be reused without permission.",
       })}
     </div>
     <p class="small muted" style="margin-top:1.4rem">Licence texts: <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow noopener" target="_blank">CC BY 2.0</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow noopener" target="_blank">CC BY 4.0</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="nofollow noopener" target="_blank">CC BY-SA 2.0</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow noopener" target="_blank">CC BY-SA 3.0</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow noopener" target="_blank">CC BY-SA 4.0</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow noopener" target="_blank">CC0 1.0</a>.</p>

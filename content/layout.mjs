@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Page shell: <head>, header, mobile navigation, footer and closing scripts.
  */
 import { site } from "./site.mjs";
@@ -7,7 +7,7 @@ import { esc, img } from "./components.mjs";
 function head({ page }) {
   const title = page.fullTitle ? page.title : `${page.title} | ${site.name}`;
   const canonical = `${site.baseUrl}/${page.path === "index.html" ? "" : page.path}`;
-  const ogImage = `${site.baseUrl}/${page.ogImage || "assets/img/og-nyc-insider.jpg"}`;
+  const ogImage = `${site.baseUrl}/${page.ogImage || "assets/img/og-nyctrove.jpg"}`;
   const robots = page.noindex ? "noindex, nofollow" : "index, follow";
 
   const jsonLd = [
@@ -77,8 +77,8 @@ function header(page) {
 
   return `<header class="site-header" data-header>
   <div class="container">
-    <a class="brand" href="index.html" aria-label="${site.name} — home">
-      <span class="brand__mark">NYC<span>Insider</span></span>
+    <a class="brand" href="index.html" aria-label="${site.name} â€” home">
+      <span class="brand__mark">NYC<span>Trove</span></span>
       <span class="brand__tag" aria-hidden="true">The City, Decoded</span>
     </a>
     <nav class="main-nav" aria-label="Primary">
@@ -114,7 +114,7 @@ function footer() {
     <div class="site-footer__grid">
       <div class="site-footer__brand">
         <a class="brand" href="index.html">
-          <span class="brand__mark">NYC<span>Insider</span></span>
+          <span class="brand__mark">NYC<span>Trove</span></span>
         </a>
         <p>An independent guide to New York City: honest itineraries, neighbourhood knowledge and the practical details that make a trip work.</p>
       </div>
@@ -133,7 +133,7 @@ function footer() {
     </div>
   </div>
 </footer>
-<a class="to-top" href="#top" aria-label="Back to top" data-to-top>↑</a>
+<a class="to-top" href="#top" aria-label="Back to top" data-to-top>â†‘</a>
 <script src="assets/js/main.js" defer></script>`;
 }
 

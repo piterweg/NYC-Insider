@@ -29,7 +29,7 @@ export default {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: "7 Days in NYC — The Full Week Itinerary",
-      author: { "@type": "Organization", name: "NYC Insider" },
+      author: { "@type": "Organization", name: "NYCTrove" },
       dateModified: "2026-11-02",
     },
   ],
