@@ -216,7 +216,7 @@ ${pageHero({
       ${card({
         kicker: "Location",
         title: "Pick the line, then the hotel",
-        text: "A hotel near the A/C or the 2/3 beats a nicer building two avenues away. Check the walk to the station and where the line goes at night.",
+        text: "A hotel near the A/C or the 2/3 beats a nicer building two avenues away. Check the walk to the station and where the line goes.",
       })}
       ${card({
         kicker: "The L train",
@@ -315,7 +315,7 @@ ${pageHero({
 ${ctaBand({
   eyebrowText: "Next",
   title: "Plan the days around the base",
-  text: "Once the neighbourhood is decided, the itinerary and budget are worth sorting next.",
+  text: "Once the neighbourhood is decided, the itinerary and budget come next.",
   actions: `${btn({ href: "itineraries.html", label: "Compare itineraries" })}${btn({
     href: "budget.html",
     label: "Budget guide",
