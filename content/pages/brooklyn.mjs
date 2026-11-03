@@ -139,7 +139,11 @@ export default {
           icon: "◆",
           title: "Do not eat in DUMBO",
           text: "DUMBO is for photographs and the park; the food is better one stop away in Brooklyn Heights or Williamsburg.",
-        },
+        },      {
+        icon: "◆",
+        title: "Where to stay in Brooklyn",
+        text: "Nine areas compared — who each suits, price bands and the hotel-tax maths. <a href=\"where-to-stay-brooklyn.html\">Read the Brooklyn guide</a>.",
+      },
         {
           icon: "☂",
           title: "Rain plan",
