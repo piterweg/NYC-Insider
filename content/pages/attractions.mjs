@@ -340,6 +340,22 @@ ${pageHero({
 <section class="section bg-paper-2">
   <div class="container">
     ${sectionHead({
+      eyebrowText: "Decision guides",
+      title: "Compare before you buy",
+      lead: "Three pages that answer the questions people actually search before booking: which deck, whether the pass is worth it, and what the tickets really cost.",
+    })}
+    <div class="grid grid--3">
+      ${card({ kicker: "Comparison", title: `<a href="best-observation-deck-nyc.html">The best observation deck in NYC</a>`, text: "Five decks compared by view, queue, price and best time — with a verdict for each kind of trip.", foot: `<a class="link-arrow" href="best-observation-deck-nyc.html">Compare the decks</a>` })}
+      ${card({ kicker: "Head to head", title: `<a href="empire-state-building-vs-top-of-the-rock.html">Empire State vs Top of the Rock</a>`, text: "The two classic decks, compared honestly — and which one to pick.", foot: `<a class="link-arrow" href="empire-state-building-vs-top-of-the-rock.html">Read the comparison</a>` })}
+      ${card({ kicker: "Data", title: `<a href="nyc-attraction-price-index.html">NYC attraction price index</a>`, text: "Every headline ticket price in one table, with a downloadable CSV and the 2026 changes.", foot: `<a class="link-arrow" href="nyc-attraction-price-index.html">See the prices</a>` })}
+    </div>
+    <p class="small muted" style="margin-top:1.2rem">Thinking about a sightseeing pass instead? Start with <a href="is-citypass-worth-it.html">is CityPASS worth it</a>.</p>
+  </div>
+</section>
+
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({
       eyebrowText: "Questions",
       title: "Attraction questions we get a lot",
       lead: "",

@@ -16,6 +16,7 @@ import path from "node:path";
 import { site } from "../content/site.mjs";
 import { renderPage } from "../content/layout.mjs";
 import { mapPoints, mapCategories } from "../content/map-data.mjs";
+import { attractions as priceAttractions, checkedDate, checkedISO } from "../content/price-data.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pagesDir = path.join(root, "content", "pages");
@@ -150,6 +151,17 @@ await writeFile(
   JSON.stringify({ categories: mapCategories, points: mapPoints }),
   "utf8"
 );
+
+// Attraction price index CSV (downloadable, citable data)
+const csvEscape = (value) => `"${String(value).replace(/"/g, '""')}"`;
+const priceCsv = [
+  ["attraction", "category", "adult_from_usd", "display_price", "notes", "checked"].join(","),
+  ...priceAttractions.map((item) =>
+    [item.name, item.category, item.adult, item.display, item.notes, checkedISO].map(csvEscape).join(",")
+  ),
+].join("\n");
+await writeFile(path.join(root, "assets", "data", "attraction-prices.csv"), priceCsv + "\n", "utf8");
+
 
 // Internal link check
 const problems = [];

@@ -73,6 +73,15 @@ ${pageHero({
         meta: "4 days · balanced",
       })}
       ${mediaCard({
+        href: "nyc-with-kids.html",
+        image: img("central-park-nyc.webp"),
+        alt: "Bethesda Fountain in Central Park",
+        kicker: "Family",
+        title: "NYC with kids",
+        text: "A three-day family plan with one anchor a day, rest windows and early dinners.",
+        meta: "3 days · family pace",
+      })}
+      ${mediaCard({
         href: "3-days-in-nyc.html",
         image: img("fifth-avenue-cab.webp"),
         alt: "A yellow taxi on a Manhattan avenue",

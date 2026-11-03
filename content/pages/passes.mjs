@@ -356,6 +356,20 @@ ${pageHero({
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "More on tickets",
+      title: "Before you buy the pass",
+      lead: "The pass only wins if you will actually use it. Two pages help you decide with real numbers.",
+    })}
+    <div class="grid grid--2">
+      ${card({ kicker: "Decision", title: `<a href="is-citypass-worth-it.html">Is CityPASS worth it in 2026?</a>`, text: "The break-even maths with current prices, and the trips where it loses to buying direct.", foot: `<a class="link-arrow" href="is-citypass-worth-it.html">Run the numbers</a>` })}
+      ${card({ kicker: "Data", title: `<a href="nyc-attraction-price-index.html">NYC attraction price index</a>`, text: "Every headline attraction price in one table, checked against official sellers and downloadable as CSV.", foot: `<a class="link-arrow" href="nyc-attraction-price-index.html">See the index</a>` })}
+    </div>
+  </div>
+</section>
+
 ${ctaBand({
   eyebrowText: "Next step",
   title: "Fix the itinerary before you fix the pass",

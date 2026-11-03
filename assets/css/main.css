@@ -2884,6 +2884,81 @@ body.search-open {
   font-weight: 600;
 }
 
+
+/* Price index bars and citation */
+.price-bars {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price-bar {
+  display: grid;
+  grid-template-columns: minmax(160px, 1.1fr) 3fr auto;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 0.86rem;
+}
+
+.price-bar__label {
+  color: var(--text-on-dark);
+  font-weight: 500;
+}
+
+.price-bar__track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.price-bar__fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--brass);
+}
+
+.price-bar__value {
+  color: var(--text-on-dark-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .price-bar {
+    grid-template-columns: 1fr auto;
+  }
+  .price-bar__track {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+}
+
+.citation {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1.4rem 1.6rem;
+  background: var(--paper);
+  border: 1px dashed rgba(28, 26, 23, 0.25);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.citation strong {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.citation code {
+  font-size: 0.82rem;
+  word-break: break-word;
+}
+
 /* Print */
 @media print {
   .site-header,
