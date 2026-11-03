@@ -11,7 +11,7 @@ export default {
     "New York's Christmas markets: Bryant Park Winter Village dates and skating costs, the Rockefeller tree, Fifth Avenue windows and the smaller markets worth a detour.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/fifth-avenue-cab.webp",
+  ogImage: "assets/img/christmas-gifts-snow.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -54,8 +54,8 @@ export default {
         "The Winter Village runs from 28 October 2026 to 28 February 2027, though the holiday shops close earlier, on 3 January 2027. The rink is the centre of it: admission is free and you pay only for skate rental, which runs from $18.72 to $64.48 depending on what you hire. The shops around the edge are small, mostly independent and best on a weekday morning. Bryant Park publishes the season, rink hours and any booking requirements at <a href=\"https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park\" rel=\"nofollow noopener\" target=\"_blank\">bryantpark.org</a>.",
         "From Bryant Park it is a ten-minute walk to the Rockefeller Center tree, lit on 2 December 2026 and on show until about 9 January 2027, and another few minutes to the Fifth Avenue windows. Those three things — market, tree, windows — make a natural half-day. Smaller markets appear around the city from late November, usually around Union Square, Columbus Circle and inside Grand Central Terminal; their dates change each year, so check each venue's official site. Expect some shops and restaurants to close or shorten hours on Christmas Day itself.",
       ],
-      introImage: "grand-central.webp",
-      introImageAlt: "The main concourse of Grand Central Terminal",
+      introImage: "christmas-gifts-snow.webp",
+      introImageAlt: "Wrapped Christmas presents on a snowy New York stoop",
       mapId: "bryant-park",
       highlightsTitle: "Three stops worth the walk",
       highlightsLead:

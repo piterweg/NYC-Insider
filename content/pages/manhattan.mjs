@@ -10,11 +10,11 @@ export default {
     "A local guide to Manhattan: the neighbourhoods worth your time, the museums and skyline decks, where to eat, and a realistic one-day plan for the island.",
   priority: "0.9",
   changefreq: "monthly",
-  ogImage: "assets/img/manhattan-skyline.webp",
+  ogImage: "assets/img/manhattan-skyline-blue.webp",
   render: () =>
     renderBoroughPage({
-      heroImage: "manhattan-skyline.webp",
-      heroAlt: "The Brooklyn Bridge and the Lower Manhattan skyline on a bright day",
+      heroImage: "manhattan-skyline-blue.webp",
+      heroAlt: "The Manhattan skyline lit up at night, reflected in the East River",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "boroughs.html", label: "Boroughs" },
@@ -38,8 +38,8 @@ export default {
         { value: "3", label: "skyline decks" },
         { value: "24h", label: "subway" },
       ],
-      splitImage: "times-square-day.webp",
-      splitImageAlt: "Times Square in daylight with yellow cabs and billboards",
+      splitImage: "nyc-empire-aerial.webp",
+      splitImageAlt: "Midtown skyscrapers and the Empire State Building seen from above at sunset",
       flip: true,
       neighbourhoods: [
         {

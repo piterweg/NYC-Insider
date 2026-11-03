@@ -32,7 +32,7 @@ export default {
     "Statue of Liberty and Ellis Island ferries: tickets from $25.50, the official operator, crown and pedestal access, security and the first-boat strategy.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/statue-of-liberty.webp",
+  ogImage: "assets/img/statue-of-liberty-sunset.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -41,7 +41,7 @@ export default {
       description:
         "Statue of Liberty and Ellis Island in New York harbour, reached by the official Statue City Cruises ferry from Battery Park.",
       url: "https://nyctrove.com/statue-of-liberty.html",
-      image: "https://nyctrove.com/assets/img/statue-of-liberty.webp",
+      image: "https://nyctrove.com/assets/img/statue-of-liberty-sunset.webp",
       touristType: "Landmark",
     },
     {
@@ -61,8 +61,8 @@ export default {
         { href: "attractions.html", label: "Things to Do" },
         { href: "statue-of-liberty.html", label: "Statue of Liberty" },
       ],
-      heroImage: "statue-of-liberty.webp",
-      heroAlt: "The Statue of Liberty standing on Liberty Island against a pale sky",
+      heroImage: "statue-of-liberty-sunset.webp",
+      heroAlt: "The Statue of Liberty silhouetted against a fiery sunset over New York harbour",
       eyebrowText: "Landmark",
       h1: "Statue of Liberty",
       lead: "A working harbour crossing, not just a monument. The ferry is the only way to land on Liberty Island, and the same ticket carries you on to Ellis Island and its immigration museum.",
@@ -139,8 +139,8 @@ export default {
           text: "The museum is included and most people under-plan it. An hour is a reasonable minimum, and the building is the reason the island is worth the second stop.",
         },
       ],
-      tipsImage: "staten-island-ferry.webp",
-      tipsImageAlt: "The Staten Island Ferry passing the Statue of Liberty in New York harbour",
+      tipsImage: "statue-of-liberty-skyline.webp",
+      tipsImageAlt: "The Statue of Liberty with the Lower Manhattan skyline behind it at sunset",
       nearby: [
         {
           href: "9-11-memorial.html",

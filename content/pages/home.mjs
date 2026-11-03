@@ -25,12 +25,12 @@ export default {
     "Plan a better New York City trip: day-by-day itineraries, guides to all five boroughs, honest advice on passes and tickets, and the practical details that make the city easy.",
   priority: "1.0",
   changefreq: "weekly",
-  ogImage: "assets/img/times-square-night.webp",
+  ogImage: "assets/img/manhattan-skyline-dusk.webp",
   scripts: `<script src="assets/js/weather.js?v=${assetVersion}" defer></script>`,
   render: () => `
 ${heroHome({
-  image: img("times-square-night.webp"),
-  alt: "Times Square at night, neon billboards lighting up the Manhattan skyline",
+  image: img("manhattan-skyline-dusk.webp"),
+  alt: "The Manhattan skyline at dusk, seen across the East River",
   eyebrowText: "The independent guide to New York City",
   title: `New York, <em>without the tourist traps.</em>`,
   lead: "Five boroughs, 8.5 million neighbours and about a thousand ways to get it wrong. We live here. These are the itineraries, neighbourhoods and small practical details that make a New York trip feel effortless.",
@@ -82,7 +82,7 @@ ${heroHome({
   <div class="container">
     <div class="split">
       <div class="split__media">
-        <img src="${img("soho-street-night.webp")}" alt="A cast-iron street corner in SoHo, New York, after dark" width="1000" height="1250" loading="lazy" />
+        <img src="${img("nyc-aerial-sunset.webp")}" alt="Midtown Manhattan seen from above at sunset" width="1000" height="1250" loading="lazy" />
       </div>
       <div class="split__body" data-reveal>
         ${eyebrow("Who we are")}

@@ -85,7 +85,7 @@ ${pageHero({
       ${callout({
         icon: "◆",
         title: "Original photography",
-        text: "The night-time New York photographs on the home page and in several guides are original to NYCTrove. They may not be reused without permission.",
+        text: "The night-time skyline, aerial and Statue of Liberty photographs on the home page and in several guides are original to NYCTrove. They may not be reused without permission.",
       })}
     </div>
     <p class="small muted" style="margin-top:1.4rem">Licence texts: <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow noopener" target="_blank">CC BY 2.0</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow noopener" target="_blank">CC BY 4.0</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="nofollow noopener" target="_blank">CC BY-SA 2.0</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow noopener" target="_blank">CC BY-SA 3.0</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow noopener" target="_blank">CC BY-SA 4.0</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow noopener" target="_blank">CC0 1.0</a>.</p>
