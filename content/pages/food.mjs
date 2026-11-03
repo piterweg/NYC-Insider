@@ -253,6 +253,23 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
+    ${sectionHead({
+      eyebrowText: "Deeper dive",
+      title: "The best pizza in New York, by style",
+      lead: "Slice, square, coal-fired or Neapolitan — where to go for each, and what to order when you get there.",
+      action: `<a class="link-arrow" href="best-pizza-nyc.html">Read the pizza guide</a>`,
+    })}
+    <div class="card" style="max-width:720px">
+      <span class="card__kicker">Food guide</span>
+      <h3><a href="best-pizza-nyc.html">Best pizza in NYC</a></h3>
+      <p>Joe's, Prince Street, Juliana's, L&amp;B Spumoni Gardens and the rest — with neighbourhoods, prices and how to order like a local.</p>
+      <div class="card__foot"><a class="link-arrow" href="best-pizza-nyc.html">Read the guide</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     ${newsletter({
       title: "One good New York food tip a week",
       text: "Join the list for a short weekly email: what is in season, which queues are worth it, and the occasional new opening worth knowing about.",

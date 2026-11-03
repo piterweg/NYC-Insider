@@ -279,6 +279,23 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
+    ${sectionHead({
+      eyebrowText: "One borough in detail",
+      title: "Where to stay in Brooklyn",
+      lead: "Better value, better food and 10–20 minutes from Manhattan — the full area-by-area guide.",
+      action: `<a class="link-arrow" href="where-to-stay-brooklyn.html">Read the Brooklyn guide</a>`,
+    })}
+    <div class="card" style="max-width:720px">
+      <span class="card__kicker">Accommodation</span>
+      <h3><a href="where-to-stay-brooklyn.html">Where to stay in Brooklyn</a></h3>
+      <p>Downtown Brooklyn, Brooklyn Heights, DUMBO, Williamsburg and more: who each area suits, price bands, subway lines and the hotel tax maths.</p>
+      <div class="card__foot"><a class="link-arrow" href="where-to-stay-brooklyn.html">Read the guide</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     ${newsletter({
       title: "Where to stay, when it matters",
       text: "Hotel areas, honest rate advice and one useful New York email a week. No spam, ever.",

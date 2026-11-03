@@ -97,6 +97,24 @@ ${pageHero({
     })}
     <div class="grid grid--3">
       ${mediaCard({
+        href: "christmas-markets-nyc.html",
+        image: img("grand-central.webp"),
+        alt: "Grand Central Terminal's main concourse",
+        kicker: "December",
+        title: "Christmas markets in NYC",
+        text: "Bryant Park, Union Square and the markets worth your time.",
+        meta: "Seasonal guide",
+      })}
+      ${mediaCard({
+        href: "new-years-eve-alternatives.html",
+        image: img("manhattan-skyline-night.webp"),
+        alt: "The Manhattan skyline lit at night",
+        kicker: "31 December",
+        title: "NYE without Times Square",
+        text: "Calmer ways to see midnight in New York.",
+        meta: "Seasonal guide",
+      })}
+      ${mediaCard({
         href: "thanksgiving-nyc.html",
         image: img("central-park-bow-bridge.webp"),
         alt: "Bow Bridge in Central Park on a clear autumn morning",

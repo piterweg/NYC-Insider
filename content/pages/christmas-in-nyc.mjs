@@ -125,6 +125,15 @@ export default {
       relatedLead: "New Year's Eve follows immediately, and the seasonal calendar covers the rest of the year.",
       related: [
         {
+          href: "christmas-markets-nyc.html",
+          image: "grand-central.webp",
+          alt: "Grand Central Terminal's main concourse decorated for the holidays",
+          kicker: "Markets",
+          title: "Christmas markets in NYC",
+          text: "The markets worth visiting, where they are and when they close.",
+          meta: "Seasonal guide",
+        },
+        {
           href: "new-years-eve-nyc.html",
           image: "times-square-night.webp",
           alt: "Times Square billboards glowing at night",

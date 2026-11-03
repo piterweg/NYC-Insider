@@ -120,6 +120,15 @@ export default {
       relatedLead: "Christmas week runs straight into New Year's Eve, and January brings the cheapest month of the year.",
       related: [
         {
+          href: "new-years-eve-alternatives.html",
+          image: "manhattan-skyline-night.webp",
+          alt: "The Manhattan skyline lit up at night",
+          kicker: "Alternatives",
+          title: "NYE without Times Square",
+          text: "Dinner, shows, viewpoints and the calmer ways to see midnight.",
+          meta: "Seasonal guide",
+        },
+        {
           href: "christmas-in-nyc.html",
           image: "fifth-avenue-cab.webp",
           alt: "A yellow taxi on Fifth Avenue in winter",
