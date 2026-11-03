@@ -19,7 +19,7 @@ export default {
   bodyClass: "page-inner",
   title: "What's on in New York — Seasonal Events",
   description:
-    "New York's seasonal calendar in one place: Thanksgiving, Christmas, New Year's Eve, Restaurant Week, summer concerts and the US Open, with dates and booking windows.",
+    "New York's seasonal calendar: Halloween, Thanksgiving, Christmas, New Year's Eve, Restaurant Week, spring, summer, fall and the US Open, with dates and booking windows.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/midtown-aerial-night.webp",
@@ -39,8 +39,8 @@ ${pageHero({
   crumbs: [{ href: "index.html", label: "Home" }, { href: "whats-on.html", label: "What's On" }],
   eyebrowText: "What's on",
   title: "What's on in New York",
-  lead: "New York runs on a seasonal calendar: a parade in November, a tree in December, a ball drop at midnight, then months of free music and tennis. This is the hub for the six guides that cover it, with the dates worth planning around.",
-  meta: metaItems("Six seasonal guides", "Dates for 2026–27", "Booking windows", "Official sources"),
+  lead: "New York runs on a seasonal calendar: blossom in spring, free music all summer, foliage and Halloween in autumn, then a parade, a tree and a ball drop at midnight. This is the hub for the nine seasonal guides, with the dates worth planning around.",
+  meta: metaItems("Nine seasonal guides", "Dates for 2026–27", "Booking windows", "Official sources"),
 })}
 
 <section class="section">
@@ -50,8 +50,8 @@ ${pageHero({
         ${eyebrow("How the year works")}
         <h2 style="font-size:var(--step-3);margin-top:.7rem">The city has a rhythm, and it is bookable</h2>
         <p class="lead">Most New York trips are planned around the weather. The better ones are planned around the calendar: the weeks when the city does something specific, and the weeks when it is simply itself.</p>
-        <p class="muted">The year divides into three useful blocks. Late November to early January is the holiday season — parade, tree, lights, New Year's Eve, and the highest hotel rates of the year. Late January to mid-February is the quiet, cold, cheap block, when Restaurant Week gives you a reason to eat well. From late May to early September the city moves outdoors: free concerts, long evenings, beaches and the US Open.</p>
-        <p class="muted">Each guide below covers one season in detail: what happens, when to arrive, what to book and what the crowds are actually like. Dates are the 2026 and early 2027 editions where confirmed. Where a 2027 date is not yet announced, we say so and point you to the official source.</p>
+        <p class="muted">The year divides into useful blocks. March to May is blossom and Easter crowds; late May to early September moves the city outdoors for free concerts, beaches and the US Open; September to early November is the best walking weather of the year, with foliage following in late October; and late November to early January is the holiday season, with the highest hotel rates of the year.</p>
+        <p class="muted">Each guide covers one season in detail: what happens, when to arrive, what to book and what the crowds are like. Where a date is not yet announced, we say so and point you to the official source.</p>
       </div>
       <div class="split__media split__media--wide">
         <img src="${img("manhattan-skyline-night.webp")}" alt="Lower Manhattan's towers lit at night across the East River" width="1000" height="688" loading="lazy" />
@@ -64,33 +64,36 @@ ${pageHero({
   <div class="container">
     ${sectionHead({
       eyebrowText: "Next 90 days",
-      title: "What is happening from now to early February",
-      lead: "From November 2026, the calendar runs straight from Thanksgiving into Christmas, New Year's Eve and the winter Restaurant Week. Later 2027 events are listed underneath with the caveat that some dates are still to be confirmed.",
+      title: "What is happening from now to next November",
+      lead: "From November 2026, the calendar runs straight from Thanksgiving into Christmas, New Year's Eve and Restaurant Week. Spring, summer, Halloween and fall 2027 follow, though some dates are still to be confirmed.",
     })}
     ${table({
-      caption: "New York events from November 2026 to August 2027, with dates and booking notes",
+      caption: "New York events from November 2026 to November 2027, with dates and booking notes",
       head: ["When", "What happens", "What to do about it"],
       rows: [
-        ["28 October 2026–28 February 2027", "Bryant Park Winter Village: free-admission rink, paid rentals, small shops", "Skate on a weekday morning; shop before noon"],
-        ["26 November 2026", "Macy's Thanksgiving Day Parade, 8:30am–noon, Central Park West &amp; 77th Street to Herald Square; free", "Watch from the upper route; book the meal early"],
-        ["2 December 2026", "Rockefeller Center tree lighting; the tree stays up until about 9 January 2027", "See it a few days later, early morning"],
-        ["31 December 2026", "Times Square New Year's Eve ball drop at 11:59pm; free, no tickets", "Arrive early afternoon or book a table instead"],
+        ["28 October 2026–28 February 2027", "Bryant Park Winter Village: free-admission rink, paid rentals", "Skate on a weekday morning; shop before noon"],
+        ["26 November 2026", "Macy's Thanksgiving Day Parade, 8:30am–noon, Central Park West &amp; 77th Street to Herald Square; free", "Watch from the upper route"],
+        ["2 December 2026", "Rockefeller Center tree lighting; the tree stays up until about 9 January 2027", "See it a few days later"],
+        ["31 December 2026", "Times Square New Year's Eve ball drop at 11:59pm; free", "Arrive early afternoon or book a table instead"],
         ["Late January–mid February 2027", "NYC Restaurant Week: prix-fixe menus at $30, $45 and $60", "Winter 2027 dates TBA — check the official site"],
+        ["March–May 2027", "Spring blossoms, Easter crowds and the NYC Half, usually in March", "Check bloom trackers and race date"],
         ["3–12 June 2027", "Tribeca Festival across Lower Manhattan", "Programme and tickets announced closer to the date"],
         ["June–August 2027", "Free summer concerts: SummerStage, BRIC Celebrate Brooklyn!, Lincoln Center Summer for the City", "Schedules published in late spring"],
         ["Late August 2027", "US Open at Flushing Meadows, Queens (2026 edition: 30 August–13 September)", "2027 dates TBA — check usopen.org"],
+        ["September–November 2027", "Fall foliage, the marathon and Thanksgiving", "Book Thanksgiving week early"],
+        ["31 October each year", "Halloween and the Village Halloween Parade; free to watch", "2027 details TBA — check the official site"],
       ],
     })}
-    <p class="muted" style="margin-top:1.2rem">Dates change. Confirm with the organiser before booking flights or a hotel around any event, and check the official site in the week before you travel.</p>
+    <p class="muted" style="margin-top:1.2rem">Dates change — confirm with the organiser before booking around any event.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     ${sectionHead({
-      eyebrowText: "The six guides",
+      eyebrowText: "The nine guides",
       title: "Pick the season you are travelling in",
-      lead: "Each guide is written for a specific window: what it is like on the ground, what to book and when, and how to see the main event without losing the rest of the trip to it.",
+      lead: "Each guide covers one window: what it is like on the ground, what to book and when, and how to see the main event without losing the rest of the trip.",
     })}
     <div class="grid grid--3">
       ${mediaCard({
@@ -99,7 +102,7 @@ ${pageHero({
         alt: "Bow Bridge in Central Park on a clear autumn morning",
         kicker: "November",
         title: "Thanksgiving in NYC",
-        text: "The 100th Macy's parade, the meal, and the quiet weekend that follows. 26 November 2026.",
+        text: "The 100th Macy's parade, the meal, and the quiet weekend that follows.",
         meta: "Seasonal guide",
       })}
       ${mediaCard({
@@ -147,6 +150,33 @@ ${pageHero({
         text: "Two weeks at Flushing Meadows: grounds passes, night sessions and the 7 train.",
         meta: "Seasonal guide",
       })}
+      ${mediaCard({
+        href: "halloween-in-nyc.html",
+        image: img("soho-street-night.webp"),
+        alt: "A cobblestone SoHo street at night with lit shop fronts",
+        kicker: "31 October",
+        title: "Halloween in NYC",
+        text: "The Village parade and a city in costume.",
+        meta: "Guide",
+      })}
+      ${mediaCard({
+        href: "spring-in-nyc.html",
+        image: img("central-park-nyc.webp"),
+        alt: "Bethesda Fountain and its terrace in Central Park",
+        kicker: "March–May",
+        title: "Spring in NYC",
+        text: "Cherry blossoms, Easter crowds and mild walking weather.",
+        meta: "Guide",
+      })}
+      ${mediaCard({
+        href: "fall-in-nyc.html",
+        image: img("central-park-bow-bridge.webp"),
+        alt: "Bow Bridge in Central Park surrounded by autumn trees",
+        kicker: "September–November",
+        title: "Fall in NYC",
+        text: "Foliage, the marathon and the best walking season.",
+        meta: "Guide",
+      })}
     </div>
   </div>
 </section>
@@ -172,23 +202,23 @@ ${pageHero({
             ["Free summer concerts", "No booking for most; some ticketed shows"],
           ],
         })}
-        <p class="muted" style="margin-top:1rem">These are working rules rather than guarantees. Hotel rates and availability for the last week of December behave differently every year.</p>
+        <p class="muted" style="margin-top:1rem">These are rules of thumb, not guarantees. The last week of December behaves differently every year.</p>
       </div>
       <div>
         ${callout({
           icon: "◆",
           title: "Holiday weeks cost more",
-          text: "Hotel rates in the weeks around Thanksgiving, Christmas and New Year are the highest of the year. If your dates are flexible, the first two weeks of December give you the atmosphere at a lower price.",
+          text: "Hotel rates in the weeks around Thanksgiving, Christmas and New Year are the highest of the year. If your dates are flexible, the first two weeks of December give you the atmosphere for less.",
         })}
         ${callout({
           icon: "☂",
           title: "Free events still need planning",
-          text: "The parade and the ball drop cost nothing but demand hours of standing and an early arrival. Decide whether the experience is worth that trade before you build a day around it.",
+          text: "The parade and the ball drop are free but demand hours of standing and an early arrival. Decide whether that trade is worth it before building a day around it.",
         })}
         ${callout({
           icon: "◷",
           title: "January is the value month",
-          text: "After New Year, the city empties and prices fall. Restaurant Week starts in late January, museums are quiet and the coldest weeks double as the cheapest.",
+          text: "After New Year, the city empties and prices fall. Restaurant Week starts in late January and museums are quiet.",
         })}
       </div>
     </div>
@@ -205,27 +235,27 @@ ${pageHero({
     ${faq([
       {
         q: "What is the biggest event in New York in November?",
-        a: "<p>The Macy's Thanksgiving Day Parade on 26 November 2026, running from Central Park West and 77th Street to Herald Square between 8:30am and noon. It is free and unticketed.</p>",
+        a: "<p>The Macy's Thanksgiving Day Parade on 26 November 2026, running from Central Park West and 77th Street to Herald Square between 8:30am and noon. It is free.</p>",
       },
       {
         q: "When does the Christmas season start in New York?",
-        a: "<p>Bryant Park Winter Village opens on 28 October 2026 and the Rockefeller Center tree is lit on 2 December 2026, staying up until about 9 January 2027. Early December is the sweet spot: decorated, open and less crowded than the final week of the year.</p>",
+        a: "<p>Bryant Park Winter Village opens on 28 October 2026 and the Rockefeller Center tree is lit on 2 December 2026, staying up until about 9 January 2027. Early December is the sweet spot: less crowded than the final week of the year.</p>",
       },
       {
         q: "Do I need tickets for New Year's Eve in Times Square?",
-        a: "<p>No. The ball drop is free and unticketed, with first-come entry to the viewing areas. Arrive in the early afternoon, expect security screening and plan to stand for hours in the cold.</p>",
+        a: "<p>No. The ball drop is free and unticketed. Arrive in the early afternoon, expect security screening and plan to stand for hours in the cold.</p>",
       },
       {
         q: "When is NYC Restaurant Week 2027?",
-        a: "<p>Restaurant Week runs in late January to mid-February and mid-July to mid-August each year, with prix-fixe menus at $30, $45 and $60. The exact 2027 dates are still to be announced — check the official NYC Tourism page before booking.</p>",
+        a: "<p>Restaurant Week runs in late January to mid-February and mid-July to mid-August, with prix-fixe menus at $30, $45 and $60. The exact 2027 dates are still to be announced — check the official NYC Tourism page.</p>",
       },
       {
         q: "What happens in New York in summer?",
-        a: "<p>Free concerts at SummerStage, BRIC Celebrate Brooklyn! and Lincoln Center Summer for the City, long evenings in the parks, beaches and the US Open at the end of August. July and August are hot and humid, so plan outdoor time for the morning and evening.</p>",
+        a: "<p>Free concerts at SummerStage, BRIC Celebrate Brooklyn! and Lincoln Center Summer for the City, long evenings in the parks, beaches and the US Open at the end of August. July and August are hot and humid, so plan outdoor time for mornings and evenings.</p>",
       },
       {
         q: "When is the US Open in 2027?",
-        a: "<p>The 2026 edition ran from 30 August to 13 September. The 2027 dates are TBA, so check the official US Open site before booking travel around the tournament.</p>",
+        a: "<p>The 2026 edition ran from 30 August to 13 September. The 2027 dates are TBA, so check the official US Open site before booking travel around it.</p>",
       },
     ])}
   </div>
@@ -244,7 +274,7 @@ ${pageHero({
 ${ctaBand({
   eyebrowText: "Before you book",
   title: "Match the season to the trip you want",
-  text: "If the calendar is the reason for your visit, start with the season guide and then build the days around it. If you are still choosing dates, start with the weather.",
+  text: "If the calendar is the reason for your visit, start with the season guide. If you are still choosing dates, start with the weather.",
   actions: `<a class="btn" href="when-to-visit.html">Weather by month</a> <a class="btn btn--outline" href="plan-your-trip.html">Plan the whole trip</a>`,
 })}
 

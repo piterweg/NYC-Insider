@@ -12,13 +12,14 @@ GitHub Pages (or any static host) with no server-side code.
 | Section | Pages |
 | --- | --- |
 | Home | `index.html` |
-| Itineraries | `itineraries.html`, `3-days-in-nyc.html`, `5-days-in-nyc.html`, `7-days-in-nyc.html` |
+| Itineraries | `itineraries.html`, `1-day-in-nyc.html`, `2-days-in-nyc.html`, `3-days-in-nyc.html`, `4-days-in-nyc.html`, `5-days-in-nyc.html`, `7-days-in-nyc.html` |
 | Boroughs | `boroughs.html`, `manhattan.html`, `brooklyn.html`, `queens.html`, `bronx.html`, `staten-island.html` |
 | Tickets | `attractions.html`, `passes.html` plus 14 individual attraction guides (Empire State Building, Top of the Rock, Edge, SUMMIT, One World Observatory, Statue of Liberty, 9/11 Memorial, AMNH, MoMA, the Met, Central Park, High Line, Brooklyn Bridge, Grand Central) |
 | Trip planning | `plan-your-trip.html`, `getting-around.html`, `budget.html`, `when-to-visit.html`, `where-to-stay.html`, `day-trips.html` (Philadelphia, Washington DC, Boston, Niagara Falls, Hudson Valley), `map.html`, `search.html` |
 | Food & journal | `food.html`, `journal.html`, `free-things-to-do-nyc.html`, `sunday-in-brooklyn.html`, `nyc-rainy-day.html` |
 | Neighbourhoods | `neighbourhoods.html` plus SoHo, West Village, Harlem, Williamsburg, DUMBO, Astoria, Flushing and Jackson Heights |
-| Seasonal | `whats-on.html` plus Thanksgiving, Christmas, New Year's Eve, summer, Restaurant Week and the US Open |
+| Seasonal | `whats-on.html` plus Thanksgiving, Christmas, New Year's Eve, summer, Halloween, spring, fall, Restaurant Week and the US Open |
+| NYC by month | `nyc-in-january.html` … `nyc-in-december.html` (12 long-tail month guides) |
 | Trust | `about.html`, `editorial.html` (research process, AI disclosure, corrections), `contact.html`, `privacy.html`, `terms.html`, `credits.html`, `cookie-settings.html`, `404.html` |
 | Trust | `about.html`, `contact.html`, `privacy.html`, `terms.html`, `credits.html`, `404.html` |
 

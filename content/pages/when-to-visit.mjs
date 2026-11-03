@@ -296,6 +296,30 @@ ${pageHero({
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "NYC by month",
+      title: "What each month is actually like",
+      lead: "Weather, crowds, prices and what is on — one page per month, updated each season.",
+    })}
+    <div class="grid grid--3">
+      ${card({ kicker: "January", title: `<a href="nyc-in-january.html">January</a>`, text: "Coldest month, cheapest rooms, quiet museums.", foot: `<a class="link-arrow" href="nyc-in-january.html">Read the guide</a>` })}
+      ${card({ kicker: "February", title: `<a href="nyc-in-february.html">February</a>`, text: "Short days, low prices, Restaurant Week.", foot: `<a class="link-arrow" href="nyc-in-february.html">Read the guide</a>` })}
+      ${card({ kicker: "March", title: `<a href="nyc-in-march.html">March</a>`, text: "Spring arrives slowly; spring-break crowds.", foot: `<a class="link-arrow" href="nyc-in-march.html">Read the guide</a>` })}
+      ${card({ kicker: "April", title: `<a href="nyc-in-april.html">April</a>`, text: "Cherry blossoms and the first park weekends.", foot: `<a class="link-arrow" href="nyc-in-april.html">Read the guide</a>` })}
+      ${card({ kicker: "May", title: `<a href="nyc-in-may.html">May</a>`, text: "Best month for walking; parks at their peak.", foot: `<a class="link-arrow" href="nyc-in-may.html">Read the guide</a>` })}
+      ${card({ kicker: "June", title: `<a href="nyc-in-june.html">June</a>`, text: "Long evenings, outdoor concerts begin.", foot: `<a class="link-arrow" href="nyc-in-june.html">Read the guide</a>` })}
+      ${card({ kicker: "July", title: `<a href="nyc-in-july.html">July</a>`, text: "Hot and humid; beaches and AC museums.", foot: `<a class="link-arrow" href="nyc-in-july.html">Read the guide</a>` })}
+      ${card({ kicker: "August", title: `<a href="nyc-in-august.html">August</a>`, text: "Peak heat, quiet offices, the US Open build-up.", foot: `<a class="link-arrow" href="nyc-in-august.html">Read the guide</a>` })}
+      ${card({ kicker: "September", title: `<a href="nyc-in-september.html">September</a>`, text: "Warm, dry and less crowded than summer.", foot: `<a class="link-arrow" href="nyc-in-september.html">Read the guide</a>` })}
+      ${card({ kicker: "October", title: `<a href="nyc-in-october.html">October</a>`, text: "Foliage, Halloween and perfect walking weather.", foot: `<a class="link-arrow" href="nyc-in-october.html">Read the guide</a>` })}
+      ${card({ kicker: "November", title: `<a href="nyc-in-november.html">November</a>`, text: "Thanksgiving, the parade and the tree build-up.", foot: `<a class="link-arrow" href="nyc-in-november.html">Read the guide</a>` })}
+      ${card({ kicker: "December", title: `<a href="nyc-in-december.html">December</a>`, text: "Christmas windows, crowds and cold.", foot: `<a class="link-arrow" href="nyc-in-december.html">Read the guide</a>` })}
+    </div>
+  </div>
+</section>
+
 <section class="section bg-paper-2">
   <div class="container">
     ${sectionHead({

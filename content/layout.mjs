@@ -9,7 +9,40 @@ function head({ page }) {
   const title = page.fullTitle ? page.title : `${page.title} | ${site.name}`;
   const canonical = `${site.baseUrl}/${page.path === "index.html" ? "" : page.path}`;
   const ogImage = `${site.baseUrl}/${page.ogImage || "assets/img/og-nyctrove.jpg"}`;
-  const robots = page.noindex ? "noindex, nofollow" : "index, follow";
+  const ogType = page.ogType || (page.path === "index.html" ? "website" : "article");
+  const robots = page.noindex
+    ? "noindex, nofollow"
+    : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+
+  const sitePublished = "2026-11-02";
+  const buildDate = new Date().toISOString().slice(0, 10);
+  const pageUrl = `${site.baseUrl}/${page.path === "index.html" ? "" : page.path}`;
+  const articleImage = `${site.baseUrl}/${page.ogImage || "assets/img/og-nyctrove.jpg"}`;
+  const organisation = {
+    "@type": "Organization",
+    name: site.name,
+    url: site.baseUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: `${site.baseUrl}/assets/img/og-nyctrove.jpg`,
+    },
+    publishingPrinciples: `${site.baseUrl}/editorial.html`,
+  };
+
+  const pageNodes = (page.jsonLd || []).map((node) => {
+    if (!node || typeof node !== "object") return node;
+    const type = node["@type"];
+    if (type !== "Article" && type !== "BlogPosting" && type !== "NewsArticle") return node;
+    return {
+      datePublished: node.datePublished || sitePublished,
+      dateModified: node.dateModified || buildDate,
+      image: node.image || articleImage,
+      author: node.author || { ...organisation },
+      publisher: node.publisher || { ...organisation },
+      mainEntityOfPage: node.mainEntityOfPage || pageUrl,
+      ...node,
+    };
+  });
 
   const jsonLd = [
     {
@@ -19,15 +52,10 @@ function head({ page }) {
       url: site.baseUrl,
       description: site.description,
       inLanguage: "en",
-      publisher: {
-        "@type": "Organization",
-        name: site.name,
-        url: site.baseUrl,
-        logo: `${site.baseUrl}/assets/img/og-nyctrove.jpg`,
-        publishingPrinciples: `${site.baseUrl}/editorial.html`,
-      },
+      publisher: organisation,
     },
-    ...(page.jsonLd || []),
+    organisation,
+    ...pageNodes,
   ];
 
   return `<meta charset="UTF-8" />
@@ -40,17 +68,20 @@ function head({ page }) {
 <meta name="theme-color" content="#0b0d10" />
 
 <!-- Open Graph -->
-<meta property="og:type" content="${page.ogType || "website"}" />
+<meta property="og:type" content="${ogType}" />
 <meta property="og:site_name" content="${site.name}" />
 <meta property="og:title" content="${esc(title)}" />
 <meta property="og:description" content="${esc(page.description)}" />
 <meta property="og:url" content="${canonical}" />
 <meta property="og:image" content="${ogImage}" />
 <meta property="og:locale" content="en_US" />
+<meta property="og:image:alt" content="${esc(title)}" />
+${ogType === "article" ? `<meta property="article:published_time" content="${sitePublished}" />\n<meta property="article:modified_time" content="${buildDate}" />` : ""}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${esc(title)}" />
 <meta name="twitter:description" content="${esc(page.description)}" />
 <meta name="twitter:image" content="${ogImage}" />
+<meta name="twitter:image:alt" content="${esc(title)}" />
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="assets/favicon.svg" />

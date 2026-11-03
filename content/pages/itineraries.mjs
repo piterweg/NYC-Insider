@@ -39,12 +39,39 @@ ${pageHero({
   eyebrowText: "Itineraries",
   title: "Plans that respect your time",
   lead: "Three days, five days or a full week — these are realistic New York itineraries with travel time built in, one big thing per half-day, and enough slack to actually enjoy the city.",
-  meta: metaItems("3, 5 &amp; 7 day plans", "Public transport only", "Verified November 2026"),
+  meta: metaItems("1 to 7 day plans", "Public transport only", "Verified November 2026"),
 })}
 
 <section class="section">
   <div class="container">
     <div class="grid grid--3">
+      ${mediaCard({
+        href: "1-day-in-nyc.html",
+        image: img("fifth-avenue-cab.webp"),
+        alt: "A yellow cab on a Manhattan avenue",
+        kicker: "One day",
+        title: "1 day in NYC",
+        text: "A single-day loop through the icons, without crossing town twice.",
+        meta: "1 day · packed",
+      })}
+      ${mediaCard({
+        href: "2-days-in-nyc.html",
+        image: img("times-square-night.webp"),
+        alt: "Times Square at night",
+        kicker: "Two days",
+        title: "2 days in NYC",
+        text: "One uptown day, one harbour day — the shortest trip that still feels complete.",
+        meta: "2 days · brisk",
+      })}
+      ${mediaCard({
+        href: "4-days-in-nyc.html",
+        image: img("central-park-nyc.webp"),
+        alt: "Bethesda Fountain in Central Park",
+        kicker: "Four days",
+        title: "4 days in NYC",
+        text: "The 3-day plan with a full Brooklyn day added in.",
+        meta: "4 days · balanced",
+      })}
       ${mediaCard({
         href: "3-days-in-nyc.html",
         image: img("fifth-avenue-cab.webp"),
@@ -87,6 +114,27 @@ ${pageHero({
       caption: "Comparison of the three NYC itineraries",
       head: ["Plan", "Best for", "Pace", "Must-sees", "What you will skip"],
       rows: [
+        [
+          '<a href="1-day-in-nyc.html"><strong>1 day</strong></a>',
+          "A long layover or one free day",
+          "Packed",
+          "Midtown icons, Central Park edge, one skyline deck",
+          "Brooklyn, museums, the harbours",
+        ],
+        [
+          '<a href="2-days-in-nyc.html"><strong>2 days</strong></a>',
+          "A weekend, or two free days",
+          "Brisk",
+          "One uptown day (park, Met, Midtown) and one harbour day (Statue ferry, 9/11, Brooklyn Bridge)",
+          "Outer boroughs, a full museum day",
+        ],
+        [
+          '<a href="4-days-in-nyc.html"><strong>4 days</strong></a>',
+          "A short break with breathing room",
+          "Balanced",
+          "Everything in the 3-day plan plus a full Brooklyn day",
+          "Queens, the Bronx, day trips",
+        ],
         [
           '<a href="3-days-in-nyc.html"><strong>3 days</strong></a>',
           "First visit, short break",
@@ -180,6 +228,24 @@ ${pageHero({
       center: false,
     })}
     <div class="grid grid--3">
+      ${card({
+        kicker: "1 day",
+        title: `<a href="1-day-in-nyc.html">The single day</a>`,
+        text: "The icons in one loop, with the order that avoids backtracking.",
+        foot: `<a class="link-arrow" href="1-day-in-nyc.html">Open the plan</a>`,
+      })}
+      ${card({
+        kicker: "2 days",
+        title: `<a href="2-days-in-nyc.html">The weekend</a>`,
+        text: "Uptown and the harbour, split so both days work on foot and subway.",
+        foot: `<a class="link-arrow" href="2-days-in-nyc.html">Open the plan</a>`,
+      })}
+      ${card({
+        kicker: "4 days",
+        title: `<a href="4-days-in-nyc.html">The short break</a>`,
+        text: "Three days of Manhattan plus a proper Brooklyn day.",
+        foot: `<a class="link-arrow" href="4-days-in-nyc.html">Open the plan</a>`,
+      })}
       ${card({
         kicker: "3 days",
         title: `<a href="3-days-in-nyc.html">The short break</a>`,
