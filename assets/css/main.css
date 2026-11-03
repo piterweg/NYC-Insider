@@ -2221,13 +2221,16 @@ table.data .num {
    -------------------------------------------------------------------------- */
 
 .page-nav {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(28, 26, 23, 0.12);
+  margin-top: 3rem;
+}
+
+.page-nav > .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(28, 26, 23, 0.12);
-  margin-top: 3rem;
 }
 
 .page-nav a {

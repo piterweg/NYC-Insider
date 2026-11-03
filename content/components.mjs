@@ -230,8 +230,10 @@ export function ctaBand({ eyebrowText, title, text, actions }) {
 
 export function pageNav({ prev, next }) {
   return `<nav class="page-nav" aria-label="More guides">
-  ${prev ? `<a href="${prev.href}"><span>Previous</span><strong>${prev.label}</strong></a>` : "<span></span>"}
-  ${next ? `<a href="${next.href}" style="text-align:right"><span>Next</span><strong>${next.label}</strong></a>` : ""}
+  <div class="container">
+    ${prev ? `<a href="${prev.href}"><span>Previous</span><strong>${prev.label}</strong></a>` : "<span></span>"}
+    ${next ? `<a href="${next.href}" style="text-align:right"><span>Next</span><strong>${next.label}</strong></a>` : ""}
+  </div>
 </nav>`;
 }
 
