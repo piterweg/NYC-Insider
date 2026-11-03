@@ -348,6 +348,8 @@ ${pageHero({
       ${card({ kicker: "Comparison", title: `<a href="best-observation-deck-nyc.html">The best observation deck in NYC</a>`, text: "Five decks compared by view, queue, price and best time — with a verdict for each kind of trip.", foot: `<a class="link-arrow" href="best-observation-deck-nyc.html">Compare the decks</a>` })}
       ${card({ kicker: "Head to head", title: `<a href="empire-state-building-vs-top-of-the-rock.html">Empire State vs Top of the Rock</a>`, text: "The two classic decks, compared honestly — and which one to pick.", foot: `<a class="link-arrow" href="empire-state-building-vs-top-of-the-rock.html">Read the comparison</a>` })}
       ${card({ kicker: "Data", title: `<a href="nyc-attraction-price-index.html">NYC attraction price index</a>`, text: "Every headline ticket price in one table, with a downloadable CSV and the 2026 changes.", foot: `<a class="link-arrow" href="nyc-attraction-price-index.html">See the prices</a>` })}
+      ${card({ kicker: "Decision", title: `<a href="is-edge-worth-it.html">Is Edge worth it?</a>`, text: "The honest answer for different trips — and when to spend the money on a different deck.", foot: `<a class="link-arrow" href="is-edge-worth-it.html">Read the verdict</a>` })}
+      ${card({ kicker: "Theatre", title: `<a href="broadway-guide.html">How to buy Broadway tickets</a>`, text: "TKTS, rush, lotteries and the box office — with the average paid ticket price.", foot: `<a class="link-arrow" href="broadway-guide.html">Read the guide</a>` })}
     </div>
     <p class="small muted" style="margin-top:1.2rem">Thinking about a sightseeing pass instead? Start with <a href="is-citypass-worth-it.html">is CityPASS worth it</a>.</p>
   </div>

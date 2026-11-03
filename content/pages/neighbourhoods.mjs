@@ -179,6 +179,15 @@ ${pageHero({
           text: "Little India, a taqueria corridor under the 7 train and quiet garden apartment blocks.",
           meta: "2–3 hours",
         },
+        {
+          href: "upper-west-side.html",
+          image: "amnh-facade.webp",
+          alt: "The American Museum of Natural History on the Upper West Side",
+          kicker: "Manhattan",
+          title: "Upper West Side",
+          text: "The Natural History museum, the park's west side and Zabar's.",
+          meta: "Half a day",
+        },
       ]
         .map((n) => mediaCard({ ...n, image: img(n.image) }))
         .join("")}

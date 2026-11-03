@@ -124,6 +124,15 @@ ${pageHero({
         meta: "Seasonal guide",
       })}
       ${mediaCard({
+        href: "valentines-day-nyc.html",
+        image: img("central-park-bow-bridge.webp"),
+        alt: "Bow Bridge in Central Park",
+        kicker: "14 February",
+        title: "Valentine's Day in NYC",
+        text: "Free romantic walks, dinner booking strategy and the sunset decks.",
+        meta: "Seasonal guide",
+      })}
+      ${mediaCard({
         href: "thanksgiving-nyc.html",
         image: img("central-park-bow-bridge.webp"),
         alt: "Bow Bridge in Central Park on a clear autumn morning",
