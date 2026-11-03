@@ -1960,6 +1960,31 @@ table.data .num {
   margin-top: 0.7rem;
 }
 
+/* FAQ cards stay legible inside dark sections: they sit on a white surface,
+   so summary and body text must keep the dark ink colour. */
+.faq details,
+.faq summary {
+  color: var(--text);
+}
+
+.faq .faq__body,
+.faq .faq__body p {
+  color: var(--text-muted);
+}
+
+.faq .faq__body a {
+  color: var(--brass-deep);
+}
+
+.bg-ink .faq details,
+.bg-ink .faq summary {
+  color: var(--text);
+}
+
+.bg-ink .faq summary::after {
+  color: var(--brass-deep);
+}
+
 /* --------------------------------------------------------------------------
    Newsletter
    -------------------------------------------------------------------------- */
