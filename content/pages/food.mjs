@@ -259,11 +259,10 @@ ${pageHero({
       lead: "Slice, square, coal-fired or Neapolitan — where to go for each, and what to order when you get there.",
       action: `<a class="link-arrow" href="best-pizza-nyc.html">Read the pizza guide</a>`,
     })}
-    <div class="card" style="max-width:720px">
-      <span class="card__kicker">Food guide</span>
-      <h3><a href="best-pizza-nyc.html">Best pizza in NYC</a></h3>
-      <p>Joe's, Prince Street, Juliana's, L&amp;B Spumoni Gardens and the rest — with neighbourhoods, prices and how to order like a local.</p>
-      <div class="card__foot"><a class="link-arrow" href="best-pizza-nyc.html">Read the guide</a></div>
+    <div class="grid grid--3">
+      ${card({ kicker: "Food guide", title: `<a href="best-pizza-nyc.html">Best pizza in NYC</a>`, text: "Joe's, Prince Street, Juliana's, L&amp;B Spumoni Gardens and the rest — with neighbourhoods, prices and how to order like a local.", foot: `<a class="link-arrow" href="best-pizza-nyc.html">Read the guide</a>` })}
+      ${card({ kicker: "Budget", title: `<a href="cheap-eats-nyc.html">Cheap eats under $10</a>`, text: "What still costs under $10 in New York — slices, bagels, dumplings, halal carts and where to find them.", foot: `<a class="link-arrow" href="cheap-eats-nyc.html">Eat cheaply</a>` })}
+      ${card({ kicker: "Breakfast", title: `<a href="best-bagels-nyc.html">The best bagels in NYC</a>`, text: "What makes a New York bagel, where to go and how to order it properly.", foot: `<a class="link-arrow" href="best-bagels-nyc.html">Bagel guide</a>` })}
     </div>
   </div>
 </section>

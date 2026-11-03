@@ -355,6 +355,20 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
+    ${sectionHead({
+      eyebrowText: "Getting here",
+      title: "Choose the right airport",
+      lead: "The airport you fly into changes your transfer cost and your first hour in the city.",
+      action: `<a class="link-arrow" href="which-nyc-airport.html">Compare the airports</a>`,
+    })}
+    <div class="grid grid--2">
+      ${mediaCard({ href: "which-nyc-airport.html", image: img("skyline-window-view.webp"), alt: "The Manhattan skyline seen through a window", kicker: "Arrivals", title: "JFK vs Newark vs LaGuardia", text: "Transfer costs, times and which airport suits which hotel.", meta: "Practical guide" })}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     ${newsletter({
       title: "The planning checklist, by email",
       text: "Join the list and we will send the one-page booking checklist, plus one useful New York email a week.",

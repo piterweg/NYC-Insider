@@ -115,6 +115,15 @@ ${pageHero({
         meta: "Seasonal guide",
       })}
       ${mediaCard({
+        href: "nyc-in-winter.html",
+        image: img("fifth-avenue-cab.webp"),
+        alt: "A yellow taxi on Fifth Avenue in winter",
+        kicker: "December–February",
+        title: "NYC in winter",
+        text: "Cold-weather strategy, cheaper hotels and what stays open.",
+        meta: "Seasonal guide",
+      })}
+      ${mediaCard({
         href: "thanksgiving-nyc.html",
         image: img("central-park-bow-bridge.webp"),
         alt: "Bow Bridge in Central Park on a clear autumn morning",

@@ -286,6 +286,23 @@ ${pageHero({
 </section>
 <section class="section">
   <div class="container">
+    ${sectionHead({
+      eyebrowText: "Arrivals",
+      title: "Which airport should you fly into?",
+      lead: "JFK, Newark or LaGuardia compared side by side — transfer costs, travel times and which one makes sense for your hotel.",
+      action: `<a class="link-arrow" href="which-nyc-airport.html">Read the airport guide</a>`,
+    })}
+    <div class="card" style="max-width:720px">
+      <span class="card__kicker">Airport guide</span>
+      <h3><a href="which-nyc-airport.html">JFK vs Newark vs LaGuardia</a></h3>
+      <p>Fares, AirTrain, subway, LIRR, NJ Transit and the honest transfer times — with a verdict for each kind of trip.</p>
+      <div class="card__foot"><a class="link-arrow" href="which-nyc-airport.html">Read the guide</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     ${newsletter({
       title: "Transit changes, without the noise",
       text: "Join the list for a short weekly note on what is actually changing in New York — closures, new fares, and the things worth knowing before you arrive.",
