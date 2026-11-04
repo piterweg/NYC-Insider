@@ -251,7 +251,7 @@ ${pageHero({
       })}
       ${card({
         kicker: "4 days",
-        title: `<a href="4-days-in-nyc.html">The short break</a>`,
+        title: `<a href="4-days-in-nyc.html">The long weekend</a>`,
         text: "Three days of Manhattan plus a proper Brooklyn day.",
         foot: `<a class="link-arrow" href="4-days-in-nyc.html">Open the plan</a>`,
       })}

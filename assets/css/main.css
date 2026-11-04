@@ -1066,6 +1066,26 @@ body.nav-open {
   color: var(--text-faint);
 }
 
+/* Cards sit on a white surface even inside dark sections, so their text must
+   keep the dark ink colour instead of inheriting the section's light text. */
+.bg-ink .card,
+.bg-ink .card h3,
+.bg-ink .card h3 a {
+  color: var(--text);
+}
+
+.bg-ink .card p {
+  color: var(--text-muted);
+}
+
+.bg-ink .card__meta {
+  color: var(--text-faint);
+}
+
+.bg-ink .card h3 a:hover {
+  color: var(--brass-deep);
+}
+
 /* Image card with photo top */
 .media-card {
   display: flex;
