@@ -90,32 +90,43 @@ ${heroHome({
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    ${sectionHead({
-      eyebrowText: "Start here",
-      title: "What kind of New York are you after?",
-      lead: "Every trip has a different shape. Pick the plan that matches your time and appetite, then steal the parts you like.",
-      action: btn({ href: "itineraries.html", label: "All itineraries", variant: "outline" }),
-    })}
-    <div class="grid grid--3">
-      ${card({
+<section class="section plans-cinema" aria-labelledby="plans-cinema-title">
+  <img class="plans-cinema__bg" src="${img("manhattan-skyline-dusk.webp")}" alt="" width="1400" height="939" loading="lazy" decoding="async" aria-hidden="true" />
+  <div class="plans-cinema__overlay" aria-hidden="true"></div>
+  <div class="container plans-cinema__inner">
+    <header class="plans-cinema__header">
+      ${eyebrow("Start here")}
+      <h2 id="plans-cinema-title">What kind of New York are you after?</h2>
+      <p class="lead">Every trip has a different shape. Pick the plan that matches your time and appetite, then steal the parts you like.</p>
+      <a class="btn btn--ghost" href="itineraries.html">All itineraries</a>
+    </header>
+    <div class="grid grid--3 plans-cinema__grid">
+      ${mediaCard({
+        href: "5-days-in-nyc.html",
+        image: img("fifth-avenue-cab.webp"),
+        alt: "A yellow cab on Fifth Avenue below the Empire State Building",
         kicker: "01 — First time",
-        title: `<a href="5-days-in-nyc.html">Five days, the icons done properly</a>`,
+        title: "Five days, the icons done properly",
         text: "Empire State Building, Central Park, the Brooklyn Bridge at sunrise and one very good Broadway night — sequenced so you are not crossing the city twice a day.",
-        foot: `<a class="link-arrow" href="5-days-in-nyc.html">See the 5-day plan</a>`,
+        meta: "5 days · balanced pace",
       })}
-      ${card({
+      ${mediaCard({
+        href: "3-days-in-nyc.html",
+        image: img("brooklyn-bridge-sunset.webp"),
+        alt: "The Brooklyn Bridge at sunset seen from the waterfront",
         kicker: "02 — Long weekend",
-        title: `<a href="3-days-in-nyc.html">Three days, zero wasted hours</a>`,
+        title: "Three days, zero wasted hours",
         text: "For a first flying visit: one skyline morning, one neighbourhood afternoon, one night out. Works with a Friday-to-Sunday schedule.",
-        foot: `<a class="link-arrow" href="3-days-in-nyc.html">See the 3-day plan</a>`,
+        meta: "3 days · easy pace",
       })}
-      ${card({
+      ${mediaCard({
+        href: "7-days-in-nyc.html",
+        image: img("queens-astoria.webp"),
+        alt: "The Manhattan skyline seen from Astoria, Queens",
         kicker: "03 — Returning",
-        title: `<a href="7-days-in-nyc.html">Seven days, beyond Midtown</a>`,
+        title: "Seven days, beyond Midtown",
         text: "Queens food crawls, the Bronx, Staten Island by ferry and the parts of Manhattan that locals actually use. Give the city the whole week.",
-        foot: `<a class="link-arrow" href="7-days-in-nyc.html">See the 7-day plan</a>`,
+        meta: "7 days · flexible pace",
       })}
     </div>
   </div>
@@ -146,41 +157,41 @@ ${heroHome({
   </div>
 </section>
 
-<section class="section">
+<section class="section bg-paper-2">
   <div class="container">
     ${sectionHead({
-      eyebrowText: "Curated itineraries",
-      title: "Plans you can actually follow",
-      lead: "Real days, with travel time and opening hours built in. No ten-stop marathons, no restaurant recommendations that closed in 2019.",
-      action: btn({ href: "itineraries.html", label: "Compare all three", variant: "outline" }),
+      eyebrowText: "More plans",
+      title: "Every length, covered",
+      lead: "Short trips and long weekends, planned with travel time and opening hours built in.",
+      action: btn({ href: "itineraries.html", label: "All itineraries", variant: "outline" }),
     })}
     <div class="grid grid--3">
       ${mediaCard({
-        href: "3-days-in-nyc.html",
-        image: img("fifth-avenue-cab.webp"),
-        alt: "A yellow cab crossing a Manhattan avenue lined with office towers",
-        kicker: "Short break",
-        title: "3 days in NYC",
-        text: "The essential first taste: skyline, park, one neighbourhood and a show.",
-        meta: "3 days · easy pace",
+        href: "1-day-in-nyc.html",
+        image: img("times-square-day.webp"),
+        alt: "Times Square in daylight, with billboards and yellow cabs",
+        kicker: "One day",
+        title: "1 day in NYC",
+        text: "The icons in one loop, with the order that avoids backtracking.",
+        meta: "1 day · packed",
       })}
       ${mediaCard({
-        href: "5-days-in-nyc.html",
-        image: img("broadway-theatre-night.webp"),
-        alt: "A Broadway theatre marquee glowing at night in the Theatre District",
-        kicker: "Most popular",
-        title: "5 days in NYC",
-        text: "The full first-timer itinerary, with a morning in Brooklyn and a proper museum day.",
-        meta: "5 days · balanced pace",
+        href: "2-days-in-nyc.html",
+        image: img("manhattan-skyline.webp"),
+        alt: "Lower Manhattan and the Brooklyn Bridge across the East River",
+        kicker: "Two days",
+        title: "2 days in NYC",
+        text: "One uptown day and one harbour day — the shortest trip that still feels complete.",
+        meta: "2 days · brisk",
       })}
       ${mediaCard({
-        href: "7-days-in-nyc.html",
-        image: img("brooklyn-bridge-sunset.webp"),
-        alt: "The Brooklyn Bridge at sunset seen from the waterfront",
-        kicker: "Deep dive",
-        title: "7 days in NYC",
-        text: "Seven days means outer boroughs, real neighbourhoods and room to wander.",
-        meta: "7 days · flexible pace",
+        href: "4-days-in-nyc.html",
+        image: img("central-park-nyc.webp"),
+        alt: "Bethesda Fountain in Central Park",
+        kicker: "Four days",
+        title: "4 days in NYC",
+        text: "The 3-day plan with a full Brooklyn day added in.",
+        meta: "4 days · balanced",
       })}
     </div>
   </div>
