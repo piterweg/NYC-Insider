@@ -3238,6 +3238,40 @@ body.search-open {
   outline-offset: 4px;
 }
 
+
+.plans-cinema__hint {
+  display: none;
+  margin: 0.4rem 0 0;
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(251, 248, 243, 0.6);
+}
+
+@media (max-width: 760px) {
+  .plans-cinema__grid {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 0.9rem;
+    margin: 0;
+  }
+
+  .plans-cinema__grid > * {
+    flex: 0 0 84%;
+    scroll-snap-align: center;
+  }
+
+  .plans-cinema__hint {
+    display: block;
+  }
+}
+
 /* Print */
 @media print {
   .site-header,

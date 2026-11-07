@@ -91,7 +91,7 @@ ${heroHome({
 </section>
 
 <section class="section plans-cinema" aria-labelledby="plans-cinema-title">
-  <img class="plans-cinema__bg" src="${img("manhattan-skyline-dusk.webp")}" alt="" width="1400" height="939" loading="lazy" decoding="async" aria-hidden="true" />
+  <img class="plans-cinema__bg" src="${img("night-new-york.webp")}" alt="" width="1600" height="1216" loading="lazy" decoding="async" aria-hidden="true" />
   <div class="plans-cinema__overlay" aria-hidden="true"></div>
   <div class="container plans-cinema__inner">
     <header class="plans-cinema__header">
@@ -129,6 +129,7 @@ ${heroHome({
         meta: "7 days · flexible pace",
       })}
     </div>
+    <p class="plans-cinema__hint">Swipe to see the other plans →</p>
   </div>
 </section>
 

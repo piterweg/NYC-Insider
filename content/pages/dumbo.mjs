@@ -28,7 +28,7 @@ export default {
     "A guide to DUMBO, Brooklyn: the Washington Street bridge view, Brooklyn Bridge Park, where to eat and a two-hour walking plan.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/dumbo-brooklyn.webp",
+  ogImage: "assets/img/manhattan-bridge-dumbo.webp",
   jsonLd: [
     {
       "@context": "https://schema.org",
@@ -51,8 +51,8 @@ export default {
   ],
   render: () =>
     renderNeighbourhoodPage({
-      heroImage: "dumbo-brooklyn.webp",
-      heroAlt: "Brooklyn Bridge Park lawn with the Manhattan skyline behind",
+      heroImage: "manhattan-bridge-dumbo.webp",
+      heroAlt: "The Manhattan Bridge above the East River, seen from DUMBO at blue hour",
       crumbs: [
         { href: "index.html", label: "Home" },
         { href: "neighbourhoods.html", label: "Neighbourhoods" },
