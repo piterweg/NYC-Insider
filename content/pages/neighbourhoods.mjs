@@ -13,6 +13,12 @@ import {
   metaItems,
   eyebrow,
 } from "../components.mjs";
+import { readFileSync } from "node:fs";
+
+const hoodMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-neighbourhoods.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
 
 const faqItems = [
   {
@@ -25,7 +31,7 @@ const faqItems = [
   },
   {
     q: "Do I need a guide to walk these areas?",
-    a: "<p>No. All eight are compact, walkable and well served by subway. A short list of streets and one restaurant is enough planning.</p>",
+    a: "<p>No. All nine are compact, walkable and well served by subway. A short list of streets and one restaurant is enough planning.</p>",
   },
   {
     q: "Are these neighbourhoods safe?",
@@ -39,7 +45,7 @@ export default {
   bodyClass: "page-inner",
   title: "New York Neighbourhoods to Walk and Eat In",
   description:
-    "Eight New York neighbourhoods worth planning a morning around, with what each is best for, how long to allow and the subway that gets you there.",
+    "Nine New York neighbourhoods worth planning a morning around, with what each is best for, how long to allow and the subway that gets you there.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/soho-street-night.webp",
@@ -49,7 +55,7 @@ export default {
       "@type": "Article",
       headline: "New York Neighbourhoods to Walk and Eat In",
       description:
-        "A guide to eight walkable New York neighbourhoods in Manhattan, Brooklyn and Queens, with what each is best for and how to get there.",
+        "A guide to nine walkable New York neighbourhoods in Manhattan, Brooklyn and Queens, with what each is best for and how to get there.",
       author: { "@type": "Organization", name: "NYCTrove" },
       dateModified: "2026-11-02",
     },
@@ -76,10 +82,24 @@ ${pageHero({
     { href: "neighbourhoods.html", label: "Neighbourhoods" },
   ],
   eyebrowText: "Neighbourhoods",
-  title: "Eight neighbourhoods, eight different cities",
-  lead: "New York is a city of villages, and the fastest way to like it is to stop sightseeing and start walking one. These eight are worth a morning, an afternoon or a whole evening, and no two feel like the same place.",
-  meta: metaItems("8 guides", "Manhattan, Brooklyn and Queens", "Subway-first", "Half a day each"),
+  title: "Nine neighbourhoods, nine different cities",
+  lead: "New York is a city of villages, and the fastest way to like it is to stop sightseeing and start walking one. These nine are worth a morning, an afternoon or a whole evening, and no two feel like the same place.",
+  meta: metaItems("9 guides", "Manhattan, Brooklyn and Queens", "Subway-first", "Half a day each"),
 })}
+
+<section class="section">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "The map",
+      title: "Nine neighbourhoods, one map",
+      lead: "Click a dot to open the guide. They are spread across Manhattan, Brooklyn and Queens — the closest pairs are a 15-minute walk apart.",
+    })}
+    <div class="borough-map-wrap borough-map-wrap--wide">
+      ${hoodMapSvg}
+    </div>
+    <p class="small muted" style="text-align:center;margin-top:1rem">Borough boundaries: NYC Open Data. Dot positions are approximate — use the guides for exact addresses and subway exits.</p>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
@@ -87,7 +107,7 @@ ${pageHero({
       <div class="split__body" data-reveal>
         ${eyebrow("How to use this guide")}
         <h2 style="font-size:var(--step-3);margin-top:.7rem">One neighbourhood a day is enough</h2>
-        <p class="lead">The most common mistake in New York is trying to see the city rather than a part of it. These eight areas are between 20 and 40 minutes apart by subway, but each has its own centre, its own food and its own pace.</p>
+        <p class="lead">The most common mistake in New York is trying to see the city rather than a part of it. These nine areas are between 20 and 40 minutes apart by subway, but each has its own centre, its own food and its own pace.</p>
         <p class="muted">Pick one for the morning and one for the evening, and let the walking between them be the plan. Every guide below has the same shape: what to see, where to eat, a suggested half-day and the practical details for getting there.</p>
         <p class="muted">If you are building an itinerary, pair SoHo with the West Village, DUMBO with Brooklyn Heights, and give Astoria, Flushing or Jackson Heights a proper afternoon rather than squeezing two of them into one meal.</p>
       </div>
@@ -101,7 +121,7 @@ ${pageHero({
 <section class="section bg-paper-2">
   <div class="container">
     ${sectionHead({
-      eyebrowText: "The eight",
+      eyebrowText: "The nine",
       title: "Where to start",
       lead: "Each of these has a full guide with streets, food, a half-day plan and transit.",
     })}

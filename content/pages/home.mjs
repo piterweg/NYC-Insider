@@ -14,6 +14,12 @@ import {
   eyebrow,
 } from "../components.mjs";
 import { assetVersion } from "../version.mjs";
+import { readFileSync } from "node:fs";
+
+const boroughMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-boroughs.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
 
 export default {
   path: "index.html",
@@ -46,6 +52,24 @@ ${heroHome({
     "<strong>0</strong> pay-to-play rankings"
   ),
 })}
+
+<section class="section bg-paper-2">
+  <div class="container">
+    <div class="home-map-block">
+      <div class="borough-map-wrap">
+        ${boroughMapSvg}
+      </div>
+      <div>
+        ${eyebrow("Start with the map")}
+        <h2 style="font-size:var(--step-3);margin-top:.7rem">Five boroughs, five different trips</h2>
+        <p class="lead">Manhattan is the postcard, Brooklyn the culture, Queens the food, the Bronx the history and Staten Island the breathing space. Click a borough on the map — or open the guides — before you plan a single day.</p>
+        <div class="split__actions">
+          ${btn({ href: "boroughs.html", label: "Open the borough guides" })}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
