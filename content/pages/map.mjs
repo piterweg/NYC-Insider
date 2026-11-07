@@ -1,6 +1,34 @@
 import { sectionHead, pageHero, callout, btn, img, metaItems, eyebrow } from "../components.mjs";
 import { assetVersion } from "../version.mjs";
 import { mapCategories } from "../map-data.mjs";
+import { readFileSync } from "node:fs";
+
+const attractionsMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-attractions-map.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
+
+const hoodsMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-neighbourhoods.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
+
+const attractionLegend = [
+  ["statue-of-liberty.html", "Statue of Liberty"],
+  ["9-11-memorial.html", "9/11 Memorial & Museum"],
+  ["one-world-observatory.html", "One World Observatory"],
+  ["brooklyn-bridge.html", "Brooklyn Bridge walkway"],
+  ["high-line.html", "The High Line"],
+  ["edge.html", "Edge at Hudson Yards"],
+  ["empire-state-building.html", "Empire State Building"],
+  ["grand-central.html", "Grand Central Terminal"],
+  ["summit-one-vanderbilt.html", "SUMMIT One Vanderbilt"],
+  ["top-of-the-rock.html", "Top of the Rock"],
+  ["moma.html", "MoMA"],
+  ["central-park.html", "Central Park"],
+  ["met-museum.html", "The Met"],
+  ["amnh.html", "American Museum of Natural History"],
+];
 
 export default {
   path: "map.html",
@@ -46,6 +74,38 @@ ${pageHero({
         <p class="small muted" style="margin:0">Pins are approximate. Tap a pin for a one-line description and a link to the full guide.</p>
       </aside>
     </div>
+  </div>
+</section>
+
+<section class="section" id="attractions-map">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "Static map",
+      title: "The fourteen headline sights, numbered",
+      lead: "A tile-free version of the same city — the numbers match the list below. Useful on a weak connection, or when you want to print the plan.",
+    })}
+    <div class="borough-map-wrap borough-map-wrap--wide">
+      ${attractionsMapSvg}
+    </div>
+    <ol class="static-map-legend static-map-legend--attractions">
+      ${attractionLegend.map(([href, name], i) => `<li><a href="${href}"><span class="legend-num">${i + 1}</span>${name}</a></li>`).join("")}
+    </ol>
+    <p class="small muted" style="text-align:center;margin-top:1rem">Borough boundaries: NYC Open Data. Pins are approximate — the guides list exact entrances and subway exits.</p>
+  </div>
+</section>
+
+<section class="section bg-paper-2" id="neighbourhood-map">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "Static map",
+      title: "Nine neighbourhoods, without the tiles",
+      lead: "The same nine areas as the neighbourhoods hub, on one clickable map.",
+      action: `<a class="link-arrow" href="neighbourhoods.html">Open the neighbourhood guides</a>`,
+    })}
+    <div class="borough-map-wrap borough-map-wrap--wide">
+      ${hoodsMapSvg}
+    </div>
+    <p class="small muted" style="text-align:center;margin-top:1rem">Borough boundaries: NYC Open Data. Dot positions are approximate.</p>
   </div>
 </section>
 

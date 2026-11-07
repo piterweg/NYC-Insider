@@ -351,7 +351,7 @@ ${pageHero({
       ${card({ kicker: "Decision", title: `<a href="is-edge-worth-it.html">Is Edge worth it?</a>`, text: "The honest answer for different trips — and when to spend the money on a different deck.", foot: `<a class="link-arrow" href="is-edge-worth-it.html">Read the verdict</a>` })}
       ${card({ kicker: "Theatre", title: `<a href="broadway-guide.html">How to buy Broadway tickets</a>`, text: "TKTS, rush, lotteries and the box office — with the average paid ticket price.", foot: `<a class="link-arrow" href="broadway-guide.html">Read the guide</a>` })}
     </div>
-    <p class="small muted" style="margin-top:1.2rem">Thinking about a sightseeing pass instead? Start with <a href="is-citypass-worth-it.html">is CityPASS worth it</a>.</p>
+    <p class="small muted" style="margin-top:1.2rem">Thinking about a sightseeing pass instead? Start with <a href="is-citypass-worth-it.html">is CityPASS worth it</a>. Prefer a map? See <a href="map.html#attractions-map">all 14 sights numbered on one map</a>.</p>
   </div>
 </section>
 

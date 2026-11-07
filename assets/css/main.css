@@ -3072,6 +3072,59 @@ body.search-open {
   }
 }
 
+
+.static-map-legend {
+  max-width: 900px;
+  margin: 1.4rem auto 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 1.6rem;
+  font-size: 0.92rem;
+}
+
+.static-map-legend--attractions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.static-map-legend a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding: 0.15rem 0;
+}
+
+.static-map-legend a:hover {
+  color: var(--brass-deep);
+  border-bottom-color: rgba(168, 133, 63, 0.4);
+}
+
+.static-map-legend .legend-num {
+  flex: 0 0 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--brass);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .static-map-legend,
+  .static-map-legend--attractions {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Print */
 @media print {
   .site-header,
