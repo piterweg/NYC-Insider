@@ -16,8 +16,8 @@ import {
 import { assetVersion } from "../version.mjs";
 import { readFileSync } from "node:fs";
 
-const boroughMapSvg = readFileSync(
-  new URL("../../assets/img/nyc-boroughs.svg", import.meta.url),
+const hoodsMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-neighbourhoods-numbered.svg", import.meta.url),
   "utf8"
 ).replace(/^<\?xml[^>]*>\s*/, "");
 
@@ -57,14 +57,28 @@ ${heroHome({
   <div class="container">
     <div class="home-map-block">
       <div class="borough-map-wrap">
-        ${boroughMapSvg}
+        ${hoodsMapSvg}
       </div>
       <div>
         ${eyebrow("Start with the map")}
-        <h2 style="font-size:var(--step-3);margin-top:.7rem">Five boroughs, five different trips</h2>
-        <p class="lead">Manhattan is the postcard, Brooklyn the culture, Queens the food, the Bronx the history and Staten Island the breathing space. Click a borough on the map — or open the guides — before you plan a single day.</p>
-        <div class="split__actions">
-          ${btn({ href: "boroughs.html", label: "Open the borough guides" })}
+        <h2 style="font-size:var(--step-3);margin-top:.7rem">Nine neighbourhoods, one map</h2>
+        <p class="lead">New York is a city of villages. Click a number to open the guide for that neighbourhood — one is enough for a day, and no two feel like the same place.</p>
+        <ol class="static-map-legend home-map-legend">
+          ${[
+            ["soho.html", "SoHo"],
+            ["west-village.html", "West Village"],
+            ["harlem.html", "Harlem"],
+            ["upper-west-side.html", "Upper West Side"],
+            ["williamsburg.html", "Williamsburg"],
+            ["dumbo.html", "DUMBO"],
+            ["astoria.html", "Astoria"],
+            ["flushing.html", "Flushing"],
+            ["jackson-heights.html", "Jackson Heights"],
+          ].map(([href, name], i) => `<li><a href="${href}"><span class="legend-num">${i + 1}</span>${name}</a></li>`).join("")}
+        </ol>
+        <div class="split__actions" style="margin-top:1.4rem">
+          ${btn({ href: "neighbourhoods.html", label: "All neighbourhood guides" })}
+          <a class="link-arrow" href="boroughs.html" style="margin-left:1rem">Or start with the five boroughs</a>
         </div>
       </div>
     </div>

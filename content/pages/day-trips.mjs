@@ -13,6 +13,21 @@ import {
   metaItems,
   eyebrow,
 } from "../components.mjs";
+import { readFileSync } from "node:fs";
+
+const dayTripsMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-day-trips-map.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
+
+const dayTripLegend = [
+  ["philadelphia.html", "Philadelphia", "1h05–1h25 by train"],
+  ["washington-dc.html", "Washington, D.C.", "2h50–3h20 by train"],
+  ["boston.html", "Boston", "3h30–4h15 by train"],
+  ["niagara-falls.html", "Niagara Falls", "~9h by train"],
+  ["hudson-valley.html", "Hudson Valley", "1h20–1h30 by train"],
+  ["day-trips.html", "Atlantic City", "2h20–2h45 by bus"],
+];
 
 export default {
   path: "day-trips.html",
@@ -160,6 +175,23 @@ ${pageHero({
       ],
     })}
     <p class="small muted" style="margin-top:1rem">Atlantic City by rail requires a transfer in Philadelphia, which makes the bus the sensible option from New York. Round-trip figures are approximate adult fares and do not include local transport at the other end — check current fares and schedules before you book.</p>
+  </div>
+</section>
+
+<section class="section" id="day-trips-map">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "The map",
+      title: "Six trips, one map",
+      lead: "Journey times are for the fastest sensible option from New York. Numbers match the list below the map.",
+    })}
+    <div class="borough-map-wrap borough-map-wrap--wide">
+      ${dayTripsMapSvg}
+    </div>
+    <ol class="static-map-legend static-map-legend--attractions">
+      ${dayTripLegend.map(([href, name, time], i) => `<li><a href="${href}"><span class="legend-num">${i + 1}</span>${name} <span class="muted" style="margin-left:.35rem">— ${time}</span></a></li>`).join("")}
+    </ol>
+    <p class="small muted" style="text-align:center;margin-top:1rem">State outlines: US Census–derived GeoJSON. Times are typical, not guaranteed — check current schedules.</p>
   </div>
 </section>
 

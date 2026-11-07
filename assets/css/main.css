@@ -3125,6 +3125,27 @@ body.search-open {
   }
 }
 
+
+.home-map-legend {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.2rem 0 0;
+  gap: 0.35rem 1.2rem;
+  font-size: 0.86rem;
+}
+
+.home-map-legend .legend-num {
+  width: 1.3rem;
+  height: 1.3rem;
+  flex-basis: 1.3rem;
+  font-size: 0.68rem;
+}
+
+@media (max-width: 520px) {
+  .home-map-legend {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Print */
 @media print {
   .site-header,
