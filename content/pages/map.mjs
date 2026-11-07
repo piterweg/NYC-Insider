@@ -14,9 +14,21 @@ const clustersMapSvg = readFileSync(
 ).replace(/^<\?xml[^>]*>\s*/, "");
 
 const hoodsMapSvg = readFileSync(
-  new URL("../../assets/img/nyc-neighbourhoods.svg", import.meta.url),
+  new URL("../../assets/img/nyc-neighbourhoods-numbered.svg", import.meta.url),
   "utf8"
 ).replace(/^<\?xml[^>]*>\s*/, "");
+
+const neighbourhoodLegend = [
+  ["soho.html", "SoHo"],
+  ["west-village.html", "West Village"],
+  ["harlem.html", "Harlem"],
+  ["upper-west-side.html", "Upper West Side"],
+  ["williamsburg.html", "Williamsburg"],
+  ["dumbo.html", "DUMBO"],
+  ["astoria.html", "Astoria"],
+  ["flushing.html", "Flushing"],
+  ["jackson-heights.html", "Jackson Heights"],
+];
 
 const attractionLegend = [
   ["statue-of-liberty.html", "Statue of Liberty"],
@@ -122,14 +134,17 @@ ${pageHero({
   <div class="container">
     ${sectionHead({
       eyebrowText: "Static map",
-      title: "Nine neighbourhoods, without the tiles",
-      lead: "The same nine areas as the neighbourhoods hub, on one clickable map.",
-      action: `<a class="link-arrow" href="neighbourhoods.html">Open the neighbourhood guides</a>`,
+      title: "Nine neighbourhoods, numbered",
+      lead: "Every neighbourhood guide on one map. The numbers match the list below — click a name to open the guide.",
+      action: `<a class="link-arrow" href="neighbourhoods.html">Open the neighbourhoods hub</a>`,
     })}
     <div class="borough-map-wrap borough-map-wrap--wide">
       ${hoodsMapSvg}
     </div>
-    <p class="small muted" style="text-align:center;margin-top:1rem">Borough boundaries: NYC Open Data. Dot positions are approximate.</p>
+    <ol class="static-map-legend static-map-legend--attractions">
+      ${neighbourhoodLegend.map(([href, name], i) => `<li><a href="${href}"><span class="legend-num">${i + 1}</span>${name}</a></li>`).join("")}
+    </ol>
+    <p class="small muted" style="text-align:center;margin-top:1rem">Borough boundaries: NYC Open Data. Dot positions are approximate — the guides list exact subway exits.</p>
   </div>
 </section>
 
