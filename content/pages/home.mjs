@@ -16,6 +16,11 @@ import {
 import { assetVersion } from "../version.mjs";
 import { readFileSync } from "node:fs";
 
+const attractionsMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-attractions-map-zoom.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
+
 const hoodsMapSvg = readFileSync(
   new URL("../../assets/img/nyc-neighbourhoods-numbered.svg", import.meta.url),
   "utf8"
@@ -231,6 +236,24 @@ ${heroHome({
           <p>Bagels, pizza, pastrami and where to find them</p>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="home-map-block home-map-block--teaser">
+      <div class="borough-map-wrap">
+        ${attractionsMapSvg}
+      </div>
+      <div>
+        ${eyebrow("Plan the sights")}
+        <h2 style="font-size:var(--step-3);margin-top:.7rem">Fourteen headline sights, one map</h2>
+        <p class="lead">Statue of Liberty, Empire State, the Met, the High Line and the rest — numbered so you can see what clusters together before you book anything.</p>
+        <div class="split__actions">
+          ${btn({ href: "map.html#attractions-map", label: "See the numbered map" })}
+        </div>
+      </div>
     </div>
   </div>
 </section>

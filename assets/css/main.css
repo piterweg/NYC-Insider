@@ -3146,6 +3146,15 @@ body.search-open {
   }
 }
 
+
+.home-map-block--teaser {
+  grid-template-columns: minmax(240px, 380px) 1fr;
+}
+
+.home-map-block--teaser .borough-map-wrap {
+  max-width: 380px;
+}
+
 /* Print */
 @media print {
   .site-header,

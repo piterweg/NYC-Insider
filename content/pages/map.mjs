@@ -8,6 +8,11 @@ const attractionsMapSvg = readFileSync(
   "utf8"
 ).replace(/^<\?xml[^>]*>\s*/, "");
 
+const clustersMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-clusters-map.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
+
 const hoodsMapSvg = readFileSync(
   new URL("../../assets/img/nyc-neighbourhoods.svg", import.meta.url),
   "utf8"
@@ -74,6 +79,25 @@ ${pageHero({
         <p class="small muted" style="margin:0">Pins are approximate. Tap a pin for a one-line description and a link to the full guide.</p>
       </aside>
     </div>
+  </div>
+</section>
+
+<section class="section" id="walking-clusters">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "Walking clusters",
+      title: "Three clusters that actually work",
+      lead: "One neighbourhood per half-day beats a checklist. These are the three clusters our itineraries are built around — click a number to open the plan that uses it.",
+    })}
+    <div class="borough-map-wrap borough-map-wrap--wide">
+      ${clustersMapSvg}
+    </div>
+    <ol class="static-map-legend">
+      <li><a href="3-days-in-nyc.html"><span class="legend-num">1</span>Lower Manhattan — 9/11 Memorial, One World Observatory, Statue ferry, Brooklyn Bridge</a></li>
+      <li><a href="5-days-in-nyc.html"><span class="legend-num">2</span>Midtown — Empire State, Top of the Rock, MoMA, Times Square</a></li>
+      <li><a href="7-days-in-nyc.html"><span class="legend-num">3</span>Brooklyn north — DUMBO, Brooklyn Bridge Park, Williamsburg</a></li>
+    </ol>
+    <p class="small muted" style="text-align:center;margin-top:1rem">Borough boundaries: NYC Open Data. Cluster shapes are approximate walking areas, not official districts.</p>
   </div>
 </section>
 
