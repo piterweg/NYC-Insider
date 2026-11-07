@@ -12,6 +12,12 @@ import {
   metaItems,
   eyebrow,
 } from "../components.mjs";
+import { readFileSync } from "node:fs";
+
+const boroughMapSvg = readFileSync(
+  new URL("../../assets/img/nyc-boroughs.svg", import.meta.url),
+  "utf8"
+).replace(/^<\?xml[^>]*>\s*/, "");
 
 export default {
   path: "boroughs.html",
@@ -36,6 +42,27 @@ ${pageHero({
   lead: "Manhattan is the postcard. Brooklyn is the culture. Queens is the food. The Bronx is the history. Staten Island is the breathing space. Here is how to choose where to spend your time — and why it is worth crossing the river at least once.",
   meta: metaItems("5 borough guides", "62 neighbourhoods", "All reachable by subway or ferry"),
 })}
+
+<section class="section">
+  <div class="container">
+    ${sectionHead({
+      eyebrowText: "The map",
+      title: "Five boroughs, one map",
+      lead: "Click a borough to open its guide. Hover to highlight it — on a phone, use the list below the map.",
+    })}
+    <div class="borough-map-wrap">
+      ${boroughMapSvg}
+    </div>
+    <div class="borough-map-legend" aria-label="Borough guides">
+      <a href="manhattan.html">Manhattan</a>
+      <a href="brooklyn.html">Brooklyn</a>
+      <a href="queens.html">Queens</a>
+      <a href="bronx.html">The Bronx</a>
+      <a href="staten-island.html">Staten Island</a>
+    </div>
+    <p class="small muted" style="text-align:center;margin-top:1rem">Borough boundaries: NYC Open Data. Map drawn for this guide — not to navigation scale.</p>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">

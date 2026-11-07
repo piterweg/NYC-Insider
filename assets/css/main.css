@@ -3007,6 +3007,42 @@ body.search-open {
   word-break: break-word;
 }
 
+
+/* Borough map (inline SVG) */
+.borough-map-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2.2rem);
+  background: var(--paper-2);
+  border: 1px solid rgba(28, 26, 23, 0.12);
+  border-radius: var(--radius);
+}
+
+.borough-map-wrap .borough-map {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.borough-map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.4rem;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.borough-map-legend a {
+  color: var(--brass-deep);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(168, 133, 63, 0.4);
+}
+
+.borough-map-legend a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
 /* Print */
 @media print {
   .site-header,

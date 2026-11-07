@@ -83,6 +83,11 @@ ${pageHero({
           title: "Rain changes the plan",
           text: "If it pours, head for a cluster with an indoor anchor — the Met and Central Park, MoMA and Midtown, or the 9/11 Museum and Lower Manhattan.",
         })}
+        ${callout({
+          icon: "◆",
+          title: "Want the five-borough view?",
+          text: "The <a href=\"boroughs.html\">borough guide</a> opens with a clickable map of Manhattan, Brooklyn, Queens, the Bronx and Staten Island.",
+        })}
       </div>
     </div>
   </div>
