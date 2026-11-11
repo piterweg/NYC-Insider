@@ -51,7 +51,7 @@ const bodies = new Map();
 for (const page of pages) {
   const body = await page.render({ site });
   bodies.set(page.path, body);
-  const html = renderPage({ page, body });
+  const html = renderPage({ page, body }).replaceAll('href="index.html"', 'href="/"');
   await writeFile(path.join(root, page.path), html, "utf8");
   written++;
 }
@@ -172,6 +172,7 @@ for (const page of pages) {
     if (/^(https?:|mailto:|tel:|#|javascript:)/.test(href)) continue;
     const target = href.split("#")[0].split("?")[0];
     if (!target) continue;
+    if (target === "/") continue; // root-relative home link
     if (target.startsWith("assets/") || target.endsWith(".xml") || target.endsWith(".txt")) continue;
     if (known.has(target)) continue;
     try {
