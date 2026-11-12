@@ -114,6 +114,11 @@ ${pageHero({
           title: "Count the hours you get there",
           text: "A three-hour train each way leaves five or six usable hours in a city, minus the walk from the station. Plan Washington and Boston around what you can genuinely see, not around what is on the map.",
         })}
+        ${callout({
+          icon: "◆",
+          title: "Planning a weekend instead?",
+          text: "If the trip needs a night, it is not a day trip. <a href=\"https://eastcoastweekends.com\" rel=\"noopener\">East Coast Weekends</a> plans the two- and three-day versions of these same destinations.",
+        })}
       </div>
     </div>
   </div>
