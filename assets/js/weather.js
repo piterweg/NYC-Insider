@@ -8,7 +8,7 @@
   var API =
     "https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060" +
     "&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m,precipitation" +
-    "&hourly=temperature_2m,weather_code,precipitation_probability" +
+    "&hourly=temperature_2m,weather_code,precipitation_probability,wind_speed_10m" +
     "&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max" +
     "&timezone=America%2FNew_York&forecast_days=7&temperature_unit=fahrenheit&wind_speed_unit=mph";
 
@@ -128,23 +128,46 @@
 
         var spark = panel.querySelector("[data-weather-spark]");
         if (spark) {
-          var temps = [];
+          var series = {
+            temp: [],
+            rain: [],
+            wind: [],
+          };
           for (var s = start; s < Math.min(start + 24, hourly.time.length); s++) {
-            temps.push(hourly.temperature_2m[s]);
+            series.temp.push(hourly.temperature_2m[s]);
+            series.rain.push(hourly.precipitation_probability ? hourly.precipitation_probability[s] : 0);
+            series.wind.push(hourly.wind_speed_10m ? hourly.wind_speed_10m[s] : 0);
           }
-          if (temps.length > 1) {
-            var lo = Math.min.apply(null, temps);
-            var hi = Math.max.apply(null, temps);
+          var drawChart = function (mode) {
+            var values = series[mode] || series.temp;
+            if (values.length < 2) return;
+            var lo = Math.min.apply(null, values);
+            var hi = Math.max.apply(null, values);
+            if (mode === "rain") { lo = 0; hi = 100; }
             var range = hi - lo || 1;
-            var step = 720 / (temps.length - 1);
-            var points = temps.map(function (value, index) {
+            var step = 720 / (values.length - 1);
+            var points = values.map(function (value, index) {
               var x = (index * step).toFixed(1);
               var y = (100 - ((value - lo) / range) * 80 - 10).toFixed(1);
               return x + "," + y;
             });
             spark.innerHTML =
               '<polyline points="' + points.join(" ") + '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />';
-          }
+          };
+          drawChart(panel.getAttribute("data-wx-mode") || "temp");
+          var tabs = panel.querySelectorAll("[data-wx-tab]");
+          Array.prototype.forEach.call(tabs, function (tab) {
+            tab.addEventListener("click", function () {
+              var mode = tab.getAttribute("data-wx-tab");
+              panel.setAttribute("data-wx-mode", mode);
+              Array.prototype.forEach.call(tabs, function (other) {
+                var active = other === tab;
+                other.classList.toggle("is-active", active);
+                other.setAttribute("aria-selected", active ? "true" : "false");
+              });
+              drawChart(mode);
+            });
+          });
         }
       }
 

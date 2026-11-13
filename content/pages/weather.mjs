@@ -72,8 +72,15 @@ ${pageHero({
       </div>
 
       <div class="wx__block">
-        <span class="widget__label">Next 24 hours</span>
-        <svg class="wx__spark" data-weather-spark viewBox="0 0 720 110" role="img" aria-label="Hourly temperature trend" preserveAspectRatio="none"></svg>
+        <div class="wx__tabs-head">
+          <span class="widget__label">Next 24 hours</span>
+          <div class="wx__tabs" role="tablist" aria-label="Hourly forecast chart">
+            <button type="button" class="wx__tab is-active" data-wx-tab="temp" role="tab" aria-selected="true">Temperature</button>
+            <button type="button" class="wx__tab" data-wx-tab="rain" role="tab" aria-selected="false">Rain</button>
+            <button type="button" class="wx__tab" data-wx-tab="wind" role="tab" aria-selected="false">Wind</button>
+          </div>
+        </div>
+        <svg class="wx__spark" data-weather-spark viewBox="0 0 720 110" role="img" aria-label="Hourly forecast chart" preserveAspectRatio="none"></svg>
         <div class="wx__hours" data-weather-hourly></div>
       </div>
 
