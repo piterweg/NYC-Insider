@@ -315,7 +315,7 @@ ${heroHome({
 <section class="section section--tight">
   <div class="container">
     <div class="grid grid--2" style="align-items:stretch;gap:1.2rem">
-      <div class="widget" data-weather>
+      <div class="widget" data-weather data-weather-days-count="4">
         <div>
           <span class="widget__label">New York right now</span>
           <p class="widget__value" data-weather-temp>—°F</p>
@@ -324,7 +324,7 @@ ${heroHome({
         <div>
           <span class="widget__label">Next few days</span>
           <div class="widget__days" data-weather-days></div>
-          <p class="widget__meta">Live forecast from Open-Meteo · <a href="when-to-visit.html">month-by-month guide</a></p>
+          <p class="widget__meta">Live forecast from Open-Meteo · <a href="when-to-visit.html">month-by-month guide</a> · <a href="weather.html">full weather guide</a></p>
         </div>
       </div>
       <div class="widget" style="grid-template-columns:1fr">

@@ -121,7 +121,7 @@ ${pageHero({
         ["December", "45", "34", "7", "1", "11.4"],
       ],
     })}
-    <p class="muted" style="margin-top:1.2rem">Annual averages: about 50 inches (1,272 mm) of precipitation, around 125 wet days and 2,535 hours of sunshine. Averages are not forecasts — check the week-of weather before you pack.</p>
+    <p class="muted" style="margin-top:1.2rem">Annual averages: about 50 inches (1,272 mm) of precipitation, around 125 wet days and 2,535 hours of sunshine. Averages are not forecasts — check the week-of weather before you pack. <a href="weather.html">See the live forecast and monthly averages</a>.</p>
   </div>
 </section>
 

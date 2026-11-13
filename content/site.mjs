@@ -28,6 +28,7 @@ export const site = {
       links: [
         { label: "Itineraries", href: "itineraries.html" },
         { label: "When to Visit", href: "when-to-visit.html" },
+        { label: "Weather", href: "weather.html" },
         { label: "Getting Around", href: "getting-around.html" },
         { label: "Budget Guide", href: "budget.html" },
         { label: "Where to Stay", href: "where-to-stay.html" },

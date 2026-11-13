@@ -148,7 +148,8 @@ const clip =
     ? { x: 0, y: 0, width, height, scale: 1 }
     : { x: 0, y: 0, width, height: Math.min(content.height, 16000), scale: 1 };
 
-const shot = await send(ws, "Page.captureScreenshot", {
+if (process.env.WAIT) await sleep(Number(process.env.WAIT));
+  const shot = await send(ws, "Page.captureScreenshot", {
   format: "png",
   captureBeyondViewport: true,
   clip,

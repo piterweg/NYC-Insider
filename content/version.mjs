@@ -13,6 +13,7 @@ import path from "node:path";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const files = [
   "assets/css/main.css",
+  "assets/css/weather.css",
   "assets/js/main.js",
   "assets/js/passes.js",
   "assets/js/search.js",
