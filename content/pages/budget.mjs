@@ -132,7 +132,8 @@ ${pageHero({
         ["Broadway show", "Around $131", "Average paid ticket in 2025–26; TKTS up to 50% off"],
         ["CityPASS", "$149", "Five attractions from ten, valid nine days"],
         ["Go City Explorer Pass", "From $89", "Two to ten attractions; flexible activation"],
-        ["New York Pass", "From $89", "One to ten consecutive days, 100+ attractions"],
+        ["Go City All-Inclusive Pass", "From $169", "One to ten consecutive days, 108 attractions"],
+        ["Go City Essentials Pass", "From $99", "One observation deck plus two attractions"],
       ],
     })}
     <p class="muted" style="margin-top:1.2rem">Passes use dynamic pricing too, and weekend and holiday dates often run 20–40% higher. Whether one saves money depends on how many of its attractions you would have paid for anyway — our <a href="passes.html">pass comparison</a> does the arithmetic.</p>

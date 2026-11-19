@@ -53,7 +53,7 @@ export default {
   bodyClass: "page-inner",
   title: "Interactive NYC Map — Attractions, Food and Neighbourhoods",
   description:
-    "An interactive map of New York City: observation decks, museums, parks, the best cheap food and the neighbourhoods worth walking — filter by category and plan a route.",
+    "Interactive map of New York City: observation decks, museums, parks, the best cheap food and the neighbourhoods worth walking. Filter by category and plan a route.",
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/midtown-aerial-night.webp",

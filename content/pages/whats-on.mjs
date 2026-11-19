@@ -19,7 +19,7 @@ export default {
   bodyClass: "page-inner",
   title: "What's on in New York — Seasonal Events",
   description:
-    "New York's seasonal calendar: Halloween, Thanksgiving, Christmas, New Year's Eve, Restaurant Week, spring, summer, fall and the US Open, with dates and booking windows.",
+    "New York's seasonal calendar: Halloween, Thanksgiving, Christmas, New Year's Eve, Restaurant Week and the US Open, with dates and booking windows.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/midtown-aerial-night.webp",

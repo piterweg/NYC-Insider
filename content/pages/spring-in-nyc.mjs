@@ -8,7 +8,7 @@ export default {
   bodyClass: "page-inner",
   title: "Spring in NYC — Blossoms, Parks and Crowds",
   description:
-    "Spring in New York: cherry blossom season in Central Park and Brooklyn, Easter and spring-break crowds, the NYC Half, and what the weather is really like month by month.",
+    "Spring in New York: cherry blossoms in Central Park and Brooklyn, Easter and spring-break crowds, the NYC Half, and what the weather is really like by month.",
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/central-park-nyc.webp",

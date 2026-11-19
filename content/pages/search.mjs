@@ -7,6 +7,7 @@ export default {
   title: "Search the Guide",
   description:
     "Search NYCTrove: itineraries, attraction guides, neighbourhood advice, food spots, transport, passes and practical planning pages.",
+  noindex: true,
   priority: "0.3",
   changefreq: "monthly",
   ogImage: "assets/img/times-square-night.webp",

@@ -29,7 +29,7 @@ export default {
   bodyClass: "page-inner",
   title: "Empire State Building vs Top of the Rock",
   description:
-    "Empire State Building or Top of the Rock? A direct comparison of view, queues, ticket prices and the best time to go, with a clear verdict for each kind of trip.",
+    "Empire State Building or Top of the Rock? A direct comparison of views, queues, ticket prices and best time to go, with a clear verdict for each trip.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/skyline-window-view.webp",

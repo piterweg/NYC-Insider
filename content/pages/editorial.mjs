@@ -6,7 +6,7 @@ export default {
   bodyClass: "page-inner",
   title: "Editorial Standards and How We Research",
   description:
-    "How NYCTrove is produced: our research process, how we check prices and opening hours, corrections policy, funding and disclosure, and the date each guide was last verified.",
+    "How NYCTrove is produced: our research process, how we check prices and hours, corrections policy, funding and disclosure, and when each guide was verified.",
   priority: "0.4",
   changefreq: "yearly",
   ogImage: "assets/img/grand-central.webp",

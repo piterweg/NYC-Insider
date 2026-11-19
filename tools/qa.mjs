@@ -55,7 +55,7 @@ for (const page of pages) {
     const target = href.split("#")[0].split("?")[0];
     if (!target) continue;
     try {
-      await stat(path.join(root, target));
+      await stat(path.join(root, target.replace(/^\//, "")));
     } catch {
       add(page, `broken local link: ${href}`);
     }
@@ -74,7 +74,7 @@ for (const page of pages) {
   const title = html.match(/<title>([^<]*)<\/title>/)?.[1] || "";
   if (title.length > 70) add(page, `title is ${title.length} chars (aim <= 70)`);
   const desc = html.match(/<meta name="description" content="([^"]*)"/)?.[1] || "";
-  if (desc.length < 110 || desc.length > 175) add(page, `description is ${desc.length} chars (aim 110–175)`);
+  if (desc.length < 110 || desc.length > 165) add(page, `description is ${desc.length} chars (aim 110–160)`);
 }
 
 if (issues.length) {

@@ -10,6 +10,8 @@ export const site = {
   baseUrl: "https://nyctrove.com",
   email: "hello@nyctrove.com",
   year: 2026,
+  published: "2026-11-02",
+  logo: "assets/img/logo-512.png",
 
   // Primary navigation. `id` is used to highlight the current section.
   nav: [

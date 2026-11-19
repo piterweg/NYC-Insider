@@ -22,7 +22,7 @@ export default {
   bodyClass: "page-inner",
   title: "New York City Attractions — Prices and Timing",
   description:
-    "The New York attractions worth planning around: observation deck prices, the Statue of Liberty ferry, museum admission, Broadway tickets and the order to book them in.",
+    "New York attractions worth planning around: observation deck prices, the Statue of Liberty ferry, museum admission, Broadway tickets and what to book first.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/manhattan-skyline-night.webp",

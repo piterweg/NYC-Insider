@@ -30,10 +30,10 @@ export default {
   path: "index.html",
   navSection: "home",
   bodyClass: "page-home",
-  title: "NYCTrove — The Independent Guide to New York City",
+  title: "NYC Travel Guide: Itineraries, Passes & Local Tips | NYCTrove",
   fullTitle: true,
   description:
-    "Plan a better New York City trip: day-by-day itineraries, guides to all five boroughs, honest advice on passes and tickets, and the practical details that make the city easy.",
+    "Plan a better NYC trip: day-by-day itineraries, guides to all five boroughs, honest advice on passes and tickets, and practical tips from locals.",
   priority: "1.0",
   changefreq: "weekly",
   ogImage: "assets/img/manhattan-skyline-dusk.webp",
@@ -44,7 +44,7 @@ ${heroHome({
   alt: "The Manhattan skyline at dusk, seen across the East River",
   eyebrowText: "The independent guide to New York City",
   title: `New York, <em>without the tourist traps.</em>`,
-  lead: "Five boroughs, 8.5 million neighbours and about a thousand ways to get it wrong. We live here. These are the itineraries, neighbourhoods and small practical details that make a New York trip feel effortless.",
+  lead: "Five boroughs, 8.5 million neighbours and about a thousand ways to get it wrong. We live here. This is an independent NYC travel guide: itineraries, neighbourhoods, ticket and pass advice, and the small practical details that make a New York trip feel effortless.",
   actions: `${btn({ href: "itineraries.html", label: "Browse itineraries" })}${btn({
     href: "boroughs.html",
     label: "Meet the five boroughs",
@@ -286,7 +286,7 @@ ${heroHome({
       ${card({
         kicker: "Tickets",
         title: `<a href="passes.html">Which NYC pass is worth it</a>`,
-        text: "CityPASS, Go City and New York Pass compared — with the maths for a 3, 5 and 7 day trip.",
+        text: "CityPASS and Go City passes compared — with the maths for a 3, 5 and 7 day trip.",
       })}
       ${card({
         kicker: "Money",

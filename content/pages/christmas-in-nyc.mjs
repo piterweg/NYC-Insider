@@ -8,7 +8,7 @@ export default {
   bodyClass: "page-inner",
   title: "Christmas in NYC — Lights, Markets and Tree",
   description:
-    "Christmas in New York: the Rockefeller tree, Fifth Avenue windows, Bryant Park Winter Village and how to handle the busiest weeks of the year without wasting them.",
+    "Christmas in New York: the Rockefeller tree, Fifth Avenue windows, Bryant Park Winter Village and how to handle the busiest weeks of the year.",
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/fifth-avenue-cab.webp",

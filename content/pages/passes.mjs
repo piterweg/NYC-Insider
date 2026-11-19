@@ -22,7 +22,7 @@ export default {
   bodyClass: "page-inner",
   title: "NYC Passes Compared — CityPASS vs Go City",
   description:
-    "New York City passes compared at 2026 prices: CityPASS, Go City Explorer, All-Inclusive and Essentials, and the New York Pass, with break-even maths and a trip calculator.",
+    "NYC passes compared at 2026 prices: CityPASS, Go City Explorer, All-Inclusive and Essentials, with break-even maths and a trip calculator.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/skyline-window-view.webp",
@@ -31,7 +31,7 @@ export default {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: "NYC Passes Compared — CityPASS, Go City and New York Pass",
+      headline: "NYC Passes Compared — CityPASS and Go City",
       author: { "@type": "Organization", name: "NYCTrove" },
       dateModified: "2026-11-02",
     },
@@ -61,7 +61,7 @@ ${pageHero({
         ${eyebrow("The honest answer")}
         <h2 style="font-size:var(--step-3);margin-top:.7rem">Buy a pass for the trip you will take</h2>
         <p class="lead">Passes are sold on the number of attractions you could visit. They are worth it only for the number you actually will.</p>
-        <p class="muted">There are two families. Fixed bundles, such as CityPASS, give you a set number of entries for one price. Day-based passes, like Go City All-Inclusive and New York Pass, charge by the day and let you enter as much as you can. Fixed bundles suit a first visit with a clear shortlist; day-based passes suit a return visitor with the stamina for three or four paid sights a day.</p>
+        <p class="muted">There are two families. Fixed bundles, such as CityPASS, give you a set number of entries for one price. Day-based passes, like Go City All-Inclusive, charge by the day and let you enter as much as you can. Fixed bundles suit a first visit with a clear shortlist; day-based passes suit a return visitor with the stamina for three or four paid sights a day.</p>
       </div>
       <div class="split__media">
         <img src="${img("manhattan-skyline-night.webp")}" alt="The Manhattan skyline above the East River at night" width="1000" height="1250" loading="lazy" />
@@ -129,18 +129,6 @@ ${pageHero({
         href: "#calculator",
         cta: "Run your numbers",
       })}
-      ${passCard({
-        name: "New York Pass",
-        price: "from $89",
-        note: " 1 day · up to around $400 for 10 days",
-        features: [
-          "100+ attractions",
-          "Priced by consecutive days, 1 to 10",
-          "Worth pricing alongside Go City All-Inclusive",
-        ],
-        href: "#calculator",
-        cta: "Run your numbers",
-      })}
     </div>
   </div>
 </section>
@@ -183,14 +171,7 @@ ${pageHero({
           "from $99",
           "Fixed bundle",
           "The skyline plus two extras, simply",
-        ],
-        [
-          "<strong>New York Pass</strong>",
-          "100+ attractions, unlimited",
-          "from $89 (1 day)",
-          "Consecutive calendar days",
-          "Compare it with All-Inclusive; the same trip type",
-        ],
+        ]
       ],
     })}
   </div>
@@ -350,7 +331,7 @@ ${pageHero({
       },
       {
         q: "Are passes cheaper for children?",
-        a: "<p>CityPASS has a child rate: $129 for ages 6–17 against $149 adult, plus a $2 fee. The Go City passes and New York Pass price by age band, so check their current child policy.</p>",
+        a: "<p>CityPASS has a child rate: $129 for ages 6–17 against $149 adult, plus a $2 fee. The Go City passes price by age band, so check their current child policy.</p>",
       },
     ])}
   </div>

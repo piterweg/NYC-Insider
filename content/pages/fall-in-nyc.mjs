@@ -8,7 +8,7 @@ export default {
   bodyClass: "page-inner",
   title: "Fall in NYC — Foliage, Marathon and Walks",
   description:
-    "Fall in New York: when the foliage peaks, where to see it in Central Park and the High Line, the marathon and Thanksgiving, and why September is the best walking month.",
+    "Fall in New York: when the foliage peaks, where to see it in Central Park and the High Line, the marathon, Thanksgiving, and why September is best for walking.",
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/central-park-bow-bridge.webp",

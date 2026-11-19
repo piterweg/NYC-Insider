@@ -29,7 +29,7 @@ export default {
   bodyClass: "page-inner",
   title: "Is CityPASS Worth It? The Break-Even Maths",
   description:
-    "Is CityPASS worth it in New York? We run the break-even maths at 2026 prices: $149 for five attractions, real gate prices, and the trips where the pass wins or loses.",
+    "Is CityPASS worth it in New York? Break-even maths at 2026 prices: $149 for five attractions, real gate prices, and the trips where the pass wins or loses.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/skyline-window-view.webp",
@@ -150,7 +150,7 @@ export default {
           alt: "The Manhattan skyline above the East River at night",
           kicker: "Passes",
           title: "NYC passes compared",
-          text: "CityPASS, Go City and New York Pass side by side, with a trip calculator.",
+          text: "CityPASS and Go City passes side by side, with a trip calculator.",
           meta: "5 passes compared",
         },
         {

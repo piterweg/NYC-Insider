@@ -8,7 +8,7 @@ export default {
   bodyClass: "page-inner",
   title: "New Year's Eve Alternatives in New York",
   description:
-    "New Year's Eve in New York without the Times Square crush: restaurant tables, Broadway and comedy shows, Brooklyn viewpoints and midnight events, with booking advice.",
+    "New Year's Eve in New York without the Times Square crush: restaurant tables, Broadway and comedy shows, Brooklyn viewpoints and midnight events, plus booking tips.",
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/times-square-night.webp",

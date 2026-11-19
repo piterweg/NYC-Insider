@@ -6,7 +6,7 @@ export default {
   bodyClass: "page-inner",
   title: "Staten Island Guide — Ferry, Snug Harbor",
   description:
-    "A guide to Staten Island: the free ferry from Manhattan, Snug Harbor's botanical garden and Chinese Scholar's Garden, St. George, and the quietest corners of New York City.",
+    "Staten Island guide: the free ferry from Manhattan, Snug Harbor's botanical garden and Chinese Scholar's Garden, St. George, and the quietest corners of NYC.",
   priority: "0.7",
   changefreq: "monthly",
   ogImage: "assets/img/staten-island-ferry.webp",

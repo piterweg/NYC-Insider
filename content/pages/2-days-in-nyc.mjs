@@ -29,7 +29,7 @@ export default {
   bodyClass: "page-inner",
   title: "2 Days in NYC: A Two-Day Itinerary",
   description:
-    "Two full days in New York, split cleanly: Midtown and the park on day one, the harbour, the 9/11 Memorial and the Brooklyn Bridge on day two — with prices and timing.",
+    "Two days in New York, split cleanly: Midtown and Central Park on day one, the harbour, 9/11 Memorial and Brooklyn Bridge on day two, with prices and timing.",
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/times-square-night.webp",

@@ -12,6 +12,7 @@
 import { readdir, writeFile, readFile, mkdir } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
 
 import { site } from "../content/site.mjs";
 import { renderPage } from "../content/layout.mjs";
@@ -35,6 +36,30 @@ for (const file of files) {
   pages.push(page);
 }
 
+// ---------------------------------------------------------------------------
+// Honest per-page dates: `updated` = last commit that touched the page module
+// (override with `updated: "YYYY-MM-DD"` in the module); never the build date.
+// ---------------------------------------------------------------------------
+const gitDate = (file) => {
+  try {
+    const out = execFileSync("git", ["log", "-1", "--format=%cs", "--", file], {
+      cwd: root,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(out) ? out : "";
+  } catch {
+    return "";
+  }
+};
+for (const page of pages) {
+  page.published = page.published || site.published;
+  const fromGit = gitDate(path.join("content", "pages", page.sourceFile));
+  let updated = page.updated || fromGit || page.published;
+  if (updated < page.published) updated = page.published;
+  page.updated = updated;
+}
+
 // Duplicate path guard
 const seen = new Map();
 for (const page of pages) {
@@ -56,18 +81,18 @@ for (const page of pages) {
   written++;
 }
 
-// sitemap.xml
+// sitemap.xml — only indexable pages; lastmod is the real last-change date.
+// (Google ignores changefreq/priority, so they are not emitted.)
+const sitemapExclude = new Set(["credits.html"]);
 const publicPages = pages.filter((p) => !p.noindex && p.path !== "404.html");
-const today = new Date().toISOString().slice(0, 10);
+const sitemapPages = publicPages.filter((p) => !sitemapExclude.has(p.path));
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${publicPages
+${sitemapPages
   .map(
     (p) => `  <url>
     <loc>${site.baseUrl}/${p.path === "index.html" ? "" : p.path}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>${p.changefreq || "monthly"}</changefreq>
-    <priority>${p.priority || "0.7"}</priority>
+    <lastmod>${p.updated}</lastmod>
   </url>`
   )
   .join("\n")}
@@ -90,7 +115,7 @@ const escapeXml = (value) =>
 const feedPages = [...publicPages]
   .sort((a, b) => Number(b.priority || 0.7) - Number(a.priority || 0.7))
   .slice(0, 30);
-const feedDate = new Date().toUTCString();
+const feedDate = new Date(Math.max(...publicPages.map((p) => Date.parse(p.updated)))).toUTCString();
 const feedItems = feedPages
   .map((p) => {
     const link = `${site.baseUrl}/${p.path === "index.html" ? "" : p.path}`;
@@ -98,7 +123,7 @@ const feedItems = feedPages
       <title>${escapeXml(p.title)}</title>
       <link>${link}</link>
       <guid isPermaLink="true">${link}</guid>
-      <pubDate>${feedDate}</pubDate>
+      <pubDate>${new Date(p.updated).toUTCString()}</pubDate>
       <description>${escapeXml(p.description)}</description>
     </item>`;
   })
@@ -170,9 +195,8 @@ for (const page of pages) {
   const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((m) => m[1]);
   for (const href of hrefs) {
     if (/^(https?:|mailto:|tel:|#|javascript:)/.test(href)) continue;
-    const target = href.split("#")[0].split("?")[0];
-    if (!target) continue;
-    if (target === "/") continue; // root-relative home link
+    const target = href.split("#")[0].split("?")[0].replace(/^\//, "");
+    if (!target) continue; // "/" home link or bare anchor
     if (target.startsWith("assets/") || target.endsWith(".xml") || target.endsWith(".txt")) continue;
     if (known.has(target)) continue;
     try {

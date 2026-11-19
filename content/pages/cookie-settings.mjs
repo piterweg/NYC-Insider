@@ -7,6 +7,7 @@ export default {
   title: "Cookie Settings",
   description:
     "Control the analytics cookies on NYCTrove: see your current choice, accept or decline Google Analytics, and read exactly which cookies the site sets.",
+  noindex: true,
   priority: "0.2",
   changefreq: "yearly",
   ogImage: "assets/img/grand-central.webp",

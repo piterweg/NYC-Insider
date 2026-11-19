@@ -6,7 +6,7 @@ export default {
   bodyClass: "page-inner",
   title: "Philadelphia Day Trip from New York",
   description:
-    "A Philadelphia day trip from New York: Amtrak and NJ Transit options, Independence Hall and Liberty Bell tickets, Reading Terminal Market and a realistic hourly plan.",
+    "Philadelphia day trip from New York: Amtrak and NJ Transit options, Independence Hall and Liberty Bell tickets, Reading Terminal Market and an hourly plan.",
   priority: "0.8",
   changefreq: "monthly",
   ogImage: "assets/img/philadelphia-skyline.webp",

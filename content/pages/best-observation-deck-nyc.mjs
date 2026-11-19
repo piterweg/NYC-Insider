@@ -29,7 +29,7 @@ export default {
   bodyClass: "page-inner",
   title: "Best Observation Deck in NYC — 5 Decks Compared",
   description:
-    "The best observation deck in New York for your trip: Empire State Building, Top of the Rock, Edge, SUMMIT and One World Observatory compared on views, prices and timing.",
+    "The best observation deck in New York: Empire State, Top of the Rock, Edge, SUMMIT and One World Observatory compared on views, prices and timing.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/manhattan-skyline-night.webp",
