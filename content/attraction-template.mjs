@@ -178,6 +178,8 @@ ${pageHero({
   </div>
 </section>
 
+${d.relatedHtml || ""}
+
 ${pageNav({ prev: d.prev, next: d.next })}
 `;
 }

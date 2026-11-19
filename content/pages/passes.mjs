@@ -363,6 +363,15 @@ ${ctaBand({
   })}`,
 })}
 
+<section class="section">
+  <div class="container container--narrow">
+    <div class="callout">
+      <p><strong>Related guide:</strong> <a href="is-the-new-york-pass-worth-it.html">Is the New York Pass worth it? What the name means</a></p>
+    </div>
+  </div>
+</section>
+
+
 ${pageNav({
   prev: { href: "attractions.html", label: "Things to do" },
   next: { href: "plan-your-trip.html", label: "Plan your trip" },

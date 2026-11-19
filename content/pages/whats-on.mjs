@@ -314,6 +314,15 @@ ${ctaBand({
   actions: `<a class="btn" href="when-to-visit.html">Weather by month</a> <a class="btn btn--outline" href="plan-your-trip.html">Plan the whole trip</a>`,
 })}
 
+<section class="section">
+  <div class="container container--narrow">
+    <div class="callout">
+      <p><strong>Related guide:</strong> <a href="rockefeller-christmas-tree-2026.html">Rockefeller Christmas Tree 2026: dates and tips</a></p>
+    </div>
+  </div>
+</section>
+
+
 ${pageNav({
   prev: { href: "when-to-visit.html", label: "When to visit New York" },
   next: { href: "thanksgiving-nyc.html", label: "Thanksgiving in NYC" },

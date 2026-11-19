@@ -96,6 +96,11 @@ export default {
         { q: "How long does a Staten Island visit take?", a: "<p>Half a day is plenty: ferry, St. George, Snug Harbor, lunch, ferry back. A full day gets you to the Greenbelt or the beaches.</p>" },
         { q: "Can I bring a car on the ferry?", a: "<p>Vehicles are only allowed for Staten Island residents and authorised users. Visitors walk on.</p>" },
       ],
+      relatedHtml: `<section class="section">
+  <div class="container container--narrow">
+    <div class="callout"><p><strong>Related guide:</strong> <a href="staten-island-ferry-guide.html">How to ride the free Staten Island Ferry</a></p></div>
+  </div>
+</section>`,
       source: "staten-island",
       prev: { href: "bronx.html", label: "The Bronx" },
       next: { href: "attractions.html", label: "Things to do" },

@@ -182,6 +182,11 @@ export default {
           meta: "Things to do",
         },
       ],
+      relatedHtml: `<section class="section">
+  <div class="container container--narrow">
+    <div class="callout"><p><strong>Related guide:</strong> <a href="met-vs-moma.html">Met or MoMA? Compare the two museums</a></p></div>
+  </div>
+</section>`,
       source: "moma",
       faq,
       prev: { href: "central-park.html", label: "Central Park" },
