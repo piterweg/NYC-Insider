@@ -127,7 +127,7 @@ export default {
         "Wednesday is the closed day, and it is the single most common wasted trip on Museum Mile. Check the official site for current hours and holiday closures before you set out.",
       official: {
         title: "Book on metmuseum.org",
-        text: "Tickets are sold on the museum's own site, which also lists the current opening hours, the Roof Garden season and the Cloisters. Buy direct and skip the third-party sites that add a booking fee.",
+        text: "Tickets are sold on the museum's own site, which also lists the current opening hours, any gallery closures and the Cloisters. Buy direct and skip the third-party sites that add a booking fee.",
         url: "https://www.metmuseum.org/plan-your-visit",
         cta: "Plan your visit at metmuseum.org",
         note: "Official museum site. Hours and holiday closures can change; check before you travel.",
@@ -139,8 +139,8 @@ export default {
           text: "Friday and Saturday openings run to 9pm. Arrive after 6pm and you get the European paintings with room to stand back from them.",
         },
         {
-          title: "Check the Roof Garden season",
-          text: "The Roof Garden is seasonal, usually May to October and weather-dependent. It is a good bonus, not a reason to plan a whole trip around.",
+          title: "Check current closures",
+          text: "The Cantor Roof Garden is closed while the Tang Wing is built. Check the official site for current gallery and roof closures before planning around them.",
         },
         {
           title: "Do not pair it with the Cloisters",
